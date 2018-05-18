@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
 	"appid": "wx07cf52be1444e4b7",
-	"projectname": "oil",
+	"projectname": "oilStationMap",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
