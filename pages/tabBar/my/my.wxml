@@ -1,0 +1,21 @@
+<page>
+  <view class='header'>
+    <image wx:if="{{userInfo.avatarUrl}}" class="userAvatarUrl" src="{{userInfo.avatarUrl}}"></image>
+    <image wx:if="{{!userInfo.avatarUrl}}" class="userAvatarUrl" src="/images/defaultavatar.png"></image>
+    <view wx:if="{{userInfo.avatarUrl}}" class='userName fz-32 ls-24' >{{userInfo.nickName}}</view>
+    <view wx:if="{{!userInfo.avatarUrl}}" class='userName fz-32 ls-24' >我</view> 
+  </view>
+  <view class='table'>
+    <block wx:for="{{tableData}}" wx:key="{{item.id}}">
+      <navigator url="/pages/{{item.page}}" class="navigator">
+        <view class="navigator-text">{{item.name}}</view>
+        <view class="navigator-arrow"></view>
+      </navigator>
+    </block>
+  </view>
+  <button class="open-speak"open-type='contact' 
+  size="40"
+  session-from="sobot|{{userInfo.nickName}}|{{userInfo.avatarUrl}}">
+  <text class='my'></text>
+  我的客服</button>
+</page>

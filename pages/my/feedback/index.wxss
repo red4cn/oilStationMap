@@ -1,0 +1,45 @@
+/* pages/feedback/index.wxss */
+.page-write-area {
+  /* position: relative; */
+  padding: 30rpx 40rpx 0rpx 40rpx;
+  background-color: #fff;
+  margin-top: 40rpx;
+  height: 392rpx;
+}
+.feed-back-area {
+  font-family: PingFang-SC-Medium;
+  font-size: 28rpx;
+  color: #353535;
+  width: 100%;
+  height: 324rpx;
+  /* line-height: 40rpx; */
+}
+.char-count-label {
+  font-family: PingFang-SC-Medium;
+  font-size: 20rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  color: #B2B2B2;
+}
+.sumit-button {
+  margin: 40rpx 40rpx 0 40rpx;
+  border-radius: 12rpx;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  color: white;
+
+  font-size: 28rpx;
+}
+button::after {
+  border: none;
+}
+.submit-button-select {
+  background-color: #09BB07;
+}
+.submit-button-unselect {
+  background-color: #D8D8D8;
+}

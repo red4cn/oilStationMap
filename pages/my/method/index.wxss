@@ -1,0 +1,26 @@
+/* pages/method/index.wxss */
+
+.page-body {
+  background-color: #fff;
+  padding: 46rpx 40rpx 98rpx 40rpx;
+}
+
+.head-title {
+  font-family: PingFang-SC-Bold;
+  font-size: 36rpx;
+  color: #353535;
+}
+.method-title {
+  margin-top: 38rpx;
+  font-family: PingFang-SC-Bold;
+  font-size: 28rpx;
+  color: #353535;
+}
+.method-content {
+  margin-top: 8rpx;
+  font-family: PingFang-SC-Medium;
+  font-size: 24rpx;
+  color: #888888;
+  line-height: 34rpx;
+  font-weight: 200;
+}

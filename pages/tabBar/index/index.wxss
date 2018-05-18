@@ -1,0 +1,114 @@
+@import "../../../app.wxss";
+.container-swiper{
+  display: block;
+  width: 100%;
+  height: 1052rpx;
+  opacity: 0.9;
+  border-radius: 12rpx;
+  margin-top: 42rpx;
+}
+.swiper1{
+  border: 0px red solid;
+  width: 670rpx;
+  margin: 0 auto;
+  padding-top: 50rpx;
+  height: 960rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.06); 
+}
+.fix-iphonex{
+  margin-top: 100rpx;
+}
+.swiper-item{
+  width: 670rpx;
+  margin: 0 auto;
+}
+.swiper{
+  height: 100%;
+}
+.swiper-box .wx-swiper-dot{
+    width:32rpx;
+    display: inline-flex;
+    height: 6rpx;
+    margin-left: -6rpx;
+    justify-content:space-between;
+    border-radius: 200rpx 
+}
+.codeImg{
+    width: 400rpx;
+    height: 400rpx;
+    margin: 0rpx 0rpx 0rpx 130rpx;
+    border: 0px red solid;
+}
+.payTextView{
+  flex-direction:column;
+  height: 110px;
+  width: 100%;
+  border: 0px red solid;
+}
+.codeText{
+    color: #09BB07;
+    font-size: 80%;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+.orText{
+    color: #09BB07;
+    font-size: 150%;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+.paymentViwer{
+    height: 300rpx;
+    margin-top: 80rpx;
+    border: 0px red solid;
+}
+.paymentBtn::after{
+    border: 0;
+}
+.paymentBtn{                                       
+    width: 300rpx;
+    height: 90rpx;
+    line-height: 90rpx; 
+    color: #09BB07;
+    border: 3rpx solid #09BB07;
+    background: #fff;
+    border-radius:12rpx;
+}
+.paymentText{
+    display: block;
+    color: #B2B2B2;
+    text-align: center;
+    margin: 60px 0px 10px 0px;
+}
+
+.appreciateBtn::after{
+    border: 0;
+}
+.appreciateBtn{                                       
+    width: 300rpx;
+    height: 90rpx;
+    line-height: 90rpx; 
+    color: #09BB07;
+    border: 3rpx solid #09BB07;
+    background: #fff;
+    border-radius:12rpx;
+}
+.appreciateText{
+    display: block;
+    color: #B2B2B2;
+    text-align: center;
+    margin: 60px 0px 10px 0px;
+}
+/* 付款的弹窗 */
+.scanned-image{
+  border-radius: 12rpx;
+  display: block;
+  width: 328rpx;
+  height: 236rpx;
+  margin: 352rpx 210rpx 0 212rpx;
+}

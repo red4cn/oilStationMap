@@ -1,0 +1,44 @@
+<!-- index.wxml 付款页面 -->
+<view class="container">
+  <view class="container-swiper {{isIpx ? 'fix-iphonex':''}}">
+    <swiper class='swiper swiper-box' indicator-dots='{{isHaveSpit}}' indicator-color='#D8D8D8' indicator-active-color='#8D8D8D' autoplay="{{autoplay}}" current="{{swiperCurrent}}" bindchange="swiperChange">
+      <view>
+        <swiper-item class='swiper-item' wx:if="{{isShowPaymentCodeImglist}}">
+          <view class='swiper1'>
+            <!-- 付款二维码 -->
+            <view wx:for="{{paymentCodeImglist}}" wx:for-item="codeImg" class="previewimg">  
+              <image src="{{codeImg}}" data-src="{{codeImg}}" bindtap='previewPaymentImage' class="codeImg"></image>
+            </view>
+            <view class="flex-wrp payTextView">
+              <view class="flex-item codeText" bindtap='previewImage'>{{paymentCodeText}}</view>
+              <view class="flex-item orText">{{orText}}</view>
+            </view>
+            <view class='paymentViwer fz-24'>
+              <button class='paymentBtn fz-32 fb-bond' bindtap='requestWxPayUnifiedOrder'>{{paymentBtn}}</button>
+              <text class='paymentText'>{{paymentText}}</text>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item class='swiper-item'>
+          <view class='swiper1'>
+            <!-- 打赏小程序码 -->
+            <view wx:for="{{appreciateCodeImglist}}" wx:for-item="codeImg" class="previewimg">  
+              <image src="{{codeImg}}" data-src="{{codeImg}}" bindtap='previewAppreciateImage' class="codeImg"></image>    
+            </view>
+            <view class="flex-wrp payTextView">
+              <view class="flex-item codeText" bindtap='previewAppreciateImage'>{{appreciateCodeText}}</view>
+              <view class="flex-item orText">{{orText}}</view>
+            </view>
+            <view class='paymentViwer fz-24'>
+              <button class='appreciateBtn fz-32 fb-bond' bindtap='requestWxPayUnifiedOrder'>{{appreciateBtn}}</button>
+              <text class='appreciateText'>{{appreciateText}}</text>
+            </view>
+          </view>
+        </swiper-item>
+      </view>
+    </swiper>
+  </view>
+  <view class='mask' wx:if="{{isShowPaying}}" catchtap="preventD">
+    <image class="scanned-image" src="/images/paying.gif"> </image>
+  </view>
+</view>

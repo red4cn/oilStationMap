@@ -1,0 +1,41 @@
+.whrite-back {
+    background-color: #fff;
+}
+.img-logo {
+    margin-top: 64rpx;
+    width: 144rpx;
+    height: 144rpx;
+}
+.icon-view {
+    margin: 0 auto;
+    text-align: center;
+}
+.card-name {
+    padding-top: 16rpx;
+    font-family: PingFang-SC-Bold;
+    font-size: 32rpx;
+    color: #353535;
+    text-align: center;
+}
+.content-view {
+    padding-top: 34rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    padding-bottom: 64rpx;
+    font-family: PingFang-SC-Regular;
+    font-size: 24rpx;
+    color: #888888;
+    text-align: justify;
+    line-height: 44rpx;
+}
+.bottom-view {
+    text-align: center;
+    position: absolute;
+    bottom: 80rpx;
+    font-size: 24rpx;
+    color: #888888;
+    width: 100%;
+}
+.privacy{
+  display: inline-block;
+}

@@ -1,0 +1,16 @@
+<view wx:if="{{isMore}}" >   
+     <view class='more-warp'>
+           <view class='plase-choice fz-24 ls-24'>请选择，可多选</view>
+           <view  class='more-all'  >
+                <view wx:for="{{more}}"  wx:key="key" class="more fz-28 ls-28 {{(index+1)%4 == 0 ? 'last': ''}} {{item.isChecked?'checked':'normal'}} {{item.canClick ? 'notCan' :'canCM'}}"
+                    bindtap='clickAdd' data-index='{{index}}' >{{item.dicName}}
+                <image  wx:if="{{item.isChecked}}" class="card-img" src='../../../images/chosse.png' background-size="cover" catchtap='clickAdd' data-index='{{index}}'></image>
+                </view>
+           </view>
+            <view class='addInput flex'>
+              <input  maxlength="7" value="{{value}}" bindinput='focus' placeholder="请输入自定义标签，最多7个字" class='write-tag' placeholder-class="placeholder"/>
+              <button  class="sure-add ls-32 fz-32 {{canAdd? 'can-add':'not-can-add'}}" disabled='{{!canAdd}}'  bindtap='addOilModelTag'>添加</button>
+            </view>
+            <button  class="sure fz-32 ls-24 {{isIpx ? '': ''}} {{isCanClick?'notCanClick':'canClick'}}"  bindtap='addChooseTag'type="primary" disabled='{{!isCanClick}}' hover="true" hover-class="hover1" >确定</button>
+     </view>
+</view>

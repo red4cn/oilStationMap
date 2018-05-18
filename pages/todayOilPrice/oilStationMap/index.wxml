@@ -1,0 +1,46 @@
+<view class="page-body">
+  <view class="priceView">
+    <map
+        id="oilStationMap"
+        style="width: 100%; height: 220px;"
+        latitude="{{latitude}}"
+        longitude="{{longitude}}"
+        markers="{{markers}}"
+        show-location="true"
+        bindmarkertap="bindMarkerTapFunc"
+        bindregionchange="bindregionchangeFunc"
+        bindcontroltap="bindcontroltapFunc"
+        bindtap="bindtapFunc"
+    ></map>
+  </view>
+  <!-- 成品油列表 -->
+  <view class='oilIntroduce'>
+    <view class="oilView">
+      <image class="oilStationImg" 
+      src='/images/oilStation_green.png'></image>
+      <text class="oilStation">{{oilStationName}}</text>
+    </view>
+    <view class="mapView">
+      <image class="mapPositionImg" src='/images/todayPrice.png' 
+      ></image>
+      <text class="ortherStation">今日油价</text>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" style="height: 320px;border:0px red solid">
+    <view class="itemView" wx:if="{{oilStationPriceList}}" wx:for="{{oilStationPriceList}}">
+        <view class="oilModelFlagNameView">
+        <text class="oilModelLabel">{{item.oilModelLabel}}</text>
+        <text class="oilFlagLabel">#</text>
+        <text class="oilNameLabel">{{item.oilNameLabel}}</text>
+      </view>
+      <view class="oilPriceUnitView">
+        <text class="oilPriceLabel">{{item.oilPriceLabel}}</text>
+        <text class="oilPriceUnitLabel">(元/升)</text>
+      </view> 
+    </view>
+  </scroll-view>
+  <view class="shareView">
+    <button class="shareButton" bindtap="shareOilPrice" 
+    open-type="share">分享给我的好友</button>
+  </view>
+</view>

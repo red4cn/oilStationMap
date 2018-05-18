@@ -1,0 +1,9 @@
+<!--pages/method/index.wxml-->
+
+<view class='page-body'>
+  <view class='head-title fb-bond'>油价地图使用方法</view>
+   <block wx:for-items="{{userMethodContentList}}" wx:key="{{item.title}}">
+    <view class='method-title fb-bond'>{{item.title}}</view>
+    <view class='method-content'>{{item.content}}</view>
+  </block> 
+</view>

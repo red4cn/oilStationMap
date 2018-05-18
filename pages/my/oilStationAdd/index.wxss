@@ -1,0 +1,141 @@
+@import "../../../app.wxss";
+.marginB{
+  margin-bottom: 40rpx;
+}
+ .scroll-y{
+  height: 100%;
+  overflow: hidden;
+} 
+.toast1{
+  display: block;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background: #F76260;
+  color: #FFF;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 10;
+}
+.toast2{
+  width: 100%;
+  height: 40rpx;
+  text-align: center;
+}
+.oilStationBackgroundView{
+  border: 0px red solid;
+}
+.oilStationBackgroundImg{
+  border: 0px red solid;
+  width: 100%;
+   height: 200px; 
+}
+.mustText{
+  margin: 2px 0px 5px 22px;
+  color: #BDBDBD;
+}
+.form-warp{
+  background: #FFFFFF;
+  padding: 0 0rpx 0rpx 40rpx; 
+  padding-right: 40rpx;
+  font-family: PingFangSC-Regular;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.form-warp1{
+  position: relative;
+  margin-top: 20rpx;
+}
+.itemView{
+  position: relative;
+  width: 670rpx;
+  height: 96rpx;
+   line-height: 96rpx; 
+  border-bottom: 2rpx solid #EEE;
+  font-size: 28rpx;
+  color: #353535;
+  letter-spacing: -0.68rpx;
+  display: flex;
+  display: -webkit-flex;
+  /* align-items: center; */
+  overflow: hidden;
+}
+.red{
+  color: red;
+  margin-right: 16rpx;
+}
+.form-warp .itemView:last-child{
+  border: 0;
+}
+.place{
+  font-size: 28rpx;
+  color: #B2B2B2;
+  letter-spacing: -0.68px; 
+}
+.place1{
+  color: #E64340;
+}
+.notCanSave::before{
+  border: 0;
+  border-radius:0;
+}
+.button{
+  border: 0px solid #09BB07; 
+  font-size: 28rpx;
+  letter-spacing: 0.24rpx;
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #fff;
+  text-align: center;
+  color: #09BB07;
+}
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+  color: #fff;
+  background: #D8D8D8;
+  border: 0;
+}
+.dicNameText{
+  border: 0px red solid;
+  margin-left: 30rpx;
+  width: 100px;
+  text-align: left;
+}
+.input{
+  border: 0px red solid;
+  position: absolute;
+  display: inline-block; 
+  width: 455rpx;
+  right: 0rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 24rpx;
+}
+.save{
+  margin: 0 auto;
+  width: 670rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 8rpx; 
+  margin-bottom: 100px;
+}
+.canSave{
+  background: #09BB07;
+}
+.notCanSave{
+  color: #fff;
+  background: #D8D8D8;
+}
+.notCanSave::after{
+  border: none;
+}
+.labelClass{
+  border: 0px red solid;
+  width: 100px;
+  text-align: left;
+}

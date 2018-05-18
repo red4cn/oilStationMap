@@ -1,0 +1,90 @@
+<scroll-view scroll-y="true" class="scroll-y" scroll-top="{{scrollTop}}">
+  <view class='marginB'>
+    <!-- 顶部toast -->
+    <view class="fz-24 toast2" ></view> 
+    <cover-view wx:if="{{inputToast}}" animation="{{animationData}}" class="fz-24 {{inputToast ? 'toast1' : ''}}">{{inputToast}} </cover-view>
+    <!-- 背景 -->
+    <view class="oilStationBackgroundView">
+      <image class="oilStationBackgroundImg" src='/images/todayOilPriceBackground.png'></image>
+      <view class='mustText ls-28 fz-20'>*号为必填项</view>
+    </view>
+    <!-- 信息项 -->
+    <form bindsubmit="formSubmit" bindreset="formReset" report-submit="true" wx:key="key">
+      <view class="form-warp">
+        <view class="itemView">
+          <text class='red'>*</text>
+          <text class="labelClass">加油站名称</text>
+          <input class="input" name="oilStationName" maxlength="100" confirm-type="next" 
+          placeholder="{{oilStationName}}" placeholder-class="place" bindblur="oilStationNameInput" 
+          bindfocus="oilStationNameInput1" cursor-spacing="0" />
+        </view>
+        <view class="itemView">
+          <text class='red'>*</text>
+          <text class="labelClass">加油站地址</text>
+          <input class="input" name="oilStationAdress	" maxlength="100" confirm-type="next" 
+          placeholder-class="place" placeholder="{{oilStationAdress}}" bindblur="oilStationAdressInput" 
+          bindfocus="oilStationAdressInput1" cursor-spacing="0" value="{{oilStation.oilStationAdress}}" />
+        </view>
+        <view class="itemView">
+          <text class='red' style="visibility:hidden;">*</text>
+          <text class="labelClass">0#柴油</text>
+          <input class="input" name="modelOil_0" maxlength="100" confirm-type="next" 
+          placeholder-class="place" placeholder="{{modelOil_0}}" bindblur="modelOil_0_input" 
+          bindfocus="modelOil_0_input1" cursor-spacing="0" />
+        </view>
+        <view class="itemView">
+          <text class='red' style="visibility:hidden;">*</text>
+          <text class="labelClass">92#汽油</text>
+          <input class="input" name="modelOil_92" maxlength="100" confirm-type="next" 
+          placeholder-class="place" placeholder="{{modelOil_92}}" bindblur="modelOil_92_input" 
+          bindfocus="modelOil_92_input1" cursor-spacing="0" />
+        </view>
+        <view class="itemView">
+          <text class='red' style="visibility:hidden;">*</text>
+          <text class="labelClass">95#汽油</text>
+          <input class="input" name="modelOil_95" maxlength="100" confirm-type="next" 
+          placeholder-class="place" placeholder="{{modelOil_95}}" bindblur="modelOil_95_input" 
+          bindfocus="modelOil_95_input1" cursor-spacing="0" />
+        </view>
+        <view class="itemView">
+          <text class='red' style="visibility:hidden;">*</text>
+          <text class="labelClass">97#汽油</text>
+          <input class="input" name="modelOil_97" maxlength="100" confirm-type="next" 
+          placeholder-class="place" placeholder="{{modelOil_97}}" bindblur="modelOil_97_input" 
+          bindfocus="modelOil_97_input1" cursor-spacing="0" />
+        </view>
+      </view>
+
+      <!-- 在编辑信息中油品标签的展示 -->
+      <view class='form-warp' wx:if="{{editData.cardCustomMessage.length != 0}}">
+        <view wx:for="{{editData.cardCustomMessage}}" wx:key="key">
+          <view class="itemView">
+            <text class="dicNameText">{{item.dicName}}</text>
+            <input class="input" name="{{item.dicName}}" maxlength="1000"
+              placeholder-class="place" placeholder="" bindblur="haveMessage" 
+              bindinput="haveMessage1" cursor-spacing="0" data-index="{{index}}" value="{{item.value}}" />
+          </view>
+        </view>
+      </view>
+
+      <!-- 新添加的更多油品标签的展示 -->
+      <view class='form-warp' wx:if="{{addOilModelTags.length != 0}}">
+        <view wx:for="{{addOilModelTags}}" wx:key="key" class="itemView">
+          <view class="itemView">
+            <text class="dicNameText">{{item.dicName}}</text>
+            <input class="input" name="{{item.name1}}" maxlength="1000" 
+              placeholder-class="place" placeholder="" bindblur="addMoreBlur" 
+              cursor-spacing="0" data-index="{{index}}"/>
+          </view>
+        </view>
+      </view>
+      
+      <view class="button" bindtap="addMoreOilModel"> 添加更多信息 </view>
+
+      <button formType="submit" class="save fz-32 ls-28 {{canSave ?'canSave':'notCanSave'}} {{isIpx ? 'fix-iphonex-button':''}}"
+        disabled='{{!canSave}}'>保存</button>
+
+    </form>
+  </view>
+
+</scroll-view>

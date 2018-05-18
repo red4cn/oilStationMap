@@ -1,0 +1,10 @@
+<!--pages/feedback/index.wxml-->
+<form bindsubmit="bindFormSubmit">
+  <view class='page-write-area'>
+    <textarea value='{{textAreaValue}}' class='feed-back-area' bindinput='updateCountRecord' placeholder='如果您在产品使用过程中有问题，请提出宝贵的意见。非常感谢！' placeholder-style='color:#B2B2B2;font-size:28rpx;' maxlength='200' ></textarea>
+    <label class='char-count-label'>{{numberCount}}/200</label>
+  </view>
+  <button class="{{'sumit-button ' + (buttonStatus?'submit-button-unselect':'submit-button-select')}}" form-type="submit" >立即提交</button>
+
+</form>
+

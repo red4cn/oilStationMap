@@ -1,0 +1,40 @@
+<page>
+  <view scroll-y class="priceView">
+    <view>
+      <view class="todayOilPriceBackgroundView">
+        <image class="todayOilPriceBackgroundImg" 
+            src='/images/todayOilPriceBackground.png'></image>
+      </view>
+      <!-- 成品油列表 -->
+      <view class='oilIntroduce'>
+        <view class="oilView">
+          <image class="oilStationImg" 
+          src='/images/oilStation_green.png'></image>
+          <text class="oilStation">{{oilStationName}}</text>
+        </view>
+        <view class="mapView" bindtap='findOilStationInMap'>
+          <image class="mapPositionImg" src='/images/mapPosition.png' 
+          ></image>
+          <text class="ortherStation">附近加油站</text>
+        </view>
+      </view>
+      <scroll-view scroll-y="true" style="height: 305px;border:0px red solid">
+        <view class="itemView" wx:if="{{oilStationPriceList}}" wx:for="{{oilStationPriceList}}">
+          <view class="oilModelFlagNameView">
+            <text class="oilModelLabel">{{item.oilModelLabel}}</text>
+            <text class="oilFlagLabel">#</text>
+            <text class="oilNameLabel">{{item.oilNameLabel}}</text>
+          </view>
+          <view class="oilPriceUnitView">
+            <text class="oilPriceLabel">{{item.oilPriceLabel}}</text>
+            <text class="oilPriceUnitLabel">(元/升)</text>
+          </view> 
+        </view>
+      </scroll-view>
+      <view class="shareView">
+        <button class="shareButton" bindtap="shareOilPrice" 
+        open-type="share">分享给我的好友</button>
+      </view>
+    </view>
+  </view>
+</page>
