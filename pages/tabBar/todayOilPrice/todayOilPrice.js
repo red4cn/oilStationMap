@@ -6,7 +6,7 @@ const util = require('../../../utils/util.js')
 var app = getApp();
 Page({
   data: {
-    oilStationName: "油价地图",
+    oilStationName: "大路田坝加油站",
     oilStationPriceList: [
       { oilModelLabel: '0', oilNameLabel: '柴油', oilPriceLabel: '5.46' },
       { oilModelLabel: '92', oilNameLabel: '汽油', oilPriceLabel: '6.36' },

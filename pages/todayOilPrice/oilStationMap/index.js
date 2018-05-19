@@ -6,23 +6,23 @@ const util = require('../../../utils/util.js')
 var app = getApp();
 Page({
     data: {
-      oilStationName: "油价地图",
+      oilStationName: "大路田坝加油站",
         markerId: 0,
         scale: 18,
         longitude: 108.958280,
         latitude: 28.122990,
-        title: "油价地图",
+        title: "大路田坝加油站",
         markers: [
             {
                 id: 0,
                 longitude: 108.958280,
                 latitude: 28.122990,
                 iconPath: "/images/oilStation_black.png",
-                title: "油价地图",
+                title: "大路田坝加油站",
                 width: 20,
                 height: 20,
                 callout: {
-                  content: "油价地图",
+                  content: "大路田坝加油站",
                     color: "#2c2c2c",
                     fontSize: 15,
                     padding: 3,
@@ -39,11 +39,11 @@ Page({
                 longitude: 108.958280,
                 latitude: 28.122990,
                 iconPath: "/images/oilStation_black.png",
-                title: "油价地图",
+                title: "大路田坝加油站",
                 width: 20,
                 height: 20,
                 callout: {
-                  content: "油价地图",
+                  content: "大路田坝加油站",
                     color: "#2c2c2c",
                     fontSize: 15,
                     padding: 3,
