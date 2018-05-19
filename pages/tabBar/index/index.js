@@ -8,6 +8,7 @@ Page({
   data: {
     isShowPaying: false,
     isShowPaymentCodeImglist: false,
+    // paymentCodeImglist: ["http://10.211.55.12:8080/images/da_lu_tian_ba_jia_you_zhan/wx_payment.jpeg"],
     paymentCodeImglist: ['https://raw.githubusercontent.com/caihongwang/Love/master/payment.jpeg'],
     appreciateCodeImglist: ['https://raw.githubusercontent.com/caihongwang/Love/master/appreciate.jpeg'],
     orText: "或",
@@ -240,7 +241,7 @@ Page({
         console.log(error);
         wx.showModal({
           title: '提示',
-          content: '不好意思，您的网络出了一会小差...',
+          content: '支付失败.',
           showCancel: false
         });
       },
