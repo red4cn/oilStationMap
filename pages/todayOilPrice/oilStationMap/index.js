@@ -7,6 +7,7 @@ var app = getApp();
 Page({
     data: {
       oilStationName: "大路田坝加油站",
+        oilStationAdress: "贵州省铜仁市松桃苗族自治县孟溪镇大路乡田坝加油站",
         markerId: 0,
         scale: 18,
         longitude: 108.958280,
@@ -19,6 +20,7 @@ Page({
                 latitude: 28.122990,
                 iconPath: "/images/oilStation_black.png",
                 title: "大路田坝加油站",
+                address: "贵州省铜仁市松桃苗族自治县孟溪镇大路乡田坝加油站",
                 width: 20,
                 height: 20,
                 callout: {
@@ -40,6 +42,7 @@ Page({
                 latitude: 28.122990,
                 iconPath: "/images/oilStation_black.png",
                 title: "大路田坝加油站",
+                address: "贵州省铜仁市松桃苗族自治县孟溪镇大路乡田坝加油站",
                 width: 20,
                 height: 20,
                 callout: {
@@ -72,7 +75,7 @@ Page({
         this.oilStationMap = this.loadOilStationMap();
     },
     onReady: function () {
-      
+
     },
     onShow: function (res) {
 
@@ -129,6 +132,7 @@ Page({
                   oilStationPriceObj.longitude = oilStationList[item].oilStationLon;
                   oilStationPriceObj.iconPath = "/images/oilStation_black.png";
                   oilStationPriceObj.title = oilStationList[item].oilStationName;
+                  oilStationPriceObj.address = oilStationList[item].oilStationAdress;
                   oilStationPriceObj.width = 20;
                   oilStationPriceObj.height = 20;
                   oilStationPriceObj.callout = {
@@ -163,6 +167,7 @@ Page({
                 } else {
                   that.data.oilStationName = oilStationName;
                 }
+                that.data.oilStationAdress = that.data.markers[0].address;
                 that.data.markerId = that.data.markers[0].id;
                 that.data.latitude = that.data.markers[0].latitude;
                 that.data.longitude = that.data.markers[0].longitude;
@@ -171,6 +176,7 @@ Page({
                   title: that.data.title,
                   markerId: that.data.markerId,
                   oilStationName: that.data.oilStationName,
+                  oilStationAdress: that.data.oilStationAdress,
                   latitude: that.data.latitude,
                   longitude: that.data.longitude,
                   markers: that.data.markers,
@@ -229,6 +235,7 @@ Page({
         } else {
             that.data.oilStationName = oilStationName;
         }
+        that.data.oilStationAdress = that.data.markers[markersArrIndex].address;
         that.data.markerId = that.data.markers[markersArrIndex].id;
         that.data.latitude = that.data.markers[markersArrIndex].latitude;
         that.data.longitude = that.data.markers[markersArrIndex].longitude;
@@ -237,6 +244,7 @@ Page({
             title: that.data.oilStationName,
             markerId: that.data.markerId,
             oilStationName: that.data.oilStationName,
+            oilStationAdress: that.data.oilStationAdress,
             latitude: that.data.latitude,
             longitude: that.data.longitude,
             // markers: that.data.markers,
@@ -259,6 +267,27 @@ Page({
         });
         wx.hideLoading();         //关闭进度条
         return that.oilStationMap;
+    },
+    navigationToMap: function () {                     //到这去，导航
+
+      console.log(11111111);
+        var that = this;
+        var longitude = Number(that.data.longitude);
+        var latitude = Number(that.data.latitude);
+        var name = that.data.oilStationName;
+        var address = that.data.oilStationAdress;
+        console.log("that.data.longitude = " + that.data.longitude);
+        console.log("that.data.latitude = " + that.data.latitude);
+        console.log("that.data.oilStationName = " + that.data.oilStationName);
+        console.log("that.data.oilStationAdress = " + that.data.oilStationAdress);
+        wx.openLocation({
+            latitude: latitude,
+            longitude: longitude,
+            scale: 28,
+            name: name,
+            address: address
+        });
+        console.log(22222222222);
     },
     bindregionchangeFunc: function (e) {             //视野发生移动变化时触发
         // console.log("================bindregionchangeFunc===============");

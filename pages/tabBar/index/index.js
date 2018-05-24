@@ -8,9 +8,8 @@ Page({
   data: {
     isShowPaying: false,
     isShowPaymentCodeImglist: false,
-    // paymentCodeImglist: ["http://10.211.55.12:8080/images/da_lu_tian_ba_jia_you_zhan/wx_payment.jpeg"],
-    paymentCodeImglist: ['https://raw.githubusercontent.com/caihongwang/Love/master/payment.jpeg'],
-    appreciateCodeImglist: ['https://raw.githubusercontent.com/caihongwang/Love/master/appreciate.jpeg'],
+    paymentCodeImglist: ["http://www.91caihongwang.com/images/da_lu_tian_ba_jia_you_zhan/wx_payment.jpeg"],
+    appreciateCodeImglist: ["http://www.91caihongwang.com/images/da_lu_tian_ba_jia_you_zhan/wx_appreciate.jpeg"],
     orText: "或",
     paymentBtn: "点击付款",
     paymentText: "查看您的付款记录",

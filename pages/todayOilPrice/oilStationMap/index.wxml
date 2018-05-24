@@ -20,10 +20,9 @@
       src='/images/oilStation_green.png'></image>
       <text class="oilStation">{{oilStationName}}</text>
     </view>
-    <view class="mapView">
-      <image class="mapPositionImg" src='/images/todayPrice.png' 
-      ></image>
-      <text class="ortherStation">今日油价</text>
+    <view class="navigationView" bindtap="navigationToMap">
+      <image class="navigationImg" src='/images/navigation.png'></image>
+      <text class="navigationText">到这去</text>
     </view>
   </view>
   <scroll-view scroll-y="true" style="height: 320px;border:0px red solid">

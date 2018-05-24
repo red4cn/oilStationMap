@@ -8,7 +8,9 @@
 
 // var host = "http://localhost:8080/oilStationMap";
 
-var host = "http://172.20.10.2:8080/oilStationMap";
+// var host = "http://172.20.10.2:8080/oilStationMap";
+
+var host = "https://www.91caihongwang.com/oilStationMap";
 
 var config = {
   host,
