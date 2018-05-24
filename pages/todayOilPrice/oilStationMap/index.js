@@ -269,8 +269,6 @@ Page({
         return that.oilStationMap;
     },
     navigationToMap: function () {                     //到这去，导航
-
-      console.log(11111111);
         var that = this;
         var longitude = Number(that.data.longitude);
         var latitude = Number(that.data.latitude);
@@ -287,7 +285,6 @@ Page({
             name: name,
             address: address
         });
-        console.log(22222222222);
     },
     bindregionchangeFunc: function (e) {             //视野发生移动变化时触发
         // console.log("================bindregionchangeFunc===============");

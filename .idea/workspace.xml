@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d01b97a-4b4c-48de-b2bb-39a35751b92b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.js" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" afterPath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxml" afterPath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxss" afterPath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.config.json" afterPath="$PROJECT_DIR$/project.config.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +28,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="270" column="31" lean-forward="false" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
+            <state relative-caret-position="388">
+              <caret line="282" column="33" lean-forward="true" selection-start-line="282" selection-start-column="33" selection-end-line="282" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -92,8 +87,8 @@
       <find>cutCardUrl</find>
       <find>mapPositionImg</find>
       <find>ortherStation</find>
-      <find>oilStationAdress</find>
       <find>findOilStationInMap</find>
+      <find>oilStationAdress</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -805,7 +800,7 @@
       <updated>1526631504519</updated>
       <workItem from="1526631507113" duration="2378000" />
       <workItem from="1526662506174" duration="2000" />
-      <workItem from="1526697881304" duration="4047000" />
+      <workItem from="1526697881304" duration="4103000" />
     </task>
     <task id="LOCAL-00001" summary="优化名称">
       <created>1526697917560</created>
@@ -821,11 +816,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526716982422</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加地图导航功能">
+      <created>1527164812166</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527164812166</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6427000" />
+    <option name="totallyTimeSpent" value="6483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -871,7 +873,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="优化名称" />
     <MESSAGE value="优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化" />
+    <MESSAGE value="增加地图导航功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加地图导航功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -966,8 +969,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="270" column="31" lean-forward="false" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
+        <state relative-caret-position="388">
+          <caret line="282" column="33" lean-forward="true" selection-start-line="282" selection-start-column="33" selection-end-line="282" selection-end-column="33" />
           <folding />
         </state>
       </provider>
