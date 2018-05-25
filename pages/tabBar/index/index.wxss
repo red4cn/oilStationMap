@@ -112,3 +112,26 @@
   height: 236rpx;
   margin: 352rpx 210rpx 0 212rpx;
 }
+
+/* 点击付款后出现的弹窗 */
+.payModel{
+  border: 10px red solid;
+}
+.place{
+  border: 0px red solid;
+  color: #09BB07;
+  font-size: 40rpx;
+  font-weight:bold;
+  letter-spacing: -0.68px; 
+  text-align: center;
+}
+.payMoneyInput{
+  border: 1px #09BB07 solid;
+  color: black;
+  font-size: 80rpx;
+  font-weight:bold;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 12rpx;
+}

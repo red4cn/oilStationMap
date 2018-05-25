@@ -14,7 +14,7 @@
               <view class="flex-item orText">{{orText}}</view>
             </view>
             <view class='paymentViwer fz-24'>
-              <button class='paymentBtn fz-32 fb-bond' bindtap='requestWxPayUnifiedOrder'>{{paymentBtn}}</button>
+              <button id='paymentBtn' class='paymentBtn fz-32 fb-bond' bindtap='requestWxPayUnifiedOrder'>{{paymentBtn}}</button>
               <text class='paymentText'>{{paymentText}}</text>
             </view>
           </view>
@@ -30,7 +30,7 @@
               <view class="flex-item orText">{{orText}}</view>
             </view>
             <view class='paymentViwer fz-24'>
-              <button class='appreciateBtn fz-32 fb-bond' bindtap='requestWxPayUnifiedOrder'>{{appreciateBtn}}</button>
+              <button id='appreciateBtn' class='appreciateBtn fz-32 fb-bond' bindtap='requestWxPayUnifiedOrder'>{{appreciateBtn}}</button>
               <text class='appreciateText'>{{appreciateText}}</text>
             </view>
           </view>
@@ -41,4 +41,23 @@
   <view class='mask' wx:if="{{isShowPaying}}" catchtap="preventD">
     <image class="scanned-image" src="/images/paying.gif"> </image>
   </view>
+
+
+  <!-- 弹窗 -->
+  <!-- 点击付款后出现的弹窗 -->
+  <view wx:if="{{oilStationName}}">
+    <modal class="payModel" hidden="{{hiddenPayModel}}" title="支付[{{oilStationName}}]油款" confirm-text="付款" cancel-text="向加油小妹询问" bindcancel="cancelPay" bindconfirm="confirmPay">  
+        <input class="payMoneyInput" name="payMoney" maxlength="100" confirm-type="next" type="digit"
+            placeholder="点击此处，输入油款." placeholder-class="place" bindinput="payMoneyInputFunc" value="{{payMoney}}"/>
+    </modal>
+  </view>
+
+  <!-- 点击打赏后出现的弹窗 -->
+  <view wx:else>
+    <modal class="payModel" hidden="{{hiddenPayModel}}" title="向[小程序开发者]打赏" confirm-text="打赏" cancel-text="残忍离去" bindcancel="cancelPay" bindconfirm="confirmPay">  
+        <input class="payMoneyInput" name="payMoney" maxlength="100" confirm-type="next" type="digit"
+            placeholder="点击此处，打赏几个铜板." placeholder-class="place" bindinput="payMoneyInputFunc" value="{{payMoney}}"/>
+    </modal>
+  </view>
+
 </view>

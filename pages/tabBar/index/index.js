@@ -6,6 +6,8 @@ const app = getApp();
 Page({
   //【付款】页面中的基本数据
   data: {
+    oilStationName: "",
+    oilStationName_Temp: "",
     isShowPaying: false,
     isShowPaymentCodeImglist: false,
     paymentCodeImglist: ["http://www.91caihongwang.com/images/da_lu_tian_ba_jia_you_zhan/wx_payment.jpeg"],
@@ -40,6 +42,9 @@ Page({
     isCanGetPhone: true,//是否展示出获取手机号授权弹窗
     imageNoLoad: true,//二维码没有加载时的图片
     clickName: '-1',//要点击复制的文字
+    hiddenPayModel: true,
+    payMoney: "",
+    payMoneyBtn: "appreciateBtn"
   },
   onLoad: function (options) {
     this.getOilStationByLonLat();
@@ -88,6 +93,7 @@ Page({
             that.data.paymentCodeImglist = [];
             that.data.paymentCodeImglist.length = 0;
             that.data.paymentCodeImglist.push(oilStationList[0].oilStationWxPaymentCodeImgUrl);
+            that.data.oilStationName = oilStationList[0].oilStationName;
             if (that.data.paymentCodeImglist.length > 0){
               isShowPaymentCodeImglist = true;
             }
@@ -95,7 +101,8 @@ Page({
             that.data.isShowPaymentCodeImglist = isShowPaymentCodeImglist;
             that.setData({
               isShowPaymentCodeImglist: that.data.isShowPaymentCodeImglist,
-              paymentCodeImglist: that.data.paymentCodeImglist
+              paymentCodeImglist: that.data.paymentCodeImglist,
+              oilStationName: that.data.oilStationName
             });
           },
           fail: function () {
@@ -137,40 +144,128 @@ Page({
     });
   },
   requestWxPayUnifiedOrder: function (e) {        //点击付款/打赏,想自己的服务器获取必要的参数
-    var that = this;  
-    console.log("使用统一订单的方式进行下订单，发起微信支付....");
-    //注：付款码，固定为加油站的微信收款码
-    var paymentCode = "wxp://f2f0807djYvTta5CR9rhvvGRw2rz0YWaSr1S";  
-    //显示付款中的遮罩
-    that.data.isShowPaying = true;
-    that.setData({
-      isShowPaying: that.data.isShowPaying
+    //点击按钮痰喘指定的hiddenmodalput弹出框  
+    var that = this;
+    this.data.payMoney = "";
+    this.data.payMoneyBtn = e.currentTarget.id;
+    console.log("====================之前=====================");
+    console.log("this.data.payMoneyBtn = " + this.data.payMoneyBtn);
+    console.log("this.data.oilStationName = " + this.data.oilStationName);
+    console.log("this.data.oilStationName_Temp = " + this.data.oilStationName_Temp);
+    console.log(this.data.payMoneyBtn == "paymentBtn" && that.data.oilStationName == "");
+    if (this.data.payMoneyBtn == "appreciateBtn") {
+      that.data.oilStationName_Temp = that.data.oilStationName;
+      that.data.oilStationName = "";
+    } else if (this.data.payMoneyBtn == "paymentBtn" && that.data.oilStationName == "") {
+      that.data.oilStationName = that.data.oilStationName_Temp;
+      that.data.oilStationName_Temp = "";
+    }
+    console.log("====================之后=====================");
+    console.log("this.data.payMoneyBtn = " + this.data.payMoneyBtn);
+    console.log("this.data.oilStationName = " + this.data.oilStationName);
+    console.log("this.data.oilStationName_Temp = " + this.data.oilStationName_Temp);
+    console.log(this.data.payMoneyBtn == "paymentBtn" && that.data.oilStationName == "");
+    this.setData({
+      hiddenPayModel: !this.data.hiddenPayModel,
+      payMoney: this.data.payMoney,
+      payMoneyBtn: this.data.payMoneyBtn,
+      oilStationName: that.data.oilStationName,
+      oilStationName_Temp: that.data.oilStationName_Temp
     });
-    // 开始获取获取openId和sessionKey  ||  可以使用用户登录系统进行获取openId
-    wx.login({
-      success: function (res) {
-        var params = new Object();
-        params.code = res.code;
-        network.POST({
-          params: params,
-          requestUrl: requestUrl.getOpenIdAndSessionKeyForWX,
-          success: function (res) {
-            if (res.data.code == 0) {  //登录成功，获取openId
-              var openId = res.data.data.openid;
-              params.openId = openId;
-              console.log("在点击付款或者打赏中发起支付，先登录中获取： openId = " + res.data.data.openid + ", sessionKey = " + res.data.data.session_key);
-              //使用统一订单的方式进行下订单，发起微信支付
+  },
+  payMoneyInputFunc: function(e) {    // 获取金额
+    this.data.payMoney = e.detail.value;
+    this.setData({
+      payMoney: this.data.payMoney
+    });
+  },
+  //取消按钮  
+  cancelPay: function () {
+    this.setData({
+      hiddenPayModel: true
+    });
+  },
+  //确认  
+  confirmPay: function () {
+    var that = this;
+    var reg = /^[0-9]+([.]{1}[0-9]{1,2})?$/;
+    console.log("this.data.payMoney = " + this.data.payMoney + " , reg.test(this.data.payMoney) = " + reg.test(this.data.payMoney));
+    if (this.data.payMoney.endsWith(".")){
+      util.toast("支付金额不能以小数点结尾，请输入正确支付金额.");
+    } else {
+      if (!reg.test(this.data.payMoney)) {           //使用正则表达式进行校验
+        util.toast("支付金额只能细化到【分】.");
+      } else {
+        if (this.data.payMoney == null && this.data.payMoney == undefined && this.data.payMoney == '') {
+          if (this.data.payMoneyBtn == "appreciateBtn") {
+            util.toast("客官，您还未输入打赏金额.");
+          } else if (this.data.payMoneyBtn == "paymentBtn") {
+            util.toast("客官，您还未输入油款金额.");
+          } else {
+            util.toast("客官，您还未输入打赏金额.");
+          }
+        } else {
+          this.setData({
+            hiddenPayModel: true
+          });
+          // return;
+          console.log("使用统一订单的方式进行下订单，发起微信支付....");
+          //注：付款码，固定为加油站的微信收款码
+          var paymentCode = "wxp://f2f0807djYvTta5CR9rhvvGRw2rz0YWaSr1S";
+          //显示付款中的遮罩
+          that.data.isShowPaying = true;
+          that.setData({
+            isShowPaying: that.data.isShowPaying
+          });
+          // 开始获取获取openId和sessionKey  ||  可以使用用户登录系统进行获取openId
+          wx.login({
+            success: function (res) {
+              var params = new Object();
+              params.code = res.code;
               network.POST({
                 params: params,
-                requestUrl: requestUrl.requestWxPayUnifiedOrder,
+                requestUrl: requestUrl.getOpenIdAndSessionKeyForWX,
                 success: function (res) {
-                  //关闭付款中的遮罩
-                  that.data.isShowPaying = false;
-                  that.setData({
-                    isShowPaying: that.data.isShowPaying
-                  });
                   if (res.data.code == 0) {  //登录成功，获取openId
-                    that.wxPayUnifiedOrder(res.data); 
+                    var openId = res.data.data.openid;
+                    params.openId = openId;
+                    params.payMoney = that.data.payMoney;           //传输金额
+                    params.payMoneyBtn = that.data.payMoneyBtn;           //按钮来源
+                    console.log("在点击付款或者打赏中发起支付，先登录中获取： openId = " + res.data.data.openid + ", sessionKey = " + res.data.data.session_key);
+                    //使用统一订单的方式进行下订单，发起微信支付
+                    network.POST({
+                      params: params,
+                      requestUrl: requestUrl.requestWxPayUnifiedOrder,
+                      success: function (res) {
+                        //关闭付款中的遮罩
+                        that.data.isShowPaying = false;
+                        that.setData({
+                          isShowPaying: that.data.isShowPaying
+                        });
+                        if (res.data.code == 0) {  //登录成功，获取openId
+                          that.wxPayUnifiedOrder(res.data);
+                        } else {                   //登录失败
+                          wx.showModal({
+                            title: '提示',
+                            content: res.data.message,
+                            showCancel: false
+                          });
+                        }
+                      },
+                      fail: function (res) {
+                        that.data.isShowPaying = false;
+                        that.setData({
+                          isShowPaying: that.data.isShowPaying
+                        });
+                        util.toast("不好意思，您的网络出了一会小差...");
+                      },
+                      complete: function () {
+                        that.data.isShowPaying = false;
+                        that.setData({
+                          isShowPaying: that.data.isShowPaying
+                        });
+                      }
+                    });
                   } else {                   //登录失败
                     wx.showModal({
                       title: '提示',
@@ -180,45 +275,26 @@ Page({
                   }
                 },
                 fail: function (res) {
+                  //关闭付款中的遮罩
                   that.data.isShowPaying = false;
                   that.setData({
                     isShowPaying: that.data.isShowPaying
                   });
                   util.toast("不好意思，您的网络出了一会小差...");
                 },
-                complete: function(){
+                complete: function () {
+                  //关闭付款中的遮罩
                   that.data.isShowPaying = false;
                   that.setData({
                     isShowPaying: that.data.isShowPaying
                   });
                 }
               });
-            } else {                   //登录失败
-              wx.showModal({
-                title: '提示',
-                content: res.data.message,
-                showCancel: false
-              });
             }
-          },
-          fail: function (res) {
-            //关闭付款中的遮罩
-            that.data.isShowPaying = false;
-            that.setData({
-              isShowPaying: that.data.isShowPaying
-            });
-            util.toast("不好意思，您的网络出了一会小差...");
-          },
-          complete: function () {
-            //关闭付款中的遮罩
-            that.data.isShowPaying = false;
-            that.setData({
-              isShowPaying: that.data.isShowPaying
-            });
-          }
-        });
+          });
+        }
       }
-    });
+    }
   },
   wxPayUnifiedOrder: function (param) {        //点击付款/打赏，向微信服务器进行付款
     //使用小程序发起微信支付  

@@ -216,6 +216,7 @@ Page({
     },
     bindMarkerTapFunc: function (e) {                 //当点击某个加油站是触发
         var that = this;
+        //判断点击的是付款按钮还是打赏按钮，付款按钮可以弹出窗口输入金额，打赏按钮默认打赏一元给开发者
         wx.showLoading({
             title: "客官请稍后...",
             mask: true
@@ -270,6 +271,10 @@ Page({
     },
     navigationToMap: function () {                     //到这去，导航
         var that = this;
+        this.data.hiddenPayModel = false;
+        this.setData({
+          hiddenPayModel: this.data.hiddenPayModel
+        });
         var longitude = Number(that.data.longitude);
         var latitude = Number(that.data.latitude);
         var name = that.data.oilStationName;
@@ -296,20 +301,20 @@ Page({
         // });
     },
     bindcontroltapFunc: function (e) {                //点击控件时触发
-        var that = this;
-        console.log("scale===" + this.data.scale)
-        if (e.controlId === 1) {
-            that.setData({
-                scale: --this.data.scale
-            });
-        } else {
-            that.setData({
-                scale: ++this.data.scale
-            });
-        }
+        // var that = this;
+        // console.log("scale===" + this.data.scale)
+        // if (e.controlId === 1) {
+        //     that.setData({
+        //         scale: --this.data.scale
+        //     });
+        // } else {
+        //     that.setData({
+        //         scale: ++this.data.scale
+        //     });
+        // }
     },
     bindtapFunc: function (e) {                       //点击地图时触发
-        console.log("===================bindtapFunc===================");
-        console.log(e);
+        // console.log("===================bindtapFunc===================");
+        // console.log(e);
     }
 })
