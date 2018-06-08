@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d01b97a-4b4c-48de-b2bb-39a35751b92b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/aboutUs/index.wxml" afterPath="$PROJECT_DIR$/pages/my/aboutUs/index.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/oilStationAdd/index.js" afterPath="$PROJECT_DIR$/pages/my/oilStationAdd/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.js" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.config.json" afterPath="$PROJECT_DIR$/project.config.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +28,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="78" column="28" lean-forward="false" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+            <state relative-caret-position="156">
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="111" />
               <folding />
             </state>
           </provider>
@@ -93,8 +89,8 @@
         <option value="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxss" />
         <option value="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxml" />
         <option value="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" />
-        <option value="$PROJECT_DIR$/pages/tabBar/index/index.js" />
         <option value="$PROJECT_DIR$/pages/my/aboutUs/index.wxml" />
+        <option value="$PROJECT_DIR$/pages/tabBar/index/index.js" />
       </list>
     </option>
   </component>
@@ -716,7 +712,7 @@
       <workItem from="1527672726268" duration="1579000" />
       <workItem from="1528077854418" duration="55000" />
       <workItem from="1528443683704" duration="524000" />
-      <workItem from="1528466419523" duration="220000" />
+      <workItem from="1528466419523" duration="852000" />
     </task>
     <task id="LOCAL-00001" summary="优化名称">
       <created>1526697917560</created>
@@ -753,11 +749,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527258244798</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="放开在地图选取地址">
+      <created>1528466667336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1528466667336</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18397000" />
+    <option name="totallyTimeSpent" value="19029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -816,7 +819,8 @@
     <MESSAGE value="优化" />
     <MESSAGE value="增加地图导航功能" />
     <MESSAGE value="在支付时支持对付款和打赏进行切换,增加地图导航" />
-    <option name="LAST_COMMIT_MESSAGE" value="在支付时支持对付款和打赏进行切换,增加地图导航" />
+    <MESSAGE value="放开在地图选取地址" />
+    <option name="LAST_COMMIT_MESSAGE" value="放开在地图选取地址" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1038,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="78" column="28" lean-forward="false" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+        <state relative-caret-position="156">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="111" />
           <folding />
         </state>
       </provider>
