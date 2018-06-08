@@ -47,9 +47,11 @@ Page({
     payMoneyBtn: "appreciateBtn"
   },
   onLoad: function (options) {
+    console.log(1111111111);
     this.getOilStationByLonLat();
   },
   onShow: function () {
+    console.log(22222222222);
 
   },
   onPullDownRefresh: function () {    //下拉刷新,获取最新的付款码
@@ -308,7 +310,30 @@ Page({
         wx.showToast({              //支付成功
           title: '支付成功',
           icon: 'success',
-          duration: 2000
+          duration: 2000,
+          complete: function () {   //支付成功后发送模板消息
+            console.log("模板消息已发送");
+            return;
+            var templateMessageParam = new Object();
+            // 整理模板消息需要的参数
+            // 整理模板消息需要的参数
+            // 整理模板消息需要的参数
+            // 整理模板消息需要的参数
+            // 整理模板消息需要的参数
+            // 整理模板消息需要的参数
+            templateMessageParam.data = JSON.stringify(that.data.data);
+            //发送模板消息，如果失败了也不给用户提示
+            network.POST({
+              params: templateMessageParam,
+              requestUrl: requestUrl.sendTemplateMessageUrl,
+              success: function (res) {
+
+              },
+              fail: function (res) {
+
+              }
+            });
+          }
         });
       },
       fail: function (error) {      //支付失败
@@ -321,7 +346,7 @@ Page({
         });
       },
       complete: function () {       //不管支付成功或者失败之后都要处理的方法，类似与final
-        console.log("pay complete");
+        console.log("支付完成");
       }
     });
   },

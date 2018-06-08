@@ -6,9 +6,9 @@
 
 // var host = "http://192.168.0.144:8080/oilStationMap";
 
-// var host = "http://localhost:8080/oilStationMap";
+// var host = "http://127.0.0.1:8080/oilStationMap";
 
-// var host = "http://172.20.10.2:8080/oilStationMap";
+// var host = "http://10.211.55.12:8080/oilStationMap";
 
 var host = "https://www.91caihongwang.com/oilStationMap";
 
@@ -17,7 +17,7 @@ var config = {
   //通用
   checkSession:`${host}/user/checkSession.do`,                                            //检测session是否过期
   wxAppLoginUrl:`${host}/user/login.do`,                                                  //检测登录
-  sendTemplateMessageUrl: `${host}/common/sendMessage.do`,                                //发送模板消息
+  sendTemplateMessageUrl: `${host}/common/sendTemplateMessage.do`,                                //发送模板消息
   getOpenIdAndSessionKeyForWX: `${host}/common/getOpenIdAndSessionKeyForWX.do`,           //获取openId和sessionKey
   //付款
   requestWxPayUnifiedOrder: `${host}/order/requestWxPayUnifiedOrder.do`,                  //开始准备微信支付

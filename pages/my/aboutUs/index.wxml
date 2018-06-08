@@ -1,4 +1,8 @@
-<view class="whrite-back">
+<!-- <web-view class='privacy' src="http://192.168.0.144:8080/oilStationMap/index.html">《隐私声明》</web-view> -->
+
+
+
+ <view class="whrite-back">
     <view class="icon-view">
         <image class="img-logo" src='/images/logo.png'></image>
     </view>

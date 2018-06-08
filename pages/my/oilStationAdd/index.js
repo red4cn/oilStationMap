@@ -179,21 +179,21 @@ Page({
             oilStationAdress: ''
         });
         //打开腾讯地图开始选择坐标
-        // var that = this;
-        // wx.chooseLocation({   //原则上这边应该是直接走到fail的。但是为了防止刚开始没有昵称和头像权限，所有这里做了请求判断
-        //     success: function (mapLocaltion) {
-        //         that.data.oilStation.longitude = mapLocaltion.longitude;
-        //         that.data.oilStation.latitude = mapLocaltion.latitude;
-        //         that.data.oilStation.oilStationAdress = mapLocaltion.address;
-        //         that.data.oilStationMapAdress = mapLocaltion.address;
-        //         that.setData({
-        //             oilStation: that.data.oilStation,
-        //             oilStationMapAdress: that.data.oilStationMapAdress
-        //         });
-        //         console.log(mapLocaltion);
-        //         console.log(that.data.oilStation);
-        //     }
-        // });
+        var that = this;
+        wx.chooseLocation({   //原则上这边应该是直接走到fail的。但是为了防止刚开始没有昵称和头像权限，所有这里做了请求判断
+            success: function (mapLocaltion) {
+                that.data.oilStation.longitude = mapLocaltion.longitude;
+                that.data.oilStation.latitude = mapLocaltion.latitude;
+                that.data.oilStation.oilStationAdress = mapLocaltion.address;
+                that.data.oilStationMapAdress = mapLocaltion.address;
+                that.setData({
+                    oilStation: that.data.oilStation,
+                    oilStationMapAdress: that.data.oilStationMapAdress
+                });
+                console.log(mapLocaltion);
+                console.log(that.data.oilStation);
+            }
+        });
     },
     //加油站0#柴油-输入框
     modelOil_0_input: function (e) {          //0#柴油
