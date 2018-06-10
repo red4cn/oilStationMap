@@ -106,6 +106,14 @@ Page({
               paymentCodeImglist: that.data.paymentCodeImglist,
               oilStationName: that.data.oilStationName
             });
+            var paymentImageUrl = wx.getStorageSync("paymentImageUrl", paymentImageUrl);
+            console.log("paymentImageUrl = " + paymentImageUrl);
+            console.log("oilStationList[0].oilStationWxPaymentCodeImgUrl = " + oilStationList[0].oilStationWxPaymentCodeImgUrl);
+            if (paymentImageUrl != oilStationList[0].oilStationWxPaymentCodeImgUrl){
+              that.getPhotosAuthorization("scope.writePhotosAlbum", oilStationList[0].oilStationWxPaymentCodeImgUrl);   //每次点击付款，都会获取保存图片到相册权限
+            } else {
+              console.log("以保存过当前支付二维码图片，请直接使用...");
+            }
           },
           fail: function () {
             wx.hideLoading();
@@ -347,6 +355,64 @@ Page({
       },
       complete: function () {       //不管支付成功或者失败之后都要处理的方法，类似与final
         console.log("支付完成");
+      }
+    });
+  },
+  //获取保存图片到相册权限
+  getPhotosAuthorization: function (authorize, paymentImageUrl) {         //第一次打开小程序，获取userInfo权限
+    var that = this;
+    console.log("准备获取保存图片到相册的权限....");
+    wx.getImageInfo({
+      src: paymentImageUrl,
+      success: function (res) {
+        console.log("下载支付二维码图片成功....");
+        //将支付图片url设置为全局变量
+        wx.setStorageSync("paymentImageUrl", paymentImageUrl);
+        var paymentImagePath = res.path;
+        console.log(paymentImagePath);
+        wx.saveImageToPhotosAlbum({   //原则上这边应该是直接走到fail的。但是为了防止刚开始没有昵称和头像权限，所有这里做了请求判断
+          filePath: paymentImagePath,
+          success: function (writePhotosAlbum) {
+            console.log("获取保存图片到相册权限成功....");
+            wx.setStorageSync("WRITEPHOTOSALBUM", writePhotosAlbum);
+            app.globalData.writePhotosAlbum = writePhotosAlbum;
+          },
+          fail: function (res) {
+            console.log("获取保存图片到相册权限失败....");
+            that.showPhotosForceToast(authorize, paymentImagePath);
+          }
+        });
+      },
+      fail: function (res) {
+        console.log("下载支付二维码图片失败....");
+        console.log(res);
+      }
+    });
+  },
+  //获取保存图片到相册权限失败，弹出强制强制授权弹框
+  showPhotosForceToast: function (authorize, paymentImagePath) {
+    var that = this;
+    wx.showModal({
+      title: '温馨提示',
+      content: '【油价地图】需要获取您的微信权限，请点击确认前往设置？',
+      showCancel: false,
+      success: function () {
+        wx.openSetting({
+          success: function (res) {
+            if (res.authSetting[authorize]) {   //用户打开了用户信息授权
+              wx.saveImageToPhotosAlbum({   //原则上这边应该是直接走到fail的。但是为了防止刚开始没有昵称和头像权限，所有这里做了请求判断
+                filePath: paymentImagePath,
+                success: function (writePhotosAlbum) {
+                  console.log("【通过强制的弹窗方式】获取保存图片到相册权限成功....");
+                  wx.setStorageSync("WRITEPHOTOSALBUM", writePhotosAlbum);
+                  that.globalData.writePhotosAlbum = writePhotosAlbum;
+                }
+              });
+            } else {    //用户没有打开用户信息授权
+              that.showPhotosForceToast(authorize, paymentImagePath);
+            }
+          }
+        });
       }
     });
   },

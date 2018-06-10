@@ -1,8 +1,6 @@
-<!-- <web-view class='privacy' src="http://192.168.0.144:8080/oilStationMap/index.html">《隐私声明》</web-view> -->
+  <web-view class='privacy' src="https://www.91caihongwang.com/oilStationMap/wx_sdk.html?uid=1">《隐私声明》</web-view>  
 
-
-
- <view class="whrite-back">
+ <!-- <view class="whrite-back">
     <view class="icon-view">
         <image class="img-logo" src='/images/logo.png'></image>
     </view>
@@ -14,4 +12,4 @@
  <view class="bottom-view">
     <label>油价地图</label>
     <label bindtap='goToPrivacy'>《隐私声明》</label>
-</view> 
+</view>  -->

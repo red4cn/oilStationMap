@@ -50,7 +50,8 @@ App({
     console.log("uid = " + uid + " , seesion = " + session);
     //判断是否有session，如果有session，判断此session是否过期，如果没有session，则登录
     if (session && uid) {             //已经登录过
-      that.getAuthorization("scope.userLocation");   //如果用户已经登录，万一将授权取消了，所以还要获取授权
+      that.getUserLocationAuthorization("scope.userLocation");   //获取位置，如果用户已经登录，万一将授权取消了，所以还要获取授权
+      // that.getPhotosAuthorization("scope.writePhotosAlbum");   //获取位置，如果用户已经登录，万一将授权取消了，所以还要获取授权
       var params = new Object();
       params.sessionKey = session;
       params.sessionCheck = 1;
@@ -84,7 +85,8 @@ App({
   login: function(){                         //第一次登录或者重新登录
     var that = this;
     //1.判断是否获取到位置信息
-    that.getAuthorization("scope.userLocation");   //如果用户已经登录，还要进一步判断位置权限
+    that.getUserLocationAuthorization("scope.userLocation");   //获取位置，如果用户已经登录，还要进一步判断位置权限
+    // that.getPhotosAuthorization("scope.writePhotosAlbum");   //获取位置，如果用户已经登录，还要进一步判断位置权限
     //2.开始登录
     wx.login({
       success: function (res) {
@@ -115,8 +117,8 @@ App({
       }
     });
   },
-  //获取微信权限
-  getAuthorization: function (authorize) {         //第一次打开小程序，获取userInfo权限
+  //获取微信的位置权限
+  getUserLocationAuthorization: function (authorize) {         //第一次打开小程序，获取userInfo权限
     var that = this;
     wx.getLocation({   //原则上这边应该是直接走到fail的。但是为了防止刚开始没有昵称和头像权限，所有这里做了请求判断
       success: function (userLocaltion) {
@@ -126,11 +128,12 @@ App({
       },
       fail: function (res) {
         console.log("获取用户位置信息失败....");
-        that.showForceToast(authorize);
+        that.showUserLocationForceToast(authorize);
       }
     });
   },
-  showForceToast: function (authorize) {     //弹出强制强制授权弹框
+  //获取微信的位置权限失败，弹出强制强制授权弹框
+  showUserLocationForceToast: function (authorize) {    
     var that = this;
     wx.showModal({
       title: '温馨提示',
@@ -148,7 +151,7 @@ App({
                 }
               });
             } else {    //用户没有打开用户信息授权
-              that.showForceToast(authorize);
+              that.showUserLocationForceToast(authorize);
             }
           }
         });
@@ -185,6 +188,8 @@ App({
   globalData: {
     userInfo: null,
     userLocaltion: null,
+    writePhotosAlbum: null,
+    paymentImageUrl: null,
     uid: null,
     session: null,
     isIpx: false,
