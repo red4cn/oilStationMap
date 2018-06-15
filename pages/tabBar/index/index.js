@@ -10,6 +10,7 @@ Page({
     oilStationName_Temp: "",
     isShowPaying: false,
     isShowPaymentCodeImglist: false,
+    paymentCodeWebPageUrl: requestUrl.paymentHtml,
     paymentCodeImglist: ["https://www.91caihongwang.com/images/da_lu_tian_ba_jia_you_zhan/wx_payment.jpeg"],
     appreciateCodeImglist: ["https://www.91caihongwang.com/images/da_lu_tian_ba_jia_you_zhan/wx_appreciate.jpeg"],
     orText: "或",
@@ -47,12 +48,10 @@ Page({
     payMoneyBtn: "appreciateBtn"
   },
   onLoad: function (options) {
-    console.log(1111111111);
     this.getOilStationByLonLat();
   },
   onShow: function () {
-    console.log(22222222222);
-
+    
   },
   onPullDownRefresh: function () {    //下拉刷新,获取最新的付款码
     this.getOilStationByLonLat();
@@ -69,8 +68,8 @@ Page({
         // params.lon = 116.322416;
         // params.lat = 39.973057;
         // //大路田坝加油站
-        params.lon = 108.958280;
-        params.lat = 28.122990;
+        // params.lon = 108.958280;
+        // params.lat = 28.122990;
         // //桃映火车站
         // params.lon = 109.021220;
         // params.lat = 27.860020;
@@ -91,29 +90,38 @@ Page({
             var isShowPaymentCodeImglist = false;
             var oilStationList = res.data.data;
             console.log(oilStationList);
-            console.log("oilStationWxPaymentCodeImgUrl = " + oilStationList[0].oilStationWxPaymentCodeImgUrl);
             that.data.paymentCodeImglist = [];
             that.data.paymentCodeImglist.length = 0;
             that.data.paymentCodeImglist.push(oilStationList[0].oilStationWxPaymentCodeImgUrl);
             that.data.oilStationName = oilStationList[0].oilStationName;
-            if (that.data.paymentCodeImglist.length > 0){
-              isShowPaymentCodeImglist = true;
+            if (that.data.paymentCodeImglist.length > 0
+              && typeof oilStationList[0].oilStationWxPaymentCodeImgUrl != "undefined"
+              && oilStationList[0].oilStationWxPaymentCodeImgUrl != null
+              && oilStationList[0].oilStationWxPaymentCodeImgUrl != "") {
+              //设置付款链接
+              that.data.paymentCodeWebPageUrl = that.data.paymentCodeWebPageUrl 
+                + "?lon=" + userLocaltion.longitude
+                + "&lat=" + userLocaltion.latitude
+                + "&oilStationName=" + encodeURI(encodeURI(oilStationList[0].oilStationName))
+                + "&oilStationWxPaymentCodeImgUrl=" + oilStationList[0].oilStationWxPaymentCodeImgUrl;
+              isShowPaymentCodeImglist = true;                      //设置是否显示付款页面
+              var paymentImageUrl = wx.getStorageSync("paymentImageUrl");
+              console.log("paymentImageUrl = " + paymentImageUrl);
+              console.log("oilStationList[0].oilStationWxPaymentCodeImgUrl = " + oilStationList[0].oilStationWxPaymentCodeImgUrl);
+              if (paymentImageUrl != oilStationList[0].oilStationWxPaymentCodeImgUrl) {
+                that.getPhotosAuthorization("scope.writePhotosAlbum", oilStationList[0].oilStationWxPaymentCodeImgUrl);   //每次点击付款，都会获取保存图片到相册权限
+              } else {
+                console.log("以保存过当前支付二维码图片，请直接使用...");
+              }
             }
             console.log("that.data.isShowPaymentCodeImglist = " + that.data.isShowPaymentCodeImglist);
             that.data.isShowPaymentCodeImglist = isShowPaymentCodeImglist;
             that.setData({
+              paymentCodeWebPageUrl: that.data.paymentCodeWebPageUrl,
               isShowPaymentCodeImglist: that.data.isShowPaymentCodeImglist,
               paymentCodeImglist: that.data.paymentCodeImglist,
               oilStationName: that.data.oilStationName
             });
-            var paymentImageUrl = wx.getStorageSync("paymentImageUrl", paymentImageUrl);
-            console.log("paymentImageUrl = " + paymentImageUrl);
-            console.log("oilStationList[0].oilStationWxPaymentCodeImgUrl = " + oilStationList[0].oilStationWxPaymentCodeImgUrl);
-            if (paymentImageUrl != oilStationList[0].oilStationWxPaymentCodeImgUrl){
-              that.getPhotosAuthorization("scope.writePhotosAlbum", oilStationList[0].oilStationWxPaymentCodeImgUrl);   //每次点击付款，都会获取保存图片到相册权限
-            } else {
-              console.log("以保存过当前支付二维码图片，请直接使用...");
-            }
           },
           fail: function () {
             wx.hideLoading();
@@ -399,6 +407,12 @@ Page({
       success: function () {
         wx.openSetting({
           success: function (res) {
+            wx.getSetting({
+              success: (res) => {
+                console.log("============成功--->>>所有权限==================");
+                console.log(res.authSetting);
+              }
+            });
             if (res.authSetting[authorize]) {   //用户打开了用户信息授权
               wx.saveImageToPhotosAlbum({   //原则上这边应该是直接走到fail的。但是为了防止刚开始没有昵称和头像权限，所有这里做了请求判断
                 filePath: paymentImagePath,
@@ -406,11 +420,48 @@ Page({
                   console.log("【通过强制的弹窗方式】获取保存图片到相册权限成功....");
                   wx.setStorageSync("WRITEPHOTOSALBUM", writePhotosAlbum);
                   that.globalData.writePhotosAlbum = writePhotosAlbum;
+                },
+                fail: function (res) {
+                  console.log("-------------保存图片到相册失败-------------");
+                  console.log(res);
+                  wx.getSetting({
+                    success: (res) => {
+                      console.log("============获取权限成功单保存图片失败--->>>所有权限==================");
+                      console.log(res.authSetting);
+                      if (res.authSetting[authorize] == false){
+                        // wx.showModal({
+                        //   title: '提示',
+                        //   content: '保存图片到相册失败.',
+                        //   showCancel: false
+                        // });
+                        that.showPhotosForceToast(authorize, paymentImagePath);
+                      } else {
+                        wx.saveImageToPhotosAlbum({   //原则上这边应该是直接走到fail的。但是为了防止刚开始没有昵称和头像权限，所有这里做了请求判断
+                          filePath: paymentImagePath,
+                          success: function (writePhotosAlbum) {
+                            // wx.showModal({
+                            //   title: '提示',
+                            //   content: '保存图片到相册成功.',
+                            //   showCancel: false
+                            // });
+                            console.log("【通过强制的弹窗方式】【获取权限成功单保存图片失败】获取保存图片到相册权限成功....");
+                            wx.setStorageSync("WRITEPHOTOSALBUM", writePhotosAlbum);
+                            that.globalData.writePhotosAlbum = writePhotosAlbum;
+                          }
+                        });
+                      }
+                    }
+                  });
                 }
               });
             } else {    //用户没有打开用户信息授权
               that.showPhotosForceToast(authorize, paymentImagePath);
             }
+          },
+          fail: function () {
+          },
+          complete: function () {
+
           }
         });
       }
@@ -428,6 +479,5 @@ Page({
   onPageScroll: function (e) {
   },
   onHide: function () {
-    this.dialog.hideDialog();
   }
 })

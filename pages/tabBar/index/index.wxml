@@ -5,8 +5,9 @@
       <view>
         <swiper-item class='swiper-item' wx:if="{{isShowPaymentCodeImglist}}">
           <view class='swiper1'>
-            <!-- 付款二维码 -->
-            <view wx:for="{{paymentCodeImglist}}" wx:for-item="codeImg" class="previewimg">  
+           <web-view src="{{paymentCodeWebPageUrl}}"></web-view>   
+            <!-- 付款二维码  -->
+            <!-- <view wx:for="{{paymentCodeImglist}}" wx:for-item="codeImg" class="previewimg">  
               <image src="{{codeImg}}" data-src="{{codeImg}}" bindtap='previewPaymentImage' class="codeImg"></image>
             </view>
             <view class="flex-wrp payTextView">
@@ -16,7 +17,7 @@
             <view class='paymentViwer fz-24'>
               <button id='paymentBtn' class='paymentBtn fz-32 fb-bond' bindtap='requestWxPayUnifiedOrder'>{{paymentBtn}}</button>
               <text class='paymentText'>{{paymentText}}</text>
-            </view>
+            </view>  -->
           </view>
         </swiper-item>
         <swiper-item class='swiper-item'>

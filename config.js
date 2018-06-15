@@ -2,18 +2,19 @@
  * 小程序配置文件,主要是网络请求地址配置,如有网络请求，请将url在这里配置,使用的时候在.js中引入：
  * const requestUrl = require('../../../../config').getSession
  */
-// var host = "https://dymapi.xiaqiu.cn/oilStationMap";
-
-// var host = "http://192.168.0.144:8080/oilStationMap";
 
 // var host = "http://127.0.0.1:8080/oilStationMap";
 
-// var host = "http://10.211.55.12:8080/oilStationMap";
+// var host = "http://172.30.5.91:8080/oilStationMap";             //公司
+
+// var host = "http://172.20.10.2:8080/oilStationMap";             //家里
 
 var host = "https://www.91caihongwang.com/oilStationMap";
 
 var config = {
   host,
+  //首页
+  paymentHtml: `${host}/payment.html`,    
   //通用
   checkSession:`${host}/user/checkSession.do`,                                            //检测session是否过期
   wxAppLoginUrl:`${host}/user/login.do`,                                                  //检测登录
