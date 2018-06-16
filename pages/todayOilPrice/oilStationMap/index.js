@@ -9,7 +9,7 @@ Page({
       oilStationName: "大路田坝加油站",
         oilStationAdress: "贵州省铜仁市松桃苗族自治县孟溪镇大路乡田坝加油站",
         markerId: 0,
-        scale: 18,
+        scale: 14,
         longitude: 108.958280,
         latitude: 28.122990,
         title: "大路田坝加油站",

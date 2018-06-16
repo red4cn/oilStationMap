@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d01b97a-4b4c-48de-b2bb-39a35751b92b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/paying.gif" afterPath="$PROJECT_DIR$/images/paying.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/aboutUs/index.wxml" afterPath="$PROJECT_DIR$/pages/my/aboutUs/index.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.js" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.wxml" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" afterPath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxml" afterPath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxss" afterPath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="index.wxss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.wxss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+            <state relative-caret-position="259">
+              <caret line="126" column="1" lean-forward="true" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -138,38 +137,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="oilStationMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oilStationMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oilStationMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oilStationMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oilStationMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tabBar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -742,7 +709,7 @@
       <workItem from="1528769118049" duration="1703000" />
       <workItem from="1528799797801" duration="1990000" />
       <workItem from="1528939710712" duration="3373000" />
-      <workItem from="1529027598212" duration="854000" />
+      <workItem from="1529027598212" duration="1795000" />
     </task>
     <task id="LOCAL-00001" summary="优化名称">
       <created>1526697917560</created>
@@ -800,11 +767,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528641473122</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="在付款页面特意标识加油站名称，同时更换loading图案">
+      <created>1529075008177</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1529075008178</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32230000" />
+    <option name="totallyTimeSpent" value="33171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -865,7 +839,8 @@
     <MESSAGE value="在支付时支持对付款和打赏进行切换,增加地图导航" />
     <MESSAGE value="放开在地图选取地址" />
     <MESSAGE value="在获取所在位置的加油站后，将所属加油站的收款二维码保存在本地" />
-    <option name="LAST_COMMIT_MESSAGE" value="在获取所在位置的加油站后，将所属加油站的收款二维码保存在本地" />
+    <MESSAGE value="在付款页面特意标识加油站名称，同时更换loading图案" />
+    <option name="LAST_COMMIT_MESSAGE" value="在付款页面特意标识加油站名称，同时更换loading图案" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1171,8 +1146,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.wxss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+        <state relative-caret-position="259">
+          <caret line="126" column="1" lean-forward="true" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="1" />
           <folding />
         </state>
       </provider>

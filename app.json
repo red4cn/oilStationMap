@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/tabBar/index/index",
     "pages/tabBar/todayOilPrice/todayOilPrice",
+    "pages/tabBar/index/index",
     "pages/tabBar/my/my"
   ],
   "window": {
