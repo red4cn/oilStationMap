@@ -286,7 +286,7 @@ Page({
         wx.openLocation({
             latitude: latitude,
             longitude: longitude,
-            scale: 28,
+            scale: 13,
             name: name,
             address: address
         });
