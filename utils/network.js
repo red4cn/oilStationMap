@@ -1,17 +1,17 @@
 /**
  * 网络请求的封装，以后所有的网络请求直接使用这里的方法进行请求
  */
-const configUrl = require('../config')
+const configUrl = require('../config');
 var requestHandler = {
   requestUrl: '',
   params: {},
   success: function (res) {
 
-  },
-  fail: function (res) {
+  }, 
+  fail: function(res) {
 
-  },
-}
+  }
+};
 //Get请求
 function GET(requestHandler) {
   let header = {
@@ -60,7 +60,7 @@ function request(method, requestHandler, header) {
     },
     complete: function (res) {
       if (res.statusCode != 200) {
-        // console.log(res);
+        console.log(res);
       }
     }
   })

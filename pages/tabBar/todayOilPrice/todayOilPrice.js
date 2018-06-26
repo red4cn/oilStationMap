@@ -13,13 +13,11 @@ Page({
       { oilModelLabel: '95', oilNameLabel: '汽油', oilPriceLabel: '7.09' }
     ]
   },
-  
   onLoad:function(options) {
     this.getOilStation();
   },
   onShow: function (res) {
-    //只要进入当前页面就对获取最新的油价信息，注：油价信息基本一天一换，更新
-    // getOilStation();
+    
   },
   onHide:function(){
     

@@ -9,7 +9,9 @@
 
 // var host = "http://172.20.10.2:8080/oilStationMap";             //家里
 
-var host = "https://www.91caihongwang.com/oilStationMap";
+var host = "http://10.211.55.12:8080/oilStationMap";               //虚拟机
+
+// var host = "https://www.91caihongwang.com/oilStationMap";
 
 var config = {
   host,

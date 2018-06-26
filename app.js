@@ -59,27 +59,25 @@ App({
         params: params,
         requestUrl: requestUrl.checkSession,
         success: function (res) {
-          console.log("检测res.data.code = " + res.data.code);
-          if (res.data.code == 0) {   //session未过期
-            that.initGlobalData(session, uid);    //如果session没有过期，则初始化session和uid数据
-            isLogin = false;       //不需要重新登录
-          } else {                    //session过期或者网络异常
-            isLogin = true;         //需要重新登录
+          console.log("检测 res.data.code = " + res.data.code);
+          if (res.data.code == 10002) {   //session过期
+              that.clearInfo();
+              that.login();
+              return;
+          }
+          that.initGlobalData(session, uid);    //如果session没有过期，则初始化 数据
+          if (res.data.code != 0) {   //session检测异常
+              util.toast(res.data.message);
+              return;
           }
         },
         fail: function (res) {
           util.toast(res.data.message);
           isLogin = true;           //需要重新登录
-        },
-        complete: function(){
-          console.log("检测登陆后 isLogin = " + isLogin);
-          if (isLogin) {            //需要重新登录
-            this.login();
-          }
         }
       });
     } else {
-      this.login();
+      that.login();
     }
   },
   login: function(){                         //第一次登录或者重新登录
@@ -87,6 +85,7 @@ App({
     //1.判断是否获取到位置信息
     that.getUserLocationAuthorization("scope.userLocation");   //获取位置，如果用户已经登录，还要进一步判断位置权限
     // that.getPhotosAuthorization("scope.writePhotosAlbum");   //获取位置，如果用户已经登录，还要进一步判断位置权限
+    console.log("1234567890");
     //2.开始登录
     wx.login({
       success: function (res) {
