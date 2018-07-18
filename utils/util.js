@@ -20,9 +20,7 @@ function getNowFormatDate() {
     var currentdate = year + seperator1 + month + seperator1 + strDate + ' ' + hh + ':' + mm;
     return currentdate;
 }
-const formatNumber = n =
->
-{
+const formatNumber = n => {
     n = n.toString()
     return n[1] ? n : '0' + n
 }
@@ -37,7 +35,7 @@ function toast(str) {
     })
 }
 
-function chooseWxImage(type, isFirst, number, isOwnCard, userPhone, isGoWrite, beforeEditData, modify) {
+function chooseWxImage(type, isFirst,number, isOwnCard, userPhone, isGoWrite, beforeEditData, modify) {
     getApp().globalData.isChoosetoforgroundTag = 4;   //判断从拍照、从相册选择页面进入的标识，用来判断名片夹列表页是否更新。
     wx.chooseImage({
         count: 1,
@@ -68,13 +66,12 @@ function chooseWxImage(type, isFirst, number, isOwnCard, userPhone, isGoWrite, b
             // console.log(beforeEditData);
             if (beforeEditData) {
                 isNewAdd.beforeEditData = beforeEditData;
-            }
-            ;
+            };
             // console.log(isNewAdd.beforeEditData);
             console.log(isNewAdd);
             var tempFilePath = JSON.stringify(isNewAdd);
 
-            if (isFirst == 1) {
+            if (isFirst == 1){
                 wx.redirectTo({
                     url: '/pages/commonPage/handWrite/handWrite?tempFilePath=' + tempFilePath
                 })
@@ -92,14 +89,14 @@ function getLastName(str) {   //得到姓氏
     if (str && str.length <= 1) {
         return null;
     }
-    return str.substring(0, 1);
+    return str.substring(0,1);
 
 }
 function getFirstName(str) {   //得到名字
     if (str && str.length <= 1) {
         return str;
     }
-    return str.substring(1, str.length);
+    return str.substring(1,str.length);
 }
 // 保存更新formId
 // function saveFormId(formId,uid){

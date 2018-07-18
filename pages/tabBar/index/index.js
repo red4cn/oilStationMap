@@ -56,7 +56,7 @@ Page({
     onPullDownRefresh: function () {    //下拉刷新,获取最新的付款码
         this.getOilStationByLonLat();
     },
-    getOilStationByLonLat: function () {
+    getOilStationByLonLat: function(){
         var that = this;
         wx.getLocation({   //原则上这边应该是直接走到fail的。但是为了防止刚开始没有昵称和头像权限，所有这里做了请求判断
             success: function (userLocaltion) {
@@ -153,7 +153,7 @@ Page({
         wx.previewImage({
             current: this.data.appreciateCodeImglist, // 当前显示图片的http链接
             urls: this.data.appreciateCodeImglist, // 需要预览的图片http链接列表
-            success: function () {
+            success: function(){
                 console.log("查看打赏码图片成功...");
             },
             fail: function () {
@@ -191,7 +191,7 @@ Page({
             oilStationName_Temp: that.data.oilStationName_Temp
         });
     },
-    payMoneyInputFunc: function (e) {    // 获取金额
+    payMoneyInputFunc: function(e) {    // 获取金额
         this.data.payMoney = e.detail.value;
         this.setData({
             payMoney: this.data.payMoney
@@ -208,7 +208,7 @@ Page({
         var that = this;
         var reg = /^[0-9]+([.]{1}[0-9]{1,2})?$/;
         console.log("this.data.payMoney = " + this.data.payMoney + " , reg.test(this.data.payMoney) = " + reg.test(this.data.payMoney));
-        if (this.data.payMoney.endsWith(".")) {
+        if (this.data.payMoney.endsWith(".")){
             util.toast("支付金额不能以小数点结尾，请输入正确支付金额.");
         } else {
             if (!reg.test(this.data.payMoney)) {           //使用正则表达式进行校验
@@ -408,12 +408,11 @@ Page({
                 wx.openSetting({
                     success: function (res) {
                         wx.getSetting({
-                                success: (res) = > {
+                                success: (res) => {
                                 console.log("============成功--->>>所有权限==================");
                         console.log(res.authSetting);
                     }
-                    })
-                        ;
+                    });
                         if (res.authSetting[authorize]) {   //用户打开了用户信息授权
                             wx.saveImageToPhotosAlbum({   //原则上这边应该是直接走到fail的。但是为了防止刚开始没有昵称和头像权限，所有这里做了请求判断
                                 filePath: paymentImagePath,
@@ -426,10 +425,10 @@ Page({
                                     console.log("-------------保存图片到相册失败-------------");
                                     console.log(res);
                                     wx.getSetting({
-                                            success: (res) = > {
+                                            success: (res) => {
                                             console.log("============获取权限成功单保存图片失败--->>>所有权限==================");
                                     console.log(res.authSetting);
-                                    if (res.authSetting[authorize] == false) {
+                                    if (res.authSetting[authorize] == false){
                                         // wx.showModal({
                                         //   title: '提示',
                                         //   content: '保存图片到相册失败.',
@@ -452,8 +451,7 @@ Page({
                                         });
                                     }
                                 }
-                                })
-                                    ;
+                                });
                                 }
                             });
                         } else {    //用户没有打开用户信息授权
