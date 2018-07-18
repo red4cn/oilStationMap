@@ -14,24 +14,24 @@
 var host = "https://www.91caihongwang.com/oilStationMap";
 
 var config = {
-  host,
-  //首页
-  paymentHtml: `${host}/payment.html`,    
-  //通用
-  checkSession:`${host}/user/checkSession.do`,                                            //检测session是否过期
-  wxAppLoginUrl:`${host}/user/login.do`,                                                  //检测登录
-  sendTemplateMessageUrl: `${host}/common/sendTemplateMessage.do`,                                //发送模板消息
-  getOpenIdAndSessionKeyForWX: `${host}/common/getOpenIdAndSessionKeyForWX.do`,           //获取openId和sessionKey
-  //付款
-  requestWxPayUnifiedOrder: `${host}/order/requestWxPayUnifiedOrder.do`,                  //开始准备微信支付
-  //今日油价
-  addOrUpdateOilStation: `${host}/oilStation/addOrUpdateOilStation.do`,                   //添加加油站
-  getOilStationByLonLat: `${host}/oilStation/getOilStationByLonLat.do`,                   //根据经纬度地址获取所处的加油站
-  getOneOilStationByCondition: `${host}/oilStation/getOneOilStationByCondition.do`,       //根据条件获取指定加油站
-  getOilStationList: `${host}/oilStation/getOilStationList.do`,                           //根据附近获取附近加油站列表
-  //我的
-  getMoreOilModelTagList: `${host}/dic/getSimpleDicByCondition.do`,                       //获取更多的油品标签信息
-  feedBackUrl:`${host}/comments/addComments.do`                                          //意见反馈
+    host,
+    //首页
+    paymentHtml: `${host}/payment.html`,
+    //通用
+    checkSession: `${host}/user/checkSession.do`,                                            //检测session是否过期
+    wxAppLoginUrl: `${host}/user/login.do`,                                                  //检测登录
+    sendTemplateMessageUrl: `${host}/common/sendTemplateMessage.do`,                                //发送模板消息
+    getOpenIdAndSessionKeyForWX: `${host}/common/getOpenIdAndSessionKeyForWX.do`,           //获取openId和sessionKey
+    //付款
+    requestWxPayUnifiedOrder: `${host}/order/requestWxPayUnifiedOrder.do`,                  //开始准备微信支付
+    //今日油价
+    addOrUpdateOilStation: `${host}/oilStation/addOrUpdateOilStation.do`,                   //添加加油站
+    getOilStationByLonLat: `${host}/oilStation/getOilStationByLonLat.do`,                   //根据经纬度地址获取所处的加油站
+    getOneOilStationByCondition: `${host}/oilStation/getOneOilStationByCondition.do`,       //根据条件获取指定加油站
+    getOilStationList: `${host}/oilStation/getOilStationList.do`,                           //根据附近获取附近加油站列表
+    //我的
+    getMoreOilModelTagList: `${host}/dic/getSimpleDicByCondition.do`,                       //获取更多的油品标签信息
+    feedBackUrl: `${host}/comments/addComments.do`                                          //意见反馈
 };
 
 module.exports = config;

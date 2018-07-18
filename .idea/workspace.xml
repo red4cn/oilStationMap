@@ -3,8 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="7d01b97a-4b4c-48de-b2bb-39a35751b92b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsconfig.json" afterPath="$PROJECT_DIR$/jsconfig.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/aboutUs/index.js" afterPath="$PROJECT_DIR$/pages/my/aboutUs/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/feedback/index.js" afterPath="$PROJECT_DIR$/pages/my/feedback/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/feedback/index.json" afterPath="$PROJECT_DIR$/pages/my/feedback/index.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/howFind/index.js" afterPath="$PROJECT_DIR$/pages/my/howFind/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/howFind/index.json" afterPath="$PROJECT_DIR$/pages/my/howFind/index.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/method/index.js" afterPath="$PROJECT_DIR$/pages/my/method/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/method/index.json" afterPath="$PROJECT_DIR$/pages/my/method/index.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/moreOilModelTag/index.js" afterPath="$PROJECT_DIR$/pages/my/moreOilModelTag/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/oilStationAdd/index.js" afterPath="$PROJECT_DIR$/pages/my/oilStationAdd/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/my/privacy/index.js" afterPath="$PROJECT_DIR$/pages/my/privacy/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.js" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.json" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/my/my.js" afterPath="$PROJECT_DIR$/pages/tabBar/my/my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/my/my.json" afterPath="$PROJECT_DIR$/pages/tabBar/my/my.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.js" afterPath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.json" afterPath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" afterPath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.config.json" afterPath="$PROJECT_DIR$/project.config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typings/wx.d.ts" afterPath="$PROJECT_DIR$/typings/wx.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/network.js" afterPath="$PROJECT_DIR$/utils/network.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/util.js" afterPath="$PROJECT_DIR$/utils/util.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +53,18 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2059">
-              <caret line="71" column="11" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+            <state relative-caret-position="377">
+              <caret line="83" column="10" lean-forward="false" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -42,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/utils/network.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1856">
-              <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+              <caret line="64" column="9" lean-forward="false" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -58,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="121" column="39" lean-forward="true" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="39" />
+            <state relative-caret-position="145">
+              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -121,13 +153,13 @@
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxss" />
         <option value="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxml" />
-        <option value="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" />
         <option value="$PROJECT_DIR$/pages/my/aboutUs/index.wxml" />
         <option value="$PROJECT_DIR$/pages/tabBar/index/index.js" />
         <option value="$PROJECT_DIR$/pages/tabBar/index/index.wxss" />
         <option value="$PROJECT_DIR$/pages/tabBar/index/index.wxml" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/utils/network.js" />
+        <option value="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" />
       </list>
     </option>
   </component>
@@ -166,28 +198,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="oilStationMap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oilStationMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oilStationMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oilStationMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="todayOilPrice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="oilStationMap" />
@@ -788,7 +798,7 @@
       <workItem from="1530179461088" duration="1060000" />
       <workItem from="1530526158369" duration="756000" />
       <workItem from="1530582996566" duration="411000" />
-      <workItem from="1531899811121" duration="14000" />
+      <workItem from="1531899811121" duration="151000" />
     </task>
     <task id="LOCAL-00001" summary="优化名称">
       <created>1526697917560</created>
@@ -881,11 +891,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530022411494</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="优化支付失败后的提示信息">
+      <created>1531899859006</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1531899859006</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47381000" />
+    <option name="totallyTimeSpent" value="47518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -915,6 +932,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17167382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -929,7 +947,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -960,7 +977,8 @@
     <MESSAGE value="更新" />
     <MESSAGE value="修改打开地图后的缩放系数" />
     <MESSAGE value="优化登录逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化登录逻辑" />
+    <MESSAGE value="优化支付失败后的提示信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化支付失败后的提示信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1210,13 +1228,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
@@ -1294,18 +1305,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2059">
-          <caret line="71" column="11" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/network.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1856">
-          <caret line="64" column="5" lean-forward="false" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <caret line="64" column="9" lean-forward="false" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1320,8 +1323,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="121" column="39" lean-forward="true" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="39" />
+        <state relative-caret-position="145">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="83" column="10" lean-forward="false" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding />
         </state>
       </provider>

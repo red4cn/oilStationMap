@@ -411,12 +411,12 @@ Page({
                 params: params,
                 requestUrl: requestUrl.addOrUpdateOilStation,
                 success: function (res) {
-                  wx.hideLoading();
-                  console.log("=============res================");
-                  console.log(res);
-                  console.log("res.data.code = " + res.data.code);
-                  console.log("res.data.code == 0");
-                  console.log(res.data.code == 0);
+                    wx.hideLoading();
+                    console.log("=============res================");
+                    console.log(res);
+                    console.log("res.data.code = " + res.data.code);
+                    console.log("res.data.code == 0");
+                    console.log(res.data.code == 0);
                     //发送模板消息
                     if (res.data.code == 0) {
                         // if (that.data.editData.isOwnCard == 0) {  //自己创建别人的名片成功提醒

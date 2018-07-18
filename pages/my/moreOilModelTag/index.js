@@ -135,7 +135,7 @@ Page({
         return;
     },
     addOilModelTag: function () {   //点击确定添加标签
-                                    // 是否是表情的正则判断
+        // 是否是表情的正则判断
         var reg1 = new RegExp(/[~#^$@%&!*()<>:;'"{}【】˶ ᶘ ᵒᴥ ]/gi); //判断是否有特殊字符
         var reg2 = new RegExp(/\ud83c[\udf00-\udfff]|\ud83d[\udc00-\ude4f]|\ud83d[\ude80-\udeff]/g);  //判断是否是表情的字符
         // if (reg1.test(this.data.value) || reg2.test(this.data.value)) {
