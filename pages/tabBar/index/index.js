@@ -357,7 +357,7 @@ Page({
         console.log(error);
         wx.showModal({
           title: '提示',
-          content: '支付失败.',
+          content: '支付被取消.',
           showCancel: false
         });
       },
