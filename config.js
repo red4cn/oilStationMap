@@ -16,7 +16,8 @@ var host = "https://www.91caihongwang.com/oilStationMap";
 var config = {
     host,
     //首页
-    paymentHtml: `${host}/payment.html`,
+    paymentHtml_bak: `${host}/payment.html`,
+    paymentHtml: `https://www.91caihongwang.com/oilStationMap/wx_Pay/getToOauthUrl.do`,
     //通用
     checkSession: `${host}/user/checkSession.do`,                                            //检测session是否过期
     wxAppLoginUrl: `${host}/user/login.do`,                                                  //检测登录
