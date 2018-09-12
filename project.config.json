@@ -1,91 +1,91 @@
 {
-  "description": "项目配置文件。",
-  "setting": {
-    "urlCheck": false,
-    "es6": true,
-    "postcss": true,
-    "minified": true,
-    "newFeature": true
-  },
-  "compileType": "miniprogram",
-  "libVersion": "1.9.98",
-  "appid": "wx07cf52be1444e4b7",
-  "projectname": "oilStationMap",
-  "isGameTourist": false,
-  "condition": {
-    "search": {
-      "current": -1,
-      "list": []
-    },
-    "conversation": {
-      "current": -1,
-      "list": []
-    },
-    "plugin": {
-      "current": -1,
-      "list": []
-    },
-    "game": {
-      "currentL": -1,
-      "list": []
-    },
-    "miniprogram": {
-      "current": -1,
-      "list": [
-        {
-          "id": -1,
-          "name": "今日油价",
-          "pathName": "pages/tabBar/todayOilPrice/todayOilPrice",
-          "query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
-          "scene": "1011"
-        },
-        {
-          "id": -1,
-          "name": "我的",
-          "pathName": "pages/tabBar/my/my",
-          "query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
-          "scene": "1011"
-        },
-        {
-          "id": -1,
-          "name": "寻找附近加油站",
-          "pathName": "pages/todayOilPrice/oilStationMap/index",
-          "query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
-          "scene": "1011"
-        },
-        {
-          "id": -1,
-          "name": "付款",
-          "pathName": "pages/tabBar/index/index",
-          "query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
-          "scene": "1011"
-        },
-        {
-          "id": -1,
-          "name": "关于我们",
-          "pathName": "pages/my/aboutUs/index",
-          "query": ""
-        },
-        {
-          "id": -1,
-          "name": "隐私声明",
-          "pathName": "pages/my/privacy/index",
-          "query": ""
-        },
-        {
-          "id": 6,
-          "name": "油价录入",
-          "pathName": "pages/my/oilStationAdd/index",
-          "query": "",
-          "scene": "1011"
-        },
-        {
-          "id": -1,
-          "name": "添加更多油品型号标签",
-          "pathName": "pages/my/moreOilModelTag/index",
-          "query": ""
-        }
-      ]
-    }
-  }
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.5",
+	"appid": "wx07cf52be1444e4b7",
+	"projectname": "oilStationMap",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "今日油价",
+					"pathName": "pages/tabBar/todayOilPrice/todayOilPrice",
+					"query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/tabBar/my/my",
+					"query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "寻找附近加油站",
+					"pathName": "pages/todayOilPrice/oilStationMap/index",
+					"query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "付款",
+					"pathName": "pages/tabBar/index/index",
+					"query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/my/aboutUs/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "隐私声明",
+					"pathName": "pages/my/privacy/index",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "油价录入",
+					"pathName": "pages/my/oilStationAdd/index",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "添加更多油品型号标签",
+					"pathName": "pages/my/moreOilModelTag/index",
+					"query": ""
+				}
+			]
+		}
+	}
 }
