@@ -3,15 +3,15 @@
  * const requestUrl = require('../../../../config').getSession
  */
 
-// var host = "http://127.0.0.1:8080/oilStationMap";
+// var host = "http://127.0.0.1:8080/oilStationMap";                //本地
 
-// var host = "http://172.30.5.91:8080/oilStationMap";             //公司
+// var host = "http://172.30.5.91:8080/oilStationMap";               //公司
 
-// var host = "http://172.20.10.2:8080/oilStationMap";             //家里
+// var host = "http://172.20.10.2:8080/oilStationMap";               //家里
 
 // var host = "http://10.211.55.12:8080/oilStationMap";               //虚拟机
 
-var host = "https://www.91caihongwang.com/oilStationMap";
+var host = "https://www.91caihongwang.com/oilStationMap";      //线上
 
 var config = {
     host,

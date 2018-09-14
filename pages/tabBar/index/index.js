@@ -67,9 +67,11 @@ Page({
                 // //融科资讯中心
                 // params.lon = 116.322416;
                 // params.lat = 39.973057;
-                // //大路田坝加油站
-                // params.lon = 108.958280;
-                // params.lat = 28.122990;
+                if (params.uid == 1){             //管理员默认显示自己家的加油站
+                    //大路田坝加油站
+                    params.lon = 108.958280;
+                    params.lat = 28.122990;
+                }
                 // //桃映火车站
                 // params.lon = 109.021220;
                 // params.lat = 27.860020;
@@ -101,9 +103,10 @@ Page({
                             //设置付款链接
                             that.data.paymentCodeWebPageUrl = that.data.paymentCodeWebPageUrl
                                 + "?lon=" + userLocaltion.longitude
-                                + "&lat=" + userLocaltion.latitude
-                                + "&oilStationName=" + encodeURI(encodeURI(oilStationList[0].oilStationName))
-                                + "&oilStationWxPaymentCodeImgUrl=" + oilStationList[0].oilStationWxPaymentCodeImgUrl;
+                              + "&lat=" + userLocaltion.latitude
+                              // + "&oilStationName=" + encodeURI(encodeURI(oilStationList[0].oilStationName))
+                              + "&oilStationName=" + oilStationList[0].oilStationName
+                              + "&oilStationWxPaymentCodeImgUrl=" + oilStationList[0].oilStationWxPaymentCodeImgUrl;
                             isShowPaymentCodeImglist = true;                      //设置是否显示付款页面
                             var paymentImageUrl = wx.getStorageSync("paymentImageUrl");
                             console.log("paymentImageUrl = " + paymentImageUrl);
