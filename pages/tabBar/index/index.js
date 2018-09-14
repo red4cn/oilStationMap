@@ -103,14 +103,15 @@ Page({
                             //设置付款链接
                             that.data.paymentCodeWebPageUrl = that.data.paymentCodeWebPageUrl
                                 + "?lon=" + userLocaltion.longitude
-                              + "&lat=" + userLocaltion.latitude
-                              // + "&oilStationName=" + encodeURI(encodeURI(oilStationList[0].oilStationName))
-                              + "&oilStationName=" + oilStationList[0].oilStationName
-                              + "&oilStationWxPaymentCodeImgUrl=" + oilStationList[0].oilStationWxPaymentCodeImgUrl;
+                                + "&lat=" + userLocaltion.latitude
+                                + "&oilStationName=" + encodeURI(oilStationList[0].oilStationName)
+                                + "&oilStationWxPaymentCodeImgUrl=" + oilStationList[0].oilStationWxPaymentCodeImgUrl;
                             isShowPaymentCodeImglist = true;                      //设置是否显示付款页面
                             var paymentImageUrl = wx.getStorageSync("paymentImageUrl");
                             console.log("paymentImageUrl = " + paymentImageUrl);
                             console.log("oilStationList[0].oilStationWxPaymentCodeImgUrl = " + oilStationList[0].oilStationWxPaymentCodeImgUrl);
+                          console.log("encodeURI(oilStationList[0].oilStationName) = " + encodeURI(oilStationList[0].oilStationName));
+                          console.log("最终地址 that.data.paymentCodeWebPageUrl = " + that.data.paymentCodeWebPageUrl);
                             if (paymentImageUrl != oilStationList[0].oilStationWxPaymentCodeImgUrl) {
                                 that.getPhotosAuthorization("scope.writePhotosAlbum", oilStationList[0].oilStationWxPaymentCodeImgUrl);   //每次点击付款，都会获取保存图片到相册权限
                             } else {
