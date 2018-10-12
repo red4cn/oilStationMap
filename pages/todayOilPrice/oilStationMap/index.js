@@ -248,6 +248,8 @@ Page({
         that.data.latitude = that.data.markers[markersArrIndex].latitude;
         that.data.longitude = that.data.markers[markersArrIndex].longitude;
         that.data.oilStationPriceList = that.data.markers[markersArrIndex].oilStationPriceList;
+      console.log("that.data.oilStationName = " + that.data.oilStationName);
+      console.log(that.data.oilStationPriceList);
         this.setData({
             title: that.data.oilStationName,
             markerId: that.data.markerId,
