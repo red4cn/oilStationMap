@@ -1,3 +1,4 @@
+<!-- 寻找附近的加油站 -->
 <view class="page-body">
   <view class="priceView">
     <map
@@ -37,6 +38,11 @@
         <text class="oilPriceLabel">{{item.oilPriceLabel}}</text>
         <text class="oilPriceUnitLabel">(元/升)</text>
       </view> 
+    </view>
+    <!-- 纠正油价 -->
+    <view class="updateOilStationItemView" type="primary" bindtap='updateOilStation'>
+        <image class="updateOilStationImg" src='/images/updateOilStationImg.png'></image>
+        <text class="updateOilStation">纠正油价</text>
     </view>
   </scroll-view>
   <view class="shareView">

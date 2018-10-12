@@ -1,4 +1,6 @@
-//logs.js
+/**
+ * 寻找附近的加油站
+ */
 var network = require('../../../utils/network.js')
 const requestUrl = require('../../../config')
 const util = require('../../../utils/util.js')
@@ -8,6 +10,7 @@ Page({
     data: {
         oilStationName: "大路田坝加油站",
         oilStationAdress: "贵州省铜仁市松桃苗族自治县孟溪镇大路乡田坝加油站",
+        oilStationList: [],
         markerId: 0,
         scale: 14,
         longitude: 108.958280,
@@ -71,14 +74,14 @@ Page({
         ]
     },
     onLoad: function (e) {
-        //在线获取地图
-        this.oilStationMap = this.loadOilStationMap();
+        
     },
     onReady: function () {
 
     },
     onShow: function (res) {
-
+      //在线获取地图
+      this.oilStationMap = this.loadOilStationMap();
     },
     onHide: function () {
 
@@ -116,6 +119,9 @@ Page({
                             return;
                         }
                         var oilStationList = res.data.data;
+                        that.setData({
+                          oilStationList: oilStationList
+                        });
                         that.data.oilStationName = "";
                         that.data.circles = [];
                         that.data.circles.length = 0;
@@ -202,6 +208,7 @@ Page({
                                 console.log("已经平移到最新的加油站: " + that.data.markers[0].title);
                             }
                         });
+                        wx.setStorageSync("showCurrentOilStation", oilStationList[0]);
                         return that.oilStationMap;
                     },
                     fail: function () {
@@ -267,6 +274,7 @@ Page({
             }
         });
         wx.hideLoading();         //关闭进度条
+        wx.setStorageSync("showCurrentOilStation", that.data.oilStationList[markersArrIndex]);
         return that.oilStationMap;
     },
     navigationToMap: function () {                     //到这去，导航
@@ -290,6 +298,13 @@ Page({
             name: name,
             address: address
         });
+    },
+    //纠正油价
+    updateOilStation: function () {
+      console.log("开始纠正油价");
+      wx.navigateTo({
+        url: "../../my/oilStationAdd/index?isShowCurrentOilStationFlag=true&title=纠正油价"
+      });
     },
     bindregionchangeFunc: function (e) {             //视野发生移动变化时触发
         // console.log("================bindregionchangeFunc===============");

@@ -8,7 +8,7 @@ Page({
         tableData: [
             {
                 "id": "1",
-                "name": "油价录入",
+                "name": "添加油价",
                 "page": "my/oilStationAdd/index"
             }, {
                 "id": "2",

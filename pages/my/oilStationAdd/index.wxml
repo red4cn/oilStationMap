@@ -16,42 +16,42 @@
           <text class="labelClass">加油站名称</text>
           <input class="input" name="oilStationName" maxlength="100" confirm-type="next" 
           placeholder="{{oilStationName}}" placeholder-class="place" bindblur="oilStationNameInput" 
-          bindfocus="oilStationNameInput1" cursor-spacing="0" />
+          bindfocus="oilStationNameInput1" cursor-spacing="0" value="{{oilStationName_value}}" />
         </view>
         <view class="itemView">
           <text class='red'>*</text>
           <text class="labelClass">加油站地址</text>
-          <input class="input" name="oilStationAdress	" maxlength="100" confirm-type="next" 
-          placeholder-class="place" placeholder="{{oilStationAdress}}" bindblur="oilStationAdressInput" 
-          bindfocus="oilStationAdressInput1" cursor-spacing="0" value="{{oilStation.oilStationAdress}}" />
+          <input class="input" name="oilStationAdress" maxlength="100" confirm-type="next" 
+          placeholder-class="place" placeholder="{{oilStationAdress}}" bindtap="oilStationAdressInput" 
+          cursor-spacing="0" value="{{oilStationAdress_value}}" />
         </view>
         <view class="itemView">
           <text class='red' style="visibility:hidden;">*</text>
           <text class="labelClass">0#柴油</text>
           <input class="input" name="modelOil_0" maxlength="100" confirm-type="next" 
           placeholder-class="place" placeholder="{{modelOil_0}}" bindblur="modelOil_0_input" 
-          bindfocus="modelOil_0_input1" cursor-spacing="0" />
+          bindfocus="modelOil_0_input1" cursor-spacing="0" value="{{modelOil_0_value}}" />
         </view>
         <view class="itemView">
           <text class='red' style="visibility:hidden;">*</text>
           <text class="labelClass">92#汽油</text>
           <input class="input" name="modelOil_92" maxlength="100" confirm-type="next" 
           placeholder-class="place" placeholder="{{modelOil_92}}" bindblur="modelOil_92_input" 
-          bindfocus="modelOil_92_input1" cursor-spacing="0" />
+          bindfocus="modelOil_92_input1" cursor-spacing="0" value="{{modelOil_92_value}}" />
         </view>
         <view class="itemView">
           <text class='red' style="visibility:hidden;">*</text>
           <text class="labelClass">95#汽油</text>
           <input class="input" name="modelOil_95" maxlength="100" confirm-type="next" 
           placeholder-class="place" placeholder="{{modelOil_95}}" bindblur="modelOil_95_input" 
-          bindfocus="modelOil_95_input1" cursor-spacing="0" />
+          bindfocus="modelOil_95_input1" cursor-spacing="0" value="{{modelOil_95_value}}" />
         </view>
         <view class="itemView">
           <text class='red' style="visibility:hidden;">*</text>
           <text class="labelClass">97#汽油</text>
           <input class="input" name="modelOil_97" maxlength="100" confirm-type="next" 
           placeholder-class="place" placeholder="{{modelOil_97}}" bindblur="modelOil_97_input" 
-          bindfocus="modelOil_97_input1" cursor-spacing="0" />
+          bindfocus="modelOil_97_input1" cursor-spacing="0" value="{{modelOil_97_value}}" />
         </view>
       </view>
 
@@ -74,7 +74,7 @@
             <text class="dicNameText">{{item.dicName}}</text>
             <input class="input" name="{{item.name1}}" maxlength="1000" 
               placeholder-class="place" placeholder="" bindblur="addMoreBlur" 
-              cursor-spacing="0" data-index="{{index}}"/>
+              cursor-spacing="0" data-index="{{index}}" value="{{item.dicValue}}" />
           </view>
         </view>
       </view>

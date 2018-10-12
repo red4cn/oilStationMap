@@ -98,6 +98,10 @@ function getFirstName(str) {   //得到名字
     }
     return str.substring(1,str.length);
 }
+
+function isNull(str) {
+  return !str && str !== 0 && typeof str !== "boolean" ? true : false;
+}
 // 保存更新formId
 // function saveFormId(formId,uid){
 //   let params = new Object()
@@ -120,6 +124,7 @@ function getFirstName(str) {   //得到名字
 module.exports = {
     // formatTime: formatTime,
     toast: toast,
+    isNull: isNull,
     chooseWxImage: chooseWxImage,
     getNowFormatDate: getNowFormatDate,
     getLastName: getLastName,

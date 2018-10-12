@@ -1,7 +1,10 @@
-//logs.js
+/**
+ * 油价地图
+ */
 var network = require('../../../utils/network.js')
 const requestUrl = require('../../../config')
 const util = require('../../../utils/util.js')
+import NumberAnimate from '../../../utils/NumberAnimate.js'
 
 var app = getApp();
 Page({
@@ -14,10 +17,10 @@ Page({
         ]
     },
     onLoad: function (options) {
-        this.getOilStation();
+      
     },
     onShow: function (res) {
-
+      this.getOilStation();
     },
     onHide: function () {
 
@@ -59,6 +62,7 @@ Page({
                             oilStationName: res.data.data.oilStationName,
                             oilStationPriceList: that.data.oilStationPriceList
                         });
+                      wx.setStorageSync("showCurrentOilStation", oilStationList[0]);
                     },
                     fail: function () {
                         wx.hideLoading();
@@ -72,13 +76,20 @@ Page({
     findOilStationInMap: function () {
         console.log("开始准备跳转地图...");
         wx.navigateTo({
-            url: "../../todayOilPrice/oilStationMap/index?paramNum=123456789"
+            url: "../../todayOilPrice/oilStationMap/index?show=123456789"
         });
     },
     //下拉刷新获取最新数据
     onPullDownRefresh: function () {
         console.log("开始下拉刷新");
         this.getOilStation(true);
+    },
+    //纠正油价
+    updateOilStation: function(){
+      console.log("开始纠正油价");
+      wx.navigateTo({
+        url: "../../my/oilStationAdd/index?isShowCurrentOilStationFlag=true&title=纠正油价"
+      });
     }
 
 })

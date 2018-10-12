@@ -179,6 +179,36 @@
   text-align: left;
   padding: 0px 20px 0px 10px;
 }
+.updateOilStationItemView{
+  border: 0rpx solid #09BB07;
+  background: #09BB07;
+  border-radius: 12rpx;
+  position: relative;
+  width: 90%;
+  height: 90rpx;
+  line-height: 70rpx; 
+  border-bottom: 2rpx solid #EEE;
+  font-size: 28rpx;
+  color: #353535;
+  letter-spacing: -0.68rpx;
+  display: flex;
+  justify-content: center; 
+  overflow: hidden;
+  margin: 0px auto;
+  margin-top: 5px;
+ align-items:center;
+}
+.updateOilStationImg{
+  height: 50rpx;
+  width: 90rpx;
+}
+.updateOilStation{
+  border: 0px red solid;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  font-weight: bolder;
+  margin-left: -10rpx;
+}
 .shareView{
   border: 0px red solid;
   display: flex;

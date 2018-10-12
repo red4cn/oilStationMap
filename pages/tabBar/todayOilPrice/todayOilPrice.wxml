@@ -1,3 +1,4 @@
+<!-- 油价地图 -->
 <page>
   <view scroll-y class="priceView">
     <view>
@@ -20,6 +21,7 @@
       </view>
       <scroll-view scroll-y="true" style="height: 305px;border:0px red solid">
         <view class="itemView" wx:if="{{oilStationPriceList}}" wx:for="{{oilStationPriceList}}">
+          <!-- 油价列表 -->
           <view class="oilModelFlagNameView">
             <text class="oilModelLabel">{{item.oilModelLabel}}</text>
             <text class="oilFlagLabel">#</text>
@@ -30,9 +32,15 @@
             <text class="oilPriceUnitLabel">(元/升)</text>
           </view> 
         </view>
+        <!-- 纠正油价 -->
+        <view class="updateOilStationItemView" type="primary" bindtap='updateOilStation'>
+            <image class="updateOilStationImg" src='/images/updateOilStationImg.png'></image>
+            <text class="updateOilStation">纠正油价</text>
+        </view>
       </scroll-view>
+      <!-- 分享 -->
       <view class="shareView">
-        <button class="shareButton" bindtap="shareOilPrice" 
+        <button type="primary" plain="true" class="shareButton" bindtap="shareOilPrice" 
         open-type="share">分享给我的好友</button>
       </view>
     </view>

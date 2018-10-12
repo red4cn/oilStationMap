@@ -74,7 +74,7 @@
 				},
 				{
 					"id": 6,
-					"name": "油价录入",
+					"name": "添加油价",
 					"pathName": "pages/my/oilStationAdd/index",
 					"query": "",
 					"scene": "1011"
