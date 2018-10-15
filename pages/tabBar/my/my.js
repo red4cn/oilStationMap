@@ -10,11 +10,13 @@ Page({
                 "id": "1",
                 "name": "添加油价",
                 "page": "my/oilStationAdd/index"
-            }, {
-                "id": "2",
-                "name": "积分兑换",
-                "page": "my/method/index"
-            }, {
+            },
+            //  {
+            //     "id": "2",
+            //     "name": "积分兑换",
+            //     "page": "my/method/index"
+            // },
+             {
                 "id": "3",
                 "name": "使用方法",
                 "page": "my/method/index"

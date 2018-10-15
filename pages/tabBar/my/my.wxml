@@ -13,9 +13,11 @@
       </navigator>
     </block>
   </view>
-  <button class="open-speak"open-type='contact' 
-  size="40"
+
+  <button class="open-speak" open-type='contact' size="40"
   session-from="sobot|{{userInfo.nickName}}|{{userInfo.avatarUrl}}">
   <text class='my'></text>
   我的客服</button>
+  <view style="height:1px;width:100%;border:0px red solid;"></view>
+  
 </page>

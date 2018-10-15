@@ -83,6 +83,7 @@
 
       <button formType="submit" class="save fz-32 ls-28 {{canSave ?'canSave':'notCanSave'}} {{isIpx ? 'fix-iphonex-button':''}}"
         disabled='{{!canSave}}'>保存</button>
+      <view style="height:1px;width:100%;border:0px red solid;"></view>
 
     </form>
   </view>
