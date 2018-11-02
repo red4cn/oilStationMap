@@ -8,15 +8,13 @@ Page({
         tableData: [
             {
                 "id": "1",
-                "name": "添加油价",
+                "name": "添加油站",
                 "page": "my/oilStationAdd/index"
-            },
-            //  {
-            //     "id": "2",
-            //     "name": "积分兑换",
-            //     "page": "my/method/index"
-            // },
-             {
+            },{
+                "id": "2",
+                "name": "红包记录",
+                "page": "my/redPacketHistory/index"
+            },{
                 "id": "3",
                 "name": "使用方法",
                 "page": "my/method/index"

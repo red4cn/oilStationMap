@@ -42,6 +42,7 @@
       "root": "pages/my/",
       "pages": [
         "feedback/index",
+        "redPacketHistory/index",
         "howFind/index",
         "method/index",
         "aboutUs/index",

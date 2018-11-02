@@ -1,6 +1,3 @@
-<!-- <web-view style="width:500px;height:700px;" src="https://www.91caihongwang.com/oilStationMap/index.html">《隐私声明》</web-view>    -->
- 
- 
 <view class="whrite-back">
     <view class="icon-view">
         <image class="img-logo" src='/images/logo.png'></image>
