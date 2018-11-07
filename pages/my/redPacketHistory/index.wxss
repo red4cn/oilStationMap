@@ -1,0 +1,259 @@
+.warp {
+  width: 100%;
+  height: 1100rpx;
+  background: #fff;
+}
+
+.top-warp {
+  width: 100%;
+  /* height: 100%; */
+  background: #fff;
+  overflow-y: scroll;
+}
+
+.top {
+  padding-top: 36rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 40rpx;
+  color: #09bb07;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 52rpx;
+}
+
+.top-text1 {
+  margin-left: 20rpx;
+}
+
+
+
+
+
+.ranking-not {
+  color: #4f4f4f;
+  width: 80rpx;
+  text-align: center;
+  font-family: PingFang-SC-Medium;
+}
+
+
+
+.ranking-not-image {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 35rpx;
+  border: 2rpx solid #fff;
+}
+
+
+
+
+
+
+
+.not-image2 {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  left: 0;
+  top: 10rpx;
+  border-radius: 25rpx;
+  border: 2rpx solid #fff;
+}
+
+
+
+.ranking-not-image2 {
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  right: 0;
+  top: 10rpx;
+  z-index: 1;
+  border-radius: 25rpx;
+  border: 2rpx solid #fff;
+}
+
+.ranking-not-image {
+  width: 38rpx;
+  height: 38rpx;
+  border-radius: 19rpx;
+}
+
+.image-three-one {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.image-three-two {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.image-three-three {
+  position: absolute;
+  left: 15rpx;
+  top: 0;
+  z-index: 2;
+}
+
+
+
+
+
+.iphonex {
+  width: 100%;
+  height: 68rpx;
+  background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* redPacketHistoryList */
+
+.redPacketHistoryListView {
+  border: 0px red solid;
+  padding: 36rpx  64rpx 30rpx 64rpx;
+}
+
+.redPacketHistoryListView .redPacketHistoryView:last-child {
+  border: 0;
+}
+
+.redPacketHistoryView {
+  border: 0rpx red solid;
+  border-bottom: 2rpx solid rgba(121, 100, 244, 0.10);
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.operatorImageView {
+  border: 0rpx red solid;
+  width: 45rpx;
+  height: 45rpx;
+  position: relative;
+}
+
+.operatorImage {
+  border: 0rpx red solid;
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 2rpx;
+}
+
+.operatorNameView {
+  border: 0rpx red solid;
+  width: 140rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: bold;
+  color: #4f4f4f;
+  letter-spacing: 0;
+  height: 70rpx;
+  line-height: 75rpx;
+  padding-left: 20rpx;
+}
+
+.redPacketView {
+  border: 0rpx red solid;
+  width: 120rpx;
+  font-family: PingFang-SC-Medium;
+  color: #09BB07;
+  letter-spacing: 0;
+  text-align: right;
+  height: 70rpx;
+  line-height: 70rpx;
+  /* padding-right: 40rpx; */
+}
+
+.redPacketText {
+  font-family: PingFangSC-Light;
+  color: #4f4f4f;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+.statusView {
+  border: 0rpx red solid;
+  width: 300rpx;
+  font-family: PingFang-SC-Medium;
+  letter-spacing: 0;
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.statusNameView{
+  border: 0px red solid;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-family: PingFangSC-Light;
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 27rpx;
+  color: #09BB07;
+}
+
+.updateTimeView{
+  border: 0px red solid;
+  font-size: 20rpx;
+  height: 20rpx;
+  line-height: 5rpx;
+  color: rgba(74, 73, 78, 0.7);
+}
+
+.getRedPacketButton {
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-family: PingFang-SC-Bold;
+  font-size: 23rpx;
+  background: #FFFFFF;
+  color: #09BB07;
+  text-align: center;
+  border: 2rpx solid #09BB07;
+  border-radius: 12rpx;
+}
+
+.footer {
+  border: 0px red solid;
+  height: 106rpx;
+  line-height: 106rpx;
+  width: 100%;
+  background: #fff;
+}
+
+.addMore {
+  opacity: 0.4;
+  font-family: PingFangSC-Regular;
+  color: #9d9d9d;
+  letter-spacing: 0;
+  text-align: center;
+  /* margin-top: 30rpx; */
+}

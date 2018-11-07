@@ -12,7 +12,7 @@ Page({
                 "page": "my/oilStationAdd/index"
             },{
                 "id": "2",
-                "name": "红包记录",
+                "name": "红包提现",
                 "page": "my/redPacketHistory/index"
             },{
                 "id": "3",

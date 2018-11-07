@@ -32,7 +32,9 @@ var config = {
     getOilStationList: `${host}/oilStation/getOilStationList.do`,                           //根据附近获取附近加油站列表
     //我的
     getMoreOilModelTagList: `${host}/dic/getSimpleDicByCondition.do`,                       //获取更多的油品标签信息
-    feedBackUrl: `${host}/comments/addComments.do`                                          //意见反馈
+  feedBackUrl: `${host}/comments/addComments.do`,                                          //意见反馈
+  getRedPacketHistoryList: `${host}/redPacketHistory/getRedPacketHistoryList.do`,                       //获取历史红包列表                             
+  cashOilStationOperatorRedPacket: `${host}/oilStationOperator/cashOilStationOperatorRedPacket.do`               //领取或者提现加油站操作红包
 };
 
 module.exports = config;
