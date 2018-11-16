@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -91,6 +91,11 @@
 					"pathName": "pages/my/redPacketHistory/index",
 					"query": "",
 					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "红包活动详情查看",
+					"pathName": "pages/my/activity/redActivity/index"
 				}
 			]
 		}

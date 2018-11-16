@@ -43,6 +43,8 @@
       "pages": [
         "feedback/index",
         "redPacketHistory/index",
+        "activity/redActivity/index",
+        "activity/redActivity/redActivityRule/index",
         "howFind/index",
         "method/index",
         "aboutUs/index",

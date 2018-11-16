@@ -1,0 +1,37 @@
+<!--这里是活动细则页面  -->
+<view class="warp over">
+  <image class="head-image" src='/images/homePage.png'></image>
+  <view class='express-warp'>
+    <view class='express-content'>
+      <view class='express-time-all'>
+        <image class='three-play' src='/images/threePlay.png'>
+        </image>
+        <view class='end-time fz-32' wx:if="{{!distanceStart}}">
+          <text class="end-time-text {{(isStartActivity && !isEndActivity)? 'time-strat':'time-not-strat'}}">距离结束：</text>
+          <text class="time fz-40 {{(isStartActivity && !isEndActivity)? 'time-strat-day':'time-not-strat-day'}}">{{day}}</text>
+          <text class="time-text {{(isStartActivity && !isEndActivity) ? 'time-strat':'time-not-strat'}}">天</text>
+          <text class="time fz-40 {{(isStartActivity && !isEndActivity) ? 'time-strat-day':'time-not-strat-day'}}">{{hour}}</text>
+          <text class="time-text {{(isStartActivity && !isEndActivity)? 'time-strat':'time-not-strat'}}">时</text>
+          <text class="time fz-40 {{(isStartActivity && !isEndActivity) ? 'time-strat-day':'time-not-strat-day'}}">{{min}}</text>
+          <text class="time-text {{(isStartActivity && !isEndActivity)? 'time-strat':'time-not-strat'}}">分</text>
+          <text class=" fz-40 time {{(isStartActivity && !isEndActivity) ? 'time-strat-day':'time-not-strat-day'}}">{{ms}}</text>
+          <text class="time-text {{(isStartActivity && !isEndActivity) ? 'time-strat':'time-not-strat'}}">秒</text>
+        </view>
+        <view class='end-time fz-32' wx:if="{{distanceStart}}">
+          <text class="end-time-text time-strat">距离开始：</text>
+          <text class="time time-strat-day fz-40">{{day}}</text>
+          <text class="time-text time-strat">天</text>
+          <text class="time time-strat-day fz-40">{{hour}}</text>
+          <text class="time-text time-strat">时</text>
+          <text class="time time-strat-day fz-40">{{min}}</text>
+          <text class="time-text time-strat">分</text>
+          <text class="time time-strat-day fz-40">{{ms}}</text>
+          <text class="time-text time-strat">秒</text>
+        </view>
+        <navigator class='open-rule fz-28' hover-class="none" url="/pages/my/activity/redActivity/redActivityRule/index">
+          <text class='open-rule-text'>查看活动细则</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

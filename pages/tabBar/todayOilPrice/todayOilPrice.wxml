@@ -2,20 +2,31 @@
 <page>
   <view scroll-y class="priceView">
     <view>
-      <view class="todayOilPriceBackgroundView">
-        <image class="todayOilPriceBackgroundImg" 
-            src='/images/todayOilPriceBackground.png'></image>
-      </view>
+      <!-- 背景栏和广告页 -->
+      <swiper indicator-dots="false" autoplay="true" interval="2000" duration="500" style='height: 208px;border: 0px red solid;'>
+        <swiper-item>
+          <view style='display: block;height: 250px;'>
+            <view class="todayOilPriceBackgroundView">
+              <image class="todayOilPriceBackgroundImg" src='/images/todayOilPriceBackground.png'></image>
+            </view>
+          </view>
+        </swiper-item>
+        <swiper-item  wx:if="{{redActivityFlag}}">
+          <view style='display: block;height: 250px;'>
+            <view class="redActivityImageView"  bindtap='checkRedActivity'>
+              <image class='redActivityImage' src='/images/redActivity.png'></image>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
       <!-- 成品油列表 -->
       <view class='oilIntroduce'>
         <view class="oilView">
-          <image class="oilStationImg" 
-          src='/images/oilStation_green.png'></image>
+          <image class="oilStationImg" src='/images/oilStation_green.png'></image>
           <text class="oilStation">{{oilStationName}}</text>
         </view>
         <view class="mapView" bindtap='findOilStationInMap'>
-          <image class="mapPositionImg" src='/images/mapPosition.png' 
-          ></image>
+          <image class="mapPositionImg" src='/images/mapPosition.png'></image>
           <text class="ortherStation">附近加油站</text>
         </view>
       </view>
@@ -30,18 +41,17 @@
           <view class="oilPriceUnitView">
             <text class="oilPriceLabel">{{item.oilPriceLabel}}</text>
             <text class="oilPriceUnitLabel">(元/升)</text>
-          </view> 
+          </view>
         </view>
         <!-- 纠正油价 -->
         <view class="updateOilStationItemView" type="primary" bindtap='updateOilStation'>
-            <image class="updateOilStationImg" src='/images/updateOilStationImg.png'></image>
-            <text class="updateOilStation">纠正油价</text>
+          <image class="updateOilStationImg" src='/images/updateOilStationImg.png'></image>
+          <text class="updateOilStation">纠正油价</text>
         </view>
       </scroll-view>
       <!-- 分享 -->
       <view class="shareView">
-        <button type="primary" plain="true" class="shareButton" bindtap="shareOilPrice" 
-        open-type="share">分享给我的好友</button>
+        <button type="primary" plain="true" class="shareButton" bindtap="shareOilPrice" open-type="share">分享给我的好友</button>
       </view>
     </view>
   </view>

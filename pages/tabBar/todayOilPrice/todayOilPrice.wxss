@@ -10,7 +10,15 @@
 .todayOilPriceBackgroundImg{
   border: 0px red solid;
   width: 100%;
-   height: 200px; 
+  height: 200px; 
+}
+.redActivityImageView{
+  border: 0px red solid;
+}
+.redActivityImage{
+  border: 0px red solid;
+  width: 100%;
+  height: 200px; 
 }
 .oilIntroduce{
   border: 0px red solid;
