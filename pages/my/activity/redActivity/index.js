@@ -45,7 +45,7 @@ Page({
     if (!util.isNull(startTime) && !util.isNull(endTime)) {
       startTime = new Date(startTime);
       endTime = new Date(endTime);
-      if (currentTime >= startTime && startTime <= endTime) {
+      if (currentTime >= startTime && currentTime <= endTime) {
         redActivityFlag = true;
         var leftTime = endTime.getTime() - currentTime.getTime();
         if (leftTime && leftTime >= 0) {
