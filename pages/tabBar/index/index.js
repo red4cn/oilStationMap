@@ -86,7 +86,7 @@ Page({
                     success: function (res) {
                         wx.hideLoading();         //关闭进度条
                         if (res.data.code != 0) {
-                            util.toast(res.data.message);
+                            util.toast("您所处的位置没有加油站，先打赏一点开发小哥哥吧。");
                             return;
                         }
                         var isShowPaymentCodeImglist = false;
