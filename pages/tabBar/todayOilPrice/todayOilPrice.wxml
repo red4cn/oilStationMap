@@ -11,9 +11,9 @@
             </view>
           </view>
         </swiper-item>
-        <swiper-item  wx:if="{{redActivityFlag}}">
+        <swiper-item wx:if="{{redActivityFlag}}">
           <view style='display: block;height: 250px;'>
-            <view class="redActivityImageView"  bindtap='checkRedActivity'>
+            <view class="redActivityImageView" bindtap='checkRedActivity'>
               <image class='redActivityImage' src='/images/redActivity.png'></image>
             </view>
           </view>
@@ -49,6 +49,10 @@
           <text class="updateOilStation">纠正油价</text>
         </view>
       </scroll-view>
+      <!-- 悬浮点 -->
+      <view class='informationView'>
+        <image class='informationImg' bindtap='checkInformationPage' src="/images/information.png"></image>
+      </view>
       <!-- 分享 -->
       <view class="shareView">
         <button type="primary" plain="true" class="shareButton" bindtap="shareOilPrice" open-type="share">分享给我的好友</button>

@@ -11,7 +11,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    return;
+    // return;
     var that = this;
     var materialDetailUrl = "https://www.91caihongwang.com/oilStationMap/payment.html";
     if (options.materialDetailUrl) {

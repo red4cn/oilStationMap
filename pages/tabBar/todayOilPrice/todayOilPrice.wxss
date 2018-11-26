@@ -217,6 +217,21 @@
   font-weight: bolder;
   margin-left: -10rpx;
 }
+.informationView{
+  position: absolute;
+  height: 200rpx;
+  width: 80rpx;
+  right: 15rpx;
+  bottom: 200rpx;
+  z-index: 2;
+  align-items: right;
+  /* background-color: #35d75d; */
+  border-radius: 50%;
+}
+.informationImg{
+  height: 200rpx;
+  width: 80rpx;
+}
 .shareView{
   border: 0px red solid;
   display: flex;

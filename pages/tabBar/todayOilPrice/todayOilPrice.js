@@ -136,13 +136,20 @@ Page({
     console.log("开始纠正油价");
     wx.navigateTo({
       url: "../../other/oilStationAdd/index?isShowCurrentOilStationFlag=true&title=纠正油价&returnPageUrl=/pages/tabBar/todayOilPrice/todayOilPrice"
-    });
+    }); 
   },
   //查看红包活动
-  checkRedActivity: function() {
+  checkRedActivity: function () {
     console.log("查看红包活动");
     wx.navigateTo({
       url: "../../other/activity/redActivity/index"
+    });
+  },
+  //查看 资讯 页面
+  checkInformationPage: function () {
+    console.log("查看 资讯 页面");
+    wx.navigateTo({
+      url: "../../other/information/wxPublicNumberInformation/index"
     });
   }
 
