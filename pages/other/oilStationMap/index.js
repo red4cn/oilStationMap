@@ -305,7 +305,7 @@ Page({
     updateOilStation: function () {
       console.log("开始纠正油价");
       wx.navigateTo({
-        url: "../../my/oilStationAdd/index?isShowCurrentOilStationFlag=true&title=纠正油价"
+        url: "../../other/oilStationAdd/index?isShowCurrentOilStationFlag=true&title=纠正油价&returnPageUrl=../oilStationMap/index"
       });
     },
     bindregionchangeFunc: function (e) {             //视野发生移动变化时触发

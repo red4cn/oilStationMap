@@ -39,7 +39,7 @@
   },
   "subPackages": [
     {
-      "root": "pages/my/",
+      "root": "pages/other/",
       "pages": [
         "feedback/index",
         "redPacketHistory/index",
@@ -50,12 +50,9 @@
         "aboutUs/index",
         "oilStationAdd/index",
         "moreOilModelTag/index",
-        "privacy/index"
-      ]
-    },
-    {
-      "root": "pages/todayOilPrice/",
-      "pages": [
+        "privacy/index",
+        "information/wxPublicNumberInformation/index",
+        "information/wxPublicNumberInformation/informationDetails/index",
         "oilStationMap/index"
       ]
     }

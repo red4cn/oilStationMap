@@ -1,10 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d01b97a-4b4c-48de-b2bb-39a35751b92b" name="Default" comment="优化 红包活动">
+    <list default="true" id="7d01b97a-4b4c-48de-b2bb-39a35751b92b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/aboutUs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/aboutUs/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/aboutUs/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/aboutUs/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/activity/redActivity/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/activity/redActivity/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/activity/redActivity/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/activity/redActivity/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/activity/redActivity/redActivityRule/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/activity/redActivity/redActivityRule/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/activity/redActivity/redActivityRule/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/activity/redActivity/redActivityRule/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/feedback/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/feedback/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/feedback/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/feedback/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/howFind/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/howFind/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/howFind/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/howFind/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/method/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/method/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/method/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/method/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/moreOilModelTag/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/moreOilModelTag/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/moreOilModelTag/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/moreOilModelTag/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/oilStationAdd/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/oilStationAdd/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/oilStationAdd/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/oilStationAdd/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/privacy/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/privacy/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/privacy/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/privacy/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/redPacketHistory/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/redPacketHistory/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/redPacketHistory/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/my/redPacketHistory/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.wxss" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.js" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" afterPath="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/my/my.js" afterPath="$PROJECT_DIR$/pages/tabBar/my/my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.js" afterPath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.config.json" afterPath="$PROJECT_DIR$/project.config.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,129 +78,30 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="130" column="41" lean-forward="true" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+            <state relative-caret-position="3770">
+              <caret line="130" column="41" lean-forward="false" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
               <folding>
-                <marker date="1542694091475" expanded="true" signature="182:23557" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="2002:6842" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="2052:6834" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="2152:6688" ph="{...}" />
                 <marker date="1542694091475" expanded="true" signature="3293:3357" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="3293:6376" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="3293:6672" ph="{&quot;params&quot;: params...}" />
-                <marker date="1542694091475" expanded="true" signature="4192:5764" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="5438:5630" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="5636:5738" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="6004:6352" ph="{&quot;paymentCodeWebPageUrl&quot;: that.data.paymentCodeWebPageUrl...}" />
-                <marker date="1542694091475" expanded="true" signature="6416:6654" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="6720:6824" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="6899:7293" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="6953:7285" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="7123:7183" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="7215:7275" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="7336:7734" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="7390:7726" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="7564:7624" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="7656:7716" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="7779:9459" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="7788:7849" ph="//..." />
-                <marker date="1542694091475" expanded="true" signature="8417:8541" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="8624:8753" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="9178:9451" ph="{&quot;oilStationName&quot;: that.data.oilStationName...}" />
-                <marker date="1542694091475" expanded="true" signature="9496:9635" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="9575:9627" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="9675:9750" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="9698:9742" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="9789:16025" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10047:10109" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10115:16019" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10164:10248" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10254:16009" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10367:10736" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10435:10511" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10560:10636" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10642:10718" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10742:15995" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="10777:10845" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="11181:11265" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-                <marker date="1542694091475" expanded="true" signature="11370:15975" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="11420:15953" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="11570:15925" ph="{&quot;params&quot;: params...}" />
-                <marker date="1542694091475" expanded="true" signature="11760:15078" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="11822:14685" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="12453:14645" ph="{&quot;params&quot;: params...}" />
-                <marker date="1542694091475" expanded="true" signature="12676:13724" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="12878:13018" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-                <marker date="1542694091475" expanded="true" signature="13093:13247" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="13253:13678" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="13345:13626" ph="{&quot;title&quot;: '提示'...}" />
-                <marker date="1542694091475" expanded="true" signature="13791:14204" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="13934:14074" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-                <marker date="1542694091475" expanded="true" signature="14272:14603" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="14415:14555" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-                <marker date="1542694091475" expanded="true" signature="14691:15044" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="14771:15004" ph="{&quot;title&quot;: '提示'...}" />
-                <marker date="1542694091475" expanded="true" signature="15133:15521" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="15299:15415" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-                <marker date="1542694091475" expanded="true" signature="15577:15895" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="15743:15859" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-                <marker date="1542694091475" expanded="true" signature="16067:18060" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="16076:16118" ph="//..." />
-                <marker date="1542694091475" expanded="true" signature="16145:18052" ph="{&quot;timeStamp&quot;: param.data.timeStamp...}" />
-                <marker date="1542694091475" expanded="true" signature="16466:17619" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="16497:17603" ph="{&quot;title&quot;: '支付成功'...}" />
-                <marker date="1542694091475" expanded="true" signature="16669:17585" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="16856:17065" ph="//..." />
-                <marker date="1542694091475" expanded="true" signature="17233:17561" ph="{&quot;params&quot;: templateMessageParam...}" />
-                <marker date="1542694091475" expanded="true" signature="17420:17452" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="17503:17535" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="17656:17917" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="17772:17901" ph="{&quot;title&quot;: '提示'...}" />
-                <marker date="1542694091475" expanded="true" signature="17953:18042" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="18146:19422" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="18272:19414" ph="{&quot;src&quot;: paymentImageUrl...}" />
-                <marker date="1542694091475" expanded="true" signature="18344:19272" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="18637:19256" ph="{&quot;filePath&quot;: paymentImagePath...}" />
-                <marker date="1542694091475" expanded="true" signature="18796:19034" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="19077:19238" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="19307:19404" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="19520:23246" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="19568:23238" ph="{&quot;title&quot;: '温馨提示'...}" />
-                <marker date="1542694091475" expanded="true" signature="19713:23228" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="19746:23212" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="19792:23063" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="19832:19882" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="19884:19925" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="20133:22906" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="20205:22878" ph="{&quot;filePath&quot;: paymentImagePath...}" />
-                <marker date="1542694091475" expanded="true" signature="20388:20686" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="20741:22848" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="20935:20997" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="20999:21052" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="21257:21686" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="21299:21552" ph="//..." />
-                <marker date="1542694091475" expanded="true" signature="21692:22744" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="21760:22704" ph="{&quot;filePath&quot;: paymentImagePath...}" />
-                <marker date="1542694091475" expanded="true" signature="21967:22662" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="22017:22302" ph="//..." />
-                <marker date="1542694091475" expanded="true" signature="22912:23041" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="23103:23126" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="23170:23194" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="23279:23442" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="23326:23435" ph="{&quot;clickName&quot;: ''...}" />
-                <marker date="1542694091475" expanded="true" signature="23475:23482" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="23515:23522" ph="{...}" />
-                <marker date="1542694091475" expanded="true" signature="23548:23555" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.wxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.wxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="538">
+              <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/other/oilStationAdd/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -221,6 +169,7 @@
         <option value="$PROJECT_DIR$/pages/todayOilPrice/oilStationMap/index.js" />
         <option value="$PROJECT_DIR$/utils/util.js" />
         <option value="$PROJECT_DIR$/pages/tabBar/index/index.js" />
+        <option value="$PROJECT_DIR$/pages/other/oilStationAdd/index.js" />
       </list>
     </option>
   </component>
@@ -254,9 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,7 +243,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tabBar" />
+              <option name="myItemId" value="other" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,16 +261,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tabBar" />
+              <option name="myItemId" value="other" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
+              <option name="myItemId" value="oilStationAdd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -915,7 +864,8 @@
       <workItem from="1541634204492" duration="129000" />
       <workItem from="1542193638886" duration="598000" />
       <workItem from="1542369204065" duration="151000" />
-      <workItem from="1542680810905" duration="1659000" />
+      <workItem from="1542680810905" duration="2303000" />
+      <workItem from="1543146978510" duration="2046000" />
     </task>
     <task id="LOCAL-00001" summary="优化名称">
       <created>1526697917560</created>
@@ -1113,11 +1063,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542693718616</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="优化 付款页面">
+      <created>1542694147913</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1542694147913</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66733000" />
+    <option name="totallyTimeSpent" value="69423000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1129,7 +1086,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-590" width="1920" height="1080" extended-state="0" />
+    <frame x="1440" y="-590" width="1920" height="1080" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1145,9 +1102,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10596379" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10702875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1163,6 +1119,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1240,7 +1197,8 @@
     <MESSAGE value="添加 红包记录 入口" />
     <MESSAGE value="优化 红包记录" />
     <MESSAGE value="优化 红包活动" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化 红包活动" />
+    <MESSAGE value="优化 付款页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化 付款页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1251,13 +1209,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
@@ -1564,7 +1515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-697">
           <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1572,7 +1522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1580,7 +1529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1588,133 +1536,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="130" column="41" lean-forward="true" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+        <state relative-caret-position="3770">
+          <caret line="130" column="41" lean-forward="false" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
           <folding>
-            <marker date="1542694091475" expanded="true" signature="182:23557" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="2002:6842" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="2052:6834" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="2152:6688" ph="{...}" />
             <marker date="1542694091475" expanded="true" signature="3293:3357" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="3293:6376" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="3293:6672" ph="{&quot;params&quot;: params...}" />
-            <marker date="1542694091475" expanded="true" signature="4192:5764" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="5438:5630" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="5636:5738" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="6004:6352" ph="{&quot;paymentCodeWebPageUrl&quot;: that.data.paymentCodeWebPageUrl...}" />
-            <marker date="1542694091475" expanded="true" signature="6416:6654" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="6720:6824" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="6899:7293" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="6953:7285" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="7123:7183" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="7215:7275" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="7336:7734" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="7390:7726" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="7564:7624" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="7656:7716" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="7779:9459" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="7788:7849" ph="//..." />
-            <marker date="1542694091475" expanded="true" signature="8417:8541" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="8624:8753" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="9178:9451" ph="{&quot;oilStationName&quot;: that.data.oilStationName...}" />
-            <marker date="1542694091475" expanded="true" signature="9496:9635" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="9575:9627" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="9675:9750" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="9698:9742" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="9789:16025" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10047:10109" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10115:16019" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10164:10248" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10254:16009" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10367:10736" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10435:10511" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10560:10636" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10642:10718" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10742:15995" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="10777:10845" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="11181:11265" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-            <marker date="1542694091475" expanded="true" signature="11370:15975" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="11420:15953" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="11570:15925" ph="{&quot;params&quot;: params...}" />
-            <marker date="1542694091475" expanded="true" signature="11760:15078" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="11822:14685" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="12453:14645" ph="{&quot;params&quot;: params...}" />
-            <marker date="1542694091475" expanded="true" signature="12676:13724" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="12878:13018" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-            <marker date="1542694091475" expanded="true" signature="13093:13247" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="13253:13678" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="13345:13626" ph="{&quot;title&quot;: '提示'...}" />
-            <marker date="1542694091475" expanded="true" signature="13791:14204" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="13934:14074" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-            <marker date="1542694091475" expanded="true" signature="14272:14603" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="14415:14555" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-            <marker date="1542694091475" expanded="true" signature="14691:15044" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="14771:15004" ph="{&quot;title&quot;: '提示'...}" />
-            <marker date="1542694091475" expanded="true" signature="15133:15521" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="15299:15415" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-            <marker date="1542694091475" expanded="true" signature="15577:15895" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="15743:15859" ph="{&quot;isShowPaying&quot;: that.data.isShowPaying...}" />
-            <marker date="1542694091475" expanded="true" signature="16067:18060" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="16076:16118" ph="//..." />
-            <marker date="1542694091475" expanded="true" signature="16145:18052" ph="{&quot;timeStamp&quot;: param.data.timeStamp...}" />
-            <marker date="1542694091475" expanded="true" signature="16466:17619" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="16497:17603" ph="{&quot;title&quot;: '支付成功'...}" />
-            <marker date="1542694091475" expanded="true" signature="16669:17585" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="16856:17065" ph="//..." />
-            <marker date="1542694091475" expanded="true" signature="17233:17561" ph="{&quot;params&quot;: templateMessageParam...}" />
-            <marker date="1542694091475" expanded="true" signature="17420:17452" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="17503:17535" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="17656:17917" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="17772:17901" ph="{&quot;title&quot;: '提示'...}" />
-            <marker date="1542694091475" expanded="true" signature="17953:18042" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="18146:19422" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="18272:19414" ph="{&quot;src&quot;: paymentImageUrl...}" />
-            <marker date="1542694091475" expanded="true" signature="18344:19272" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="18637:19256" ph="{&quot;filePath&quot;: paymentImagePath...}" />
-            <marker date="1542694091475" expanded="true" signature="18796:19034" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="19077:19238" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="19307:19404" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="19520:23246" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="19568:23238" ph="{&quot;title&quot;: '温馨提示'...}" />
-            <marker date="1542694091475" expanded="true" signature="19713:23228" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="19746:23212" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="19792:23063" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="19832:19882" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="19884:19925" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="20133:22906" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="20205:22878" ph="{&quot;filePath&quot;: paymentImagePath...}" />
-            <marker date="1542694091475" expanded="true" signature="20388:20686" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="20741:22848" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="20935:20997" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="20999:21052" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="21257:21686" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="21299:21552" ph="//..." />
-            <marker date="1542694091475" expanded="true" signature="21692:22744" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="21760:22704" ph="{&quot;filePath&quot;: paymentImagePath...}" />
-            <marker date="1542694091475" expanded="true" signature="21967:22662" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="22017:22302" ph="//..." />
-            <marker date="1542694091475" expanded="true" signature="22912:23041" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="23103:23126" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="23170:23194" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="23279:23442" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="23326:23435" ph="{&quot;clickName&quot;: ''...}" />
-            <marker date="1542694091475" expanded="true" signature="23475:23482" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="23515:23522" ph="{...}" />
-            <marker date="1542694091475" expanded="true" signature="23548:23555" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="538">
+          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/other/oilStationAdd/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -6,7 +6,7 @@ var requestUrl = require('../../../config.js');
 var app = getApp();
 Page({
   data: {
-    //我使用的
+    returnPageUrl: "/pages/tabBar/todayOilPrice/todayOilPrice", //添加或者纠正油价后的返回地址
     currentLongitude: 0, //当前位置的经度
     currentLatitude: 0, //当前位置的纬度
     oilStationMapAdress: "",
@@ -77,6 +77,13 @@ Page({
   },
   onLoad: function(options) {
     var that = this;
+    var addOilModelTags = [];
+    var returnPageUrl = options.returnPageUrl;
+    this.setData({
+      returnPageUrl: returnPageUrl
+    });
+    console.log(options);
+    console.log("returnPageUrl = " + returnPageUrl);
     if (options.isShowCurrentOilStationFlag) {
       //根据当前查看的加油站信息进行整合参数
       var currentShowOilStation = wx.getStorageSync("showCurrentOilStation");
@@ -102,40 +109,75 @@ Page({
       });
       console.log(that.data.oilStation);
       console.log("oilStationPrice = " + oilStationPrice);
-      var addOilModelTags = [];
       for (var item in oilStationPriceList) {
-        var key = oilStationPriceList[item].oilModelLabel + "#" + oilStationPriceList[item].oilNameLabel;
+        // var key = oilStationPriceList[item].oilModelLabel + "#" + oilStationPriceList[item].oilNameLabel;
+        var key = oilStationPriceList[item].oilModelLabel;
         var value = oilStationPriceList[item].oilPriceLabel;
         var obj = {};
-        // console.log("key = " + key + " , value = " + value);
+        console.log("key = " + key + " , value = " + value);
+        console.log(oilStationPriceList[item]);
         if (key == "0") { //0#柴油 初始化
+          //初始化 data 中的值
+          var price = {};
+          price.oilModelLabel = "0";
+          price.oilNameLabel = "柴油";
+          price.oilPriceLabel = value;
+          that.data.oilStation.oilStationPrice.modelOil_0 = price;
           that.setData({
-            modelOil_0_value: value
+            modelOil_0_value: value,
+            oilStation: that.data.oilStation
           });
         } else if (key == "92") { //92#汽油 初始化
+          //初始化 data 中的值
+          var price = {};
+          price.oilModelLabel = "92";
+          price.oilNameLabel = "汽油";
+          price.oilPriceLabel = value;
+          that.data.oilStation.oilStationPrice.modelOil_92 = price;
           that.setData({
-            modelOil_92_value: value
+            modelOil_92_value: value,
+            oilStation: that.data.oilStation
           });
-        } else if (key == "95") { //92#汽油 初始化
+        } else if (key == "95") { //95#汽油 初始化
+          //初始化 data 中的值
+          var price = {};
+          price.oilModelLabel = "95";
+          price.oilNameLabel = "汽油";
+          price.oilPriceLabel = value;
+          that.data.oilStation.oilStationPrice.modelOil_95 = price;
           that.setData({
-            modelOil_95_value: value
+            modelOil_95_value: value,
+            oilStation: that.data.oilStation
           });
-        } else if (key == "97") { //92#汽油 初始化
+        } else if (key == "97") { //97#汽油 初始化
+          //初始化 data 中的值
+          var price = {};
+          price.oilModelLabel = "97";
+          price.oilNameLabel = "汽油";
+          price.oilPriceLabel = value;
+          that.data.oilStation.oilStationPrice.modelOil_97 = price;
           that.setData({
-            modelOil_97_value: value
+            modelOil_97_value: value,
+            oilStation: that.data.oilStation
           });
         } else {
+          key = oilStationPriceList[item].oilModelLabel + "#" + oilStationPriceList[item].oilNameLabel;
           obj.dicName = key;
           obj.dicValue = value;
           obj.isChecked = false;
           obj.isCanClick = false;
-          obj.name1 = key;
+          obj.name1 = key + "_cai_1";
           addOilModelTags.push(obj);
         }
       }
+      console.log("============addOilModelTags=============");
+      console.log(addOilModelTags);
+      console.log(" 开始设置返回页面 returnPageUrl = " + returnPageUrl);
       this.setData({
         addOilModelTags: addOilModelTags
       });
+      console.log("============this.data.addOilModelTags=============");
+      console.log(this.data.addOilModelTags);
       //修改标题，变为:纠正油价
       wx.setNavigationBarTitle({
         title: options.title
@@ -145,6 +187,7 @@ Page({
   },
   onShow: function() {
     var that = this;
+    var addOilModelTags = that.data.addOilModelTags;
     if (!util.isNull(that.data.oilStation.oilStationLon) &&
       !util.isNull(that.data.oilStation.oilStationLat)) {
       console.log("通过修改数据获取经纬度坐标");
@@ -166,13 +209,19 @@ Page({
       });
     }
     //对在更多信息中的油品标签进行初始化
-    if (that.data.addOilModelTags && that.data.addOilModelTags.length != 0) {
+    // if (that.data.addOilModelTags && that.data.addOilModelTags.length != 0) {
 
-    } else if (app.globalData.addMoreMes) {
-      this.setData({
-        addOilModelTags: app.globalData.addMoreMes
-      });
+    // } else if (app.globalData.addMoreMes) {
+    //   this.setData({
+    //     addOilModelTags: app.globalData.addMoreMes
+    //   });
+    // }
+    for (var key in app.globalData.addMoreMes) {
+      addOilModelTags.push(app.globalData.addMoreMes[key]);
     }
+    this.setData({
+      addOilModelTags: addOilModelTags
+    });
     that.isShowCanSave(that);
   },
   showToast: function(value) { //提示添加错误信息
@@ -259,7 +308,7 @@ Page({
     });
   },
   //加油站地址-输入框
-  oilStationAdressInput: function() {                    //获得焦点是触发
+  oilStationAdressInput: function() { //获得焦点是触发
     console.log("油站地址 获得焦点  正在选择地址");
     this.setData({
       oilStationAdress: ''
@@ -277,7 +326,7 @@ Page({
           oilStationAdress_value: that.data.oilStationAdress_value
         });
       },
-      complete: function(){
+      complete: function() {
         that.setData({
           oilStationAdress: "请输入当前加油站【地址】"
         });
@@ -299,6 +348,8 @@ Page({
     oilStationPrice.oilModelLabel = "0";
     oilStationPrice.oilNameLabel = "柴油";
     oilStationPrice.oilPriceLabel = e.detail.value;
+    console.log("0号柴油");
+    console.log(oilStationPrice);
     if (oilStationPrice.oilPriceLabel != "" && oilStationPrice.oilPriceLabel != null) {
       that.data.oilStation.oilStationPrice.modelOil_0 = oilStationPrice;
       that.setData({
@@ -451,7 +502,7 @@ Page({
     }
     var eidtOilModelTags = JSON.stringify(this.data.eidtOilModelTags);
     wx.navigateTo({
-      url: '/pages/my/moreOilModelTag/index?eidtOilModelTags=' + eidtOilModelTags
+      url: '/pages/other/moreOilModelTag/index?eidtOilModelTags=' + eidtOilModelTags
     });
   },
   isShowCanSave: function(that) { //是否设置保存按钮是否可点击
@@ -479,22 +530,45 @@ Page({
     for (var iterm in formValueList) {
       var oilStationPrice = {};
       var value = formValueList[iterm];
+      //手机更多标签出来的数据
       if (!util.isNull(iterm) && !util.isNull(value) &&
         iterm != "oilStationName" && iterm != "oilStationAdress"
       ) {
-        var itermArr = iterm.split("#");
-        if (itermArr.length >= 2) {
-          oilStationPrice.oilModelLabel = itermArr[0];
-          oilStationPrice.oilNameLabel = itermArr[1];
+        console.log("iterm = " + iterm);
+        if (iterm == "modelOil_0") {
+          oilStationPriceArr.push(that.data.oilStation.oilStationPrice.modelOil_0);
+          continue;
+        } else if (iterm == "modelOil_92") {
+          oilStationPriceArr.push(that.data.oilStation.oilStationPrice.modelOil_92);
+          continue;
+        } else if (iterm == "modelOil_95") {
+          oilStationPriceArr.push(that.data.oilStation.oilStationPrice.modelOil_95);
+          continue;
+        } else if (iterm == "modelOil_97") {
+          oilStationPriceArr.push(that.data.oilStation.oilStationPrice.modelOil_97);
+          continue;
         } else {
-          oilStationPrice.oilModelLabel = itermArr[0];
-          oilStationPrice.oilNameLabel = "待定";
+          console.log("=========================iterm=========================");
+          console.log(iterm);
+          var itermStrArr = iterm.split("_chw_");
+          if (itermStrArr .length >= 2){
+            var itermArr = itermStrArr[0].split("#");
+            console.log("=========================itermArr=========================");
+            console.log(itermArr);
+            if (itermArr.length >= 2) {
+              oilStationPrice.oilModelLabel = itermArr[0];
+              oilStationPrice.oilNameLabel = itermArr[1];
+            } else {
+              oilStationPrice.oilModelLabel = itermArr[0];
+              oilStationPrice.oilNameLabel = "待定";
+            }
+            oilStationPrice.oilPriceLabel = value;
+            oilStationPriceArr.push(oilStationPrice);
+          }
         }
-        oilStationPrice.oilPriceLabel = value;
-        oilStationPriceArr.push(oilStationPrice);
       }
     }
-    console.log("===================oilStationPriceArr=======================");
+    console.log("收集固定油价的信息");
     console.log(oilStationPriceArr);
     if (that.data.oilStation.oilStationName.length == 0 || that.data.oilStation.oilStationName.length == 1) {
       that.showToast('请输入您的加油站名称');
@@ -527,11 +601,20 @@ Page({
           console.log("res.data.code = " + res.data.code);
           console.log("res.data.code == 0");
           console.log(res.data.code == 0);
+          console.log("准备返回页面路径 this.data.returnPageUrl = " + that.data.returnPageUrl);
           //发送模板消息
           if (res.data.code == 0) {
-            wx.switchTab({ //不管是否发送模板消息成功，都不能影响正常操作
-              url: "/pages/tabBar/my/my"
-            });
+            if (that.data.returnPageUrl == "/pages/tabBar/todayOilPrice/todayOilPrice") {
+              wx.switchTab({ //不管是否发送模板消息成功，都不能影响正常操作
+                url: that.data.returnPageUrl
+              });
+            } else if (that.data.returnPageUrl == "/pages/tabBar/my/my") {
+              wx.switchTab({ //不管是否发送模板消息成功，都不能影响正常操作
+                url: that.data.returnPageUrl
+              });
+            } else {
+              wx.navigateBack({});
+            }
           } else if (res.data.code == 130003 || res.data.code == 10009) {
             wx.navigateBack({});
           } else {

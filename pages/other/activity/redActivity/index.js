@@ -162,7 +162,7 @@ Page({
   checkRedActivityRule: function () {
     console.log("查看红包活动");
     wx.navigateTo({
-      url: "../../my/activity/redActivity/redActivityRule/index"
+      url: "../../other/activity/redActivity/redActivityRule/index"
     });
   }
 })

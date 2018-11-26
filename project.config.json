@@ -1,7 +1,7 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -47,9 +47,9 @@
 					"scene": "1011"
 				},
 				{
-					"id": -1,
+					"id": 2,
 					"name": "寻找附近加油站",
-					"pathName": "pages/todayOilPrice/oilStationMap/index",
+					"pathName": "pages/other/oilStationMap/index",
 					"query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
 					"scene": "1011"
 				},
@@ -63,39 +63,47 @@
 				{
 					"id": -1,
 					"name": "关于我们",
-					"pathName": "pages/my/aboutUs/index",
+					"pathName": "pages/other/aboutUs/index",
 					"query": ""
 				},
 				{
 					"id": -1,
 					"name": "隐私声明",
-					"pathName": "pages/my/privacy/index",
+					"pathName": "pages/other/privacy/index",
 					"query": ""
 				},
 				{
 					"id": 6,
 					"name": "添加油价",
-					"pathName": "pages/my/oilStationAdd/index",
+					"pathName": "pages/other/oilStationAdd/index",
 					"query": "",
 					"scene": "1011"
 				},
 				{
 					"id": -1,
 					"name": "添加更多油品型号标签",
-					"pathName": "pages/my/moreOilModelTag/index",
+					"pathName": "pages/other/moreOilModelTag/index",
 					"query": ""
 				},
 				{
 					"id": -1,
 					"name": "红包提现",
-					"pathName": "pages/my/redPacketHistory/index",
+					"pathName": "pages/other/redPacketHistory/index",
 					"query": "",
 					"scene": "1011"
 				},
 				{
 					"id": -1,
 					"name": "红包活动详情查看",
-					"pathName": "pages/my/activity/redActivity/index"
+					"pathName": "pages/other/activity/redActivity/index",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "资讯列表",
+					"pathName": "pages/other/information/wxPublicNumberInformation/index",
+					"query": "",
+					"scene": "1011"
 				}
 			]
 		}

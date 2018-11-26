@@ -35,7 +35,8 @@ var config = {
   getMoreOilModelTagList: `${host}/dic/getSimpleDicByCondition.do`, //获取更多的油品标签信息
   feedBackUrl: `${host}/comments/addComments.do`, //意见反馈
   getRedPacketHistoryList: `${host}/redPacketHistory/getRedPacketHistoryList.do`, //获取历史红包列表                             
-  cashOilStationOperatorRedPacket: `${host}/oilStationOperator/cashOilStationOperatorRedPacket.do` //领取或者提现加油站操作红包
+  cashOilStationOperatorRedPacket: `${host}/oilStationOperator/cashOilStationOperatorRedPacket.do`, //领取或者提现加油站操作红包
+  batchGetMaterial: `${host}/wx_SourceMaterial/batchGetMaterial.do` //获取微信公众号素材列表
 };
 
 module.exports = config;

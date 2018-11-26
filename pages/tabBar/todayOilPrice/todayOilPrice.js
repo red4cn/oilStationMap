@@ -101,7 +101,7 @@ Page({
             //本地存储,活动的开始时间和结束时间
             wx.setStorageSync("redActivityStartTime", startTime);
             wx.setStorageSync("redActivityEndTime", endTime);
-            if (currentTime >= startTime && startTime <= endTime){
+            if (currentTime >= startTime && startTime <= endTime) {
               redActivityFlag = true;
             } else {
               redActivityFlag = false;
@@ -123,7 +123,7 @@ Page({
   findOilStationInMap: function() {
     console.log("开始准备跳转地图...");
     wx.navigateTo({
-      url: "../../todayOilPrice/oilStationMap/index?show=123456789"
+      url: "../../other/oilStationMap/index"
     });
   },
   //下拉刷新获取最新数据
@@ -135,14 +135,14 @@ Page({
   updateOilStation: function() {
     console.log("开始纠正油价");
     wx.navigateTo({
-      url: "../../my/oilStationAdd/index?isShowCurrentOilStationFlag=true&title=纠正油价"
+      url: "../../other/oilStationAdd/index?isShowCurrentOilStationFlag=true&title=纠正油价&returnPageUrl=/pages/tabBar/todayOilPrice/todayOilPrice"
     });
   },
   //查看红包活动
   checkRedActivity: function() {
     console.log("查看红包活动");
     wx.navigateTo({
-      url: "../../my/activity/redActivity/index"
+      url: "../../other/activity/redActivity/index"
     });
   }
 

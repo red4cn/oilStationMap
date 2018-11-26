@@ -28,7 +28,7 @@
           <text class="time time-strat-day fz-40">{{ms}}</text>
           <text class="time-text time-strat">秒</text>
         </view>
-        <navigator class='open-rule fz-28' hover-class="none" url="/pages/my/activity/redActivity/redActivityRule/index">
+        <navigator class='open-rule fz-28' hover-class="none" url="/pages/other/activity/redActivity/redActivityRule/index">
           <text class='open-rule-text'>查看活动细则</text>
         </navigator>
       </view>

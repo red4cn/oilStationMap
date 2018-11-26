@@ -155,7 +155,7 @@ Page({
               wx.setStorageSync("redActivityFlag", redActivityFlag);
               //跳转到红包详情，说明红包活动已结束
               wx.redirectTo({
-                url: "../../my/activity/redActivity/index"
+                url: "../../other/activity/redActivity/index"
               });
             }
           }
@@ -166,7 +166,7 @@ Page({
         util.toast("不好意思，您的网络出了一会小差...");
         //跳转到红包详情，说明红包活动已结束
         wx.redirectTo({
-          url: "../../../my/activity/redActivity/redActivityRule/index"
+          url: "../../../other/activity/redActivity/redActivityRule/index"
         });
       }
     });
