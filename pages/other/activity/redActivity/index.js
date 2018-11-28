@@ -112,7 +112,7 @@ Page({
             //本地存储,活动的开始时间和结束时间
             wx.setStorageSync("redActivityStartTime", startTime);
             wx.setStorageSync("redActivityEndTime", endTime);
-            if (currentTime >= startTime && startTime <= endTime) {
+            if (currentTime >= startTime && currentTime <= endTime) {
               redActivityFlag = true;
               var leftTime = endTime.getTime() - currentTime.getTime();
               if (leftTime && leftTime >= 0) {
