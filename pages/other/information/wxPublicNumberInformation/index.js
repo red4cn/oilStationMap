@@ -6,24 +6,29 @@ var app = getApp();
 Page({
   data: {
     materialList: [{
-      thumb_url: "http://mmbiz.qpic.cn/mmbiz_png/EtQBibotz0RYS0wfXJEnd0ibJfsAaLIVawpBX8iaHuC0czLAV2IBEJI8IAFZUS4zbGWFd5f6EuicbF6eaaeaic6kySg/0?wx_fmt=png",
-      title:"B_B截屏-标题B_B截屏-标题B_B截屏-标题",
-      digest: "B_B截屏-内容B_B截屏-内容B_B截屏-内容B_B截屏-内容B_B截屏-内容B_B截屏-内容B_B截屏-内容",
-      url: "https://mp.weixin.qq.com/s?__biz=MzI1ODMwMzAxMw==&mid=100000027&idx=1&sn=773fe0246bf1fa5c7f5b261253d8f856&chksm=6a0b74515d7cfd47084983b1a6343501db1eeb735a5f070ca992a0fc90b49ecfd2294f67d896#rd"
+      thumb_url: "http://mmbiz.qpic.cn/mmbiz/EtQBibotz0RbdiayWFEJjuEECibYRG8EzXXM9Bph5ZUXZrlWDV0rKaCngbbur4cIqnGJM2acISVrhXAwQibuebVG2g/0?wx_fmt=jpeg",
+      title:"个体工商户注册流程（本人亲测）",
+      digest: "很多人都不知道怎么办理营业执照的过程和所需要什么材料，再加上当地政府办事效率又差的要死同时每次你问他",
+      url: "http://mp.weixin.qq.com/s?__biz=MzI1ODMwMzAxMw==&mid=100000102&idx=1&sn=75a869e9c06ca9f9572314bfdd7757c0&chksm=6a0b742c5d7cfd3a538384e594258c5877fa4bcc0d725514e4ede3ff2cfb9a6b056b50f5eeaf#rd"
     }, {
-        thumb_url: "http://mmbiz.qpic.cn/mmbiz_png/EtQBibotz0RYS0wfXJEnd0ibJfsAaLIVawpBX8iaHuC0czLAV2IBEJI8IAFZUS4zbGWFd5f6EuicbF6eaaeaic6kySg/0?wx_fmt=png",
-        title: "B_B截屏-标题",
+        thumb_url: "http://mmbiz.qpic.cn/mmbiz/EtQBibotz0RbGd2jUiamNJgsuudXSuLjDLuBsI9wUAZojgnZSIlTGo1m4icITmKQ3FDWR2Zu9EG7sPib307nQKqLLw/0?wx_fmt=jpeg",
+        title: "便利店黑科技标配-自动售货机",
         digest: "一定要放硬币吗？放一个重量形状都一致的圆片行不行？售货机是如何识别硬币的？你买的商品没货了，售货机怎么知道要",
-        url: "https://mp.weixin.qq.com/s?__biz=MzI1ODMwMzAxMw==&mid=100000182&idx=1&sn=d6c10661fa8954cd217006e40029974e&chksm=6a0b74fc5d7cfdead4c662c296aa1f4fea539af8d6ebaa7b4f4d87869b4793f74f4c10bdc7b2#rd"
+        url: "http://mp.weixin.qq.com/s?__biz=MzI1ODMwMzAxMw==&mid=100000041&idx=1&sn=768057ac05dbd2737ad54fd90ec1f6e7&chksm=6a0b74635d7cfd759bcca5ca7d46a0697eb487788168cc1dc1a4813ef4f40f13a4bf7c768e18#rd"
+      }, {
+        thumb_url: "http://mmbiz.qpic.cn/mmbiz/EtQBibotz0RbVib9v44HVmQtFicAhH8I8AV20icdUQjibSmGKuJUic57jKXml8q0icGRqa29YADiadhM3Zj0WsPC6gaXPA/0?wx_fmt=png",
+        title: "扫描二维码获取WiFi密码，即可免费连WiFi",
+        digest: "扫描二维码获取WiFi密码，即可免费连WiFi",
+        url: "http://mp.weixin.qq.com/s?__biz=MzI1ODMwMzAxMw==&mid=100000027&idx=1&sn=773fe0246bf1fa5c7f5b261253d8f856&chksm=6a0b74515d7cfd47084983b1a6343501db1eeb735a5f070ca992a0fc90b49ecfd2294f67d896#rd"
       }]
   },
   onLoad: function (options) {
-    // this.batchGetMaterial();
+    
   },
   onShow: function(res) {
-    // this.batchGetMaterial();
+    this.batchGetMaterial();
   },
-  onHide: function() {
+  onHide: function () {
 
   },
   onReady: function() {
@@ -63,8 +68,9 @@ Page({
   showMaterialDetail: function(e){
     console.log(e);
     var materialDetailUrl = e.currentTarget.dataset.url;
+    wx.setStorageSync("materialDetailUrl", materialDetailUrl);
     wx.navigateTo({
-      url: "../../../other/information/wxPublicNumberInformation/informationDetails/index?materialDetailUrl=" + materialDetailUrl
+      url: "../../../other/information/wxPublicNumberInformation/informationDetails/index"
     });
   }
 });

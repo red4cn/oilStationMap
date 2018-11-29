@@ -11,11 +11,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // return;
     var that = this;
-    var materialDetailUrl = "https://www.91caihongwang.com/oilStationMap/payment.html";
-    if (options.materialDetailUrl) {
-      materialDetailUrl = options.materialDetailUrl;
+    var materialDetailUrl = wx.getStorageSync("materialDetailUrl");
+    if (materialDetailUrl) {
+      materialDetailUrl = materialDetailUrl;
+    } else {
+      materialDetailUrl = "https://www.91caihongwang.com/oilStationMap/payment.html";
     }
     that.setData({
       materialDetailUrl: materialDetailUrl
