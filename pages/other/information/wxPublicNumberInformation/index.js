@@ -34,6 +34,11 @@ Page({
   onReady: function() {
 
   },
+  //下拉刷新获取最新数据
+  onPullDownRefresh: function () {
+    console.log("开始下拉刷新");
+    this.batchGetMaterial();
+  },
   /**
    * 批量获取 微信公众号图文文章
    */

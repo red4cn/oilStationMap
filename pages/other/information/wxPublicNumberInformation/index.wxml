@@ -1,5 +1,5 @@
 <page>
-  <scroll-view class="materialScrollList" scroll-y="true">
+  <view scroll-y class="materialScrollList">
     <!-- 资讯列表 -->
     <view wx:if="{{materialList}}" wx:for="{{materialList}}">
       <view class="materialItemView" data-url="{{item.url}}" bindtap="showMaterialDetail">
@@ -19,5 +19,5 @@
         </view>
       </view>
     </view>
-  </scroll-view>
+  </view>
 </page>
