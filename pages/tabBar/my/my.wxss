@@ -65,7 +65,7 @@
   width: 232rpx;
   height: 80rpx;
   line-height: 80rpx;
-  margin: 60rpx auto;
+  margin: 20rpx auto;
   border-radius: 200rpx;
   background: #fff;
   border: 2rpx solid #eee;
@@ -85,5 +85,13 @@
   content: '\e64b';
   font-family: 'iconfont';
   font-size: 28rpx;
+}
+
+.officialAccountView {
+  border: 0rpx solid #09bb07;
+  border-radius: 12rpx;
+  width: 90%;
+  height: 90rpx;
+  margin: 0px auto;
 }
 

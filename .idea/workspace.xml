@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7d01b97a-4b4c-48de-b2bb-39a35751b92b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/other/information/wxPublicNumberInformation/index.js" afterPath="$PROJECT_DIR$/pages/other/information/wxPublicNumberInformation/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/other/information/wxPublicNumberInformation/index.wxml" afterPath="$PROJECT_DIR$/pages/other/information/wxPublicNumberInformation/index.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.js" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.wxml" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/index/index.wxss" afterPath="$PROJECT_DIR$/pages/tabBar/index/index.wxss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/my/my.wxml" afterPath="$PROJECT_DIR$/pages/tabBar/my/my.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/my/my.wxss" afterPath="$PROJECT_DIR$/pages/tabBar/my/my.wxss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.js" afterPath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.wxml" afterPath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.wxss" afterPath="$PROJECT_DIR$/pages/tabBar/todayOilPrice/todayOilPrice.wxss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +40,7 @@
             <state relative-caret-position="3770">
               <caret line="130" column="41" lean-forward="false" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
               <folding>
-                <marker date="1542694091475" expanded="true" signature="3293:3357" ph="{...}" />
+                <marker date="1543661813502" expanded="true" signature="3289:3353" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -44,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1711">
-              <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+              <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -53,8 +59,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/other/oilStationAdd/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="522">
+              <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -133,8 +139,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -767,7 +773,7 @@
       <workItem from="1543397361259" duration="639000" />
       <workItem from="1543459367562" duration="2982000" />
       <workItem from="1543490497800" duration="609000" />
-      <workItem from="1543541848572" duration="729000" />
+      <workItem from="1543541848572" duration="1554000" />
     </task>
     <task id="LOCAL-00001" summary="优化名称">
       <created>1526697917560</created>
@@ -1000,11 +1006,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543489439337</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="优化 油价资讯 下拉刷新">
+      <created>1543585007682</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1543585007682</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77374000" />
+    <option name="totallyTimeSpent" value="78199000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1016,7 +1029,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1027,13 +1040,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120934956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14800996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11235357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15228967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1509299" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20457797" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1103,7 +1116,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="放开在地图选取地址" />
     <MESSAGE value="在获取所在位置的加油站后，将所属加油站的收款二维码保存在本地" />
     <MESSAGE value="在付款页面特意标识加油站名称，同时更换loading图案" />
     <MESSAGE value="更换首页和地图缩略" />
@@ -1128,7 +1140,8 @@
     <MESSAGE value="新增 油价资讯 入口" />
     <MESSAGE value="新增 红包活动 入口" />
     <MESSAGE value="优化 油价资讯 可以打开微信公众号文章" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化 油价资讯 可以打开微信公众号文章" />
+    <MESSAGE value="优化 油价资讯 下拉刷新" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化 油价资讯 下拉刷新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1384,7 +1397,7 @@
         <state relative-caret-position="3770">
           <caret line="130" column="41" lean-forward="false" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
           <folding>
-            <marker date="1542694091475" expanded="true" signature="3293:3357" ph="{...}" />
+            <marker date="1543661813502" expanded="true" signature="3289:3353" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1392,15 +1405,15 @@
     <entry file="file://$PROJECT_DIR$/pages/tabBar/index/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1711">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+          <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/other/oilStationAdd/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="522">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding />
         </state>
       </provider>

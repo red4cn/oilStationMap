@@ -8,8 +8,8 @@ Page({
     data: {
         oilStationName: "",
         oilStationName_Temp: "",
-        isShowPaying: false,
-        isShowPaymentCodeImglist: false,
+      isShowPaying: false,
+      isShowPaymentCodeImglist: false,
         paymentCodeWebPageUrl: requestUrl.paymentHtml,
         paymentCodeImglist: ["https://www.91caihongwang.com/images/da_lu_tian_ba_jia_you_zhan/wx_payment.jpeg"],
         appreciateCodeImglist: ["https://www.91caihongwang.com/images/da_lu_tian_ba_jia_you_zhan/wx_appreciate.jpeg"],

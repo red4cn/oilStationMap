@@ -1,26 +1,32 @@
 @import "../../../app.wxss";
-.priceView{
+
+.priceView {
   border: 0px red solid;
   width: 100%;
   height: 100%;
 }
-.todayOilPriceBackgroundView{
+
+.todayOilPriceBackgroundView {
   border: 0px red solid;
 }
-.todayOilPriceBackgroundImg{
-  border: 0px red solid;
-  width: 100%;
-  height: 200px; 
-}
-.redActivityImageView{
-  border: 0px red solid;
-}
-.redActivityImage{
+
+.todayOilPriceBackgroundImg {
   border: 0px red solid;
   width: 100%;
-  height: 200px; 
+  height: 200px;
 }
-.oilIntroduce{
+
+.redActivityImageView {
+  border: 0px red solid;
+}
+
+.redActivityImage {
+  border: 0px red solid;
+  width: 100%;
+  height: 200px;
+}
+
+.oilIntroduce {
   border: 0px red solid;
   position: relative;
   width: 100%;
@@ -32,59 +38,67 @@
   display: -webkit-flex;
   overflow: hidden;
   margin: 0px 0px 3px 0px;
-} 
-.oilView{
+}
+
+.oilView {
   border: 0px red solid;
   width: 50%;
   height: 50rpx;
   padding-left: 20px;
 }
-.oilStationImg{
+
+.oilStationImg {
   border: 0px red solid;
   height: 50rpx;
   width: 50rpx;
-  display:tabel-cell; 
-  vertical-align:middle;
+  display: tabel-cell;
+  vertical-align: middle;
 }
-.oilStation{
+
+.oilStation {
   border: 0px red solid;
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-size: 28rpx;
   letter-spacing: 0;
-  display:tabel-cell;
-  vertical-align:middle;
+  display: tabel-cell;
+  vertical-align: middle;
   padding: 0px 0px 0px 3px;
 }
-.mapView{
+
+.mapView {
   border: 0px red solid;
   width: 50%;
   height: 50rpx;
   text-align: right;
   padding-right: 20px;
 }
-.mapPositionImg{
+
+.mapPositionImg {
   height: 50rpx;
   width: 50rpx;
-  display:tabel-cell; 
-  vertical-align:middle;
+  display: tabel-cell;
+  vertical-align: middle;
 }
-.ortherStation{
+
+.ortherStation {
   border: 0px red solid;
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-size: 28rpx;
   letter-spacing: 0;
-  display:tabel-cell;
-  vertical-align:middle;
+  display: tabel-cell;
+  vertical-align: middle;
 }
-.oilTitle{
+
+.oilTitle {
   border: 0px red solid;
 }
-.oilTitleView{
+
+.oilTitleView {
   border: 0px red solid;
   position: relative;
   width: 100%;
   height: 50rpx;
-  line-height: 50rpx; 
+  line-height: 50rpx;
   margin-top: 5px;
   border-bottom: 2rpx solid #1afa29;
   border-top: 2rpx solid #1afa29;
@@ -95,19 +109,21 @@
   display: -webkit-flex;
   overflow: hidden;
 }
-.oilList{
+
+.oilList {
   border: 0px red solid;
   margin-bottom: 40rpx;
 }
-.itemView{
-  border: 0rpx solid #09BB07;
-  background: #09BB07;
+
+.itemView {
+  border: 0rpx solid #09bb07;
+  background: #09bb07;
   border-radius: 12rpx;
   position: relative;
   width: 90%;
   height: 90rpx;
-  line-height: 70rpx; 
-  border-bottom: 2rpx solid #EEE;
+  line-height: 70rpx;
+  border-bottom: 2rpx solid #eee;
   font-size: 28rpx;
   color: #353535;
   letter-spacing: -0.68rpx;
@@ -117,58 +133,64 @@
   margin: 0px auto;
   margin-top: 5px;
 }
-.oilModelFlagNameView{
+
+.oilModelFlagNameView {
   border: 0px red solid;
   overflow: hidden;
   position: relative;
   width: 50%;
   height: 100%;
-  line-height: 100%; 
-  border-bottom: 2rpx solid #EEE;
+  line-height: 100%;
+  border-bottom: 2rpx solid #eee;
   font-size: 28rpx;
   color: #353535;
   display: -webkit-flex;
 }
-.oilModelLabel{
+
+.oilModelLabel {
   border: 0px red solid;
   display: inline-block;
   height: 90rpx;
-  line-height:  90rpx;
+  line-height: 90rpx;
   width: 40%;
   font-size: 60rpx;
   text-align: center;
   padding: 0px 5px 0px 10px;
 }
-.oilFlagLabel{
+
+.oilFlagLabel {
   border: 0px red solid;
   display: inline-block;
   height: 15rpx;
-  line-height:  15rpx;
+  line-height: 15rpx;
   width: 15px;
-  margin-top: 7px; 
-  text-align: center; 
+  margin-top: 7px;
+  text-align: center;
 }
-.oilNameLabel{
+
+.oilNameLabel {
   border: 0px red solid;
   display: inline-block;
   width: 60%;
   height: 90rpx;
-  line-height:  90rpx;
+  line-height: 90rpx;
   font-size: 30rpx;
   text-align: left;
   padding: 0px 0px 0px 5px;
 }
-.oilPriceUnitView{
+
+.oilPriceUnitView {
   border: 0px red solid;
   width: 50%;
   height: 100%;
-  line-height: 100%; 
+  line-height: 100%;
   overflow: hidden;
   position: relative;
   display: -webkit-flex;
   text-align: right;
 }
-.oilPriceLabel{
+
+.oilPriceLabel {
   border: 0px red solid;
   display: inline-block;
   width: 75%;
@@ -177,47 +199,52 @@
   font-size: 60rpx;
   text-align: right;
 }
-.oilPriceUnitLabel{
+
+.oilPriceUnitLabel {
   border: 0px red solid;
   display: inline-block;
   width: 25%;
   height: 90rpx;
-  line-height:  110rpx;
+  line-height: 110rpx;
   font-size: 20rpx;
   text-align: left;
   padding: 0px 20px 0px 10px;
 }
-.updateOilStationItemView{
-  border: 0rpx solid #09BB07;
-  background: #09BB07;
+
+.updateOilStationItemView {
+  border: 0rpx solid #09bb07;
+  background: #09bb07;
   border-radius: 12rpx;
   position: relative;
   width: 90%;
   height: 90rpx;
-  line-height: 70rpx; 
-  border-bottom: 2rpx solid #EEE;
+  line-height: 70rpx;
+  border-bottom: 2rpx solid #eee;
   font-size: 28rpx;
   color: #353535;
   letter-spacing: -0.68rpx;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   overflow: hidden;
   margin: 0px auto;
   margin-top: 5px;
- align-items:center;
+  align-items: center;
 }
-.updateOilStationImg{
+
+.updateOilStationImg {
   height: 50rpx;
   width: 90rpx;
 }
-.updateOilStation{
+
+.updateOilStation {
   border: 0px red solid;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 30rpx;
   font-weight: bolder;
   margin-left: -10rpx;
 }
-.informationView{
+
+.informationView {
   position: absolute;
   height: 200rpx;
   width: 80rpx;
@@ -228,32 +255,44 @@
   /* background-color: #35d75d; */
   border-radius: 50%;
 }
-.informationImg{
+
+.informationImg {
   height: 200rpx;
   width: 80rpx;
 }
-.shareView{
+
+.officialAccountView {
+  border: 0rpx solid #09bb07;
+  border-radius: 12rpx;
+  width: 90%;
+  height: 90rpx;
+  margin: 0px auto;
+  margin-top: 5px;
+}
+
+.shareView {
   border: 0px red solid;
   display: flex;
   display: -webkit-flex;
-   position: fixed;
+  position: fixed;
   bottom: 0;
   height: 128rpx;
   width: 100%;
   align-items: center;
-  background: #FFFFFF;
-  box-shadow: 0 -8rpx 12rpx 0 rgba(0,0,0,0);
+  background: #fff;
+  box-shadow: 0 -8rpx 12rpx 0 rgba(0, 0, 0, 0);
 }
+
 .shareButton {
   width: 380rpx;
   height: 80rpx;
   line-height: 80rpx;
   font-family: PingFang-SC-Bold;
   font-size: 28rpx;
-  background: #FFFFFF;
-  margin: 0rpx auto;  
-  color: #09BB07;
+  background: #fff;
+  margin: 0rpx auto;
+  color: #09bb07;
   text-align: center;
-  border: 2rpx solid #09BB07;
+  border: 2rpx solid #09bb07;
   border-radius: 12rpx;
 }

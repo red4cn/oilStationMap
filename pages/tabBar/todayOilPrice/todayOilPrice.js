@@ -151,6 +151,10 @@ Page({
     wx.navigateTo({
       url: "../../other/information/wxPublicNumberInformation/index"
     });
+  },
+  officialAccountLoadFuc: function (e) {
+    console.log("加载公众号组件");
+    console.log(e);
   }
 
 })
