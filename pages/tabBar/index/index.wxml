@@ -5,7 +5,7 @@
       <view>
       <web-view wx:if="{{isShowPaymentCodeImglist}}" src="{{paymentCodeWebPageUrl}}"></web-view>
         <swiper-item class='swiper-item'>
-          <view class='swiper1'>
+          <view class='swiper1' style="border:0px red solid;">
             <!-- 付款二维码  -->
             <view wx:for="{{paymentCodeImglist}}" wx:for-item="codeImg" class="previewimg">
               <image src="{{codeImg}}" data-src="{{codeImg}}" bindtap='previewPaymentImage' class="codeImg"></image>
@@ -40,11 +40,10 @@
     </swiper>
 
       <!-- 关注公众号 -->
-  <view class="officialAccountView">
+  <!-- <view class="officialAccountView">
     <official-account bindload="officialAccountLoadFuc" binderror="officialAccountLoadFuc"></official-account>
-  </view>
-  </view>
-
+  </view> -->
+</view>
   <!-- 付款缓冲小动画 -->
   <view class='mask' wx:if="{{isShowPaying}}" catchtap="preventD">
     <image class="scanned-image" src="/images/paying.gif"> </image>

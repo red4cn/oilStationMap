@@ -20,9 +20,9 @@
   我的客服</button>
   <view style="height:1px;width:100%;border:0px red solid;"></view>
 
-      <!-- 关注公众号 -->
-      <view class="officialAccountView">
+      <!-- 关注公众号,以后可以用来开启广告位 -->
+      <!-- <view class="officialAccountView">
         <official-account bindload="officialAccountLoadFuc" binderror="officialAccountLoadFuc"></official-account>
-      </view>
+      </view> -->
   
 </page>

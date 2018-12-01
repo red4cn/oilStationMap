@@ -15,7 +15,8 @@
   width: 670rpx;
   margin: 0 auto;
   padding-top: 50rpx;
-  height: 800rpx;
+  /* height: 800rpx;       //关注公众号,以后可以用来开启广告位 */
+  height: 970rpx;
   background: #fff;
   border-radius: 24rpx;
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.06);
@@ -31,7 +32,8 @@
 }
 
 .swiper {
-  height: 85%;
+  /* height: 85%;      //关注公众号,以后可以用来开启广告位 */
+  height: 100%;
 }
 
 .swiper-box .wx-swiper-dot {
@@ -98,7 +100,8 @@
   display: block;
   color: #b2b2b2;
   text-align: center;
-  margin: 30rpx 0rpx 10rpx 0rpx;
+  /* margin: 30rpx 0rpx 10rpx 0rpx; //关注公众号,以后可以用来开启广告位*/
+  margin: 200rpx 0rpx 40rpx 0rpx;
 }
 
 .appreciateBtn::after {
@@ -119,7 +122,8 @@
   display: block;
   color: #b2b2b2;
   text-align: center;
-  margin: 30rpx 0rpx 10rpx 0rpx;
+  /* margin: 30rpx 0rpx 10rpx 0rpx; //关注公众号,以后可以用来开启广告位*/
+  margin: 200rpx 0rpx 40rpx 0rpx;
 }
 
 .officialAccountView {

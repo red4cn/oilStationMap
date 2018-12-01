@@ -65,7 +65,8 @@
   width: 232rpx;
   height: 80rpx;
   line-height: 80rpx;
-  margin: 20rpx auto;
+  /* margin: 20rpx auto;   //关注公众号,以后可以用来开启广告位 */
+  margin: 60rpx auto;
   border-radius: 200rpx;
   background: #fff;
   border: 2rpx solid #eee;
