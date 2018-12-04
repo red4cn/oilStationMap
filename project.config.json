@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -54,9 +54,9 @@
 					"scene": "1011"
 				},
 				{
-					"id": -1,
+					"id": 3,
 					"name": "付款",
-					"pathName": "pages/tabBar/index/index",
+					"pathName": "pages/tabBar/payment/payment",
 					"query": "cardShareInfo={\"sendUid\":\"136\",\"cardId\":\"2799\"}",
 					"scene": "1011"
 				},

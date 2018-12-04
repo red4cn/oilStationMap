@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/tabBar/todayOilPrice/todayOilPrice",
-    "pages/tabBar/index/index",
+    "pages/tabBar/payment/payment",
     "pages/tabBar/my/my"
   ],
   "window": {
@@ -19,7 +19,7 @@
     "list": [
       {
         "text": "付款",
-        "pagePath": "pages/tabBar/index/index",
+        "pagePath": "pages/tabBar/payment/payment",
         "iconPath": "images/pay_gray.png",
         "selectedIconPath": "images/pay_green.png"
       },

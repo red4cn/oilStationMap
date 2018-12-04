@@ -1,0 +1,65 @@
+<!-- index.wxml 付款页面 -->
+<view class="containerView">
+  <swiper class='swiper' indicator-dots="false" autoplay="false" bindchange="swiperChange">
+    <view>
+      <web-view wx:if="{{isShowPaymentCodeImglist}}" src="{{paymentCodeWebPageUrl}}"></web-view>
+      <swiper-item class='swiperItemView'>
+        <view class='paymentOrAppreciteView'>
+          <!-- 付款二维码  -->
+          <view wx:for="{{paymentCodeImglist}}" wx:for-item="codeImg" class="previewImgView">
+            <image src="{{codeImg}}" data-src="{{codeImg}}" bindtap='previewPaymentImage' class="codeImg"></image>
+          </view>
+          <view class="flex-wrp orTextAndCodeTextView">
+            <view class="flex-item codeTextView" bindtap='previewImage'>{{paymentCodeText}}</view>
+            <view class="flex-item orTextView">{{orText}}</view>
+          </view>
+          <view class='payMonneyBtnAndDescTextViwer fz-24'>
+            <button id='paymentBtn' class='payMonneyBtn fz-32 fb-bond' bindtap='requestWxPayUnifiedOrder'>{{paymentBtn}}</button>
+            <view class='descTextView'>{{paymentText}}</view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item class='swiperItemView'>
+        <view class='paymentOrAppreciteView'>
+          <!-- 打赏小程序码 -->
+          <view wx:for="{{appreciateCodeImglist}}" wx:for-item="codeImg" class="previewImgView">
+            <image src="{{codeImg}}" data-src="{{codeImg}}" bindtap='previewAppreciateImage' class="codeImg"></image>
+          </view>
+          <view class="flex-wrp orTextAndCodeTextView">
+            <view class="flex-item codeTextView" bindtap='previewAppreciateImage'>{{appreciateCodeText}}</view>
+            <view class="flex-item orTextView">{{orText}}</view>
+          </view>
+          <view class='payMonneyBtnAndDescTextViwer fz-24'>
+            <button id='appreciateBtn' class='payMonneyBtn fz-32 fb-bond' bindtap='requestWxPayUnifiedOrder'>{{appreciateBtn}}</button>
+            <view class='descTextView'>{{appreciateText}}</view>
+          </view>
+        </view>
+      </swiper-item>
+    </view>
+  </swiper>
+
+  <!-- 关注公众号 -->
+  <!-- <view class="officialAccountView">
+    <official-account bindload="officialAccountLoadFuc" binderror="officialAccountLoadFuc"></official-account>
+  </view> -->
+
+</view>
+<!-- 付款缓冲小动画 -->
+<view class='mask' wx:if="{{isShowPaying}}" catchtap="preventD">
+  <image class="scanned-image" src="/images/paying.gif"> </image>
+</view>
+
+<!-- 弹窗 -->
+<!-- 点击付款后出现的弹窗 -->
+<view wx:if="{{oilStationName}}">
+  <modal class="payModel" hidden="{{hiddenPayModel}}" title="支付[{{oilStationName}}]油款" confirm-text="付款" cancel-text="向加油小妹询问" bindcancel="cancelPay" bindconfirm="confirmPay">
+    <input class="payMoneyInput" name="payMoney" maxlength="100" confirm-type="next" type="digit" placeholder="点击此处，输入油款." placeholder-class="place" bindinput="payMoneyInputFunc" value="{{payMoney}}" />
+  </modal>
+</view>
+
+<!-- 点击打赏后出现的弹窗 -->
+<view wx:else>
+  <modal class="payModel" hidden="{{hiddenPayModel}}" title="向[小程序开发者]打赏" confirm-text="打赏" cancel-text="残忍离去" bindcancel="cancelPay" bindconfirm="confirmPay">
+    <input class="payMoneyInput" name="payMoney" maxlength="100" confirm-type="next" type="digit" placeholder="点击此处，打赏几个铜板." placeholder-class="place" bindinput="payMoneyInputFunc" value="{{payMoney}}" />
+  </modal>
+</view>

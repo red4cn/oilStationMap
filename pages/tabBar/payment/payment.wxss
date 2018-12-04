@@ -1,0 +1,153 @@
+@import "../../../app.wxss";
+
+.containerView {
+  border: 0px red solid;
+  display: block;
+  width: 100%;
+  height: 90%;
+  opacity: 0.9;
+  border-radius: 12rpx;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+  border: 0px red solid;
+}
+
+.swiperItemView {
+  border: 0px red solid;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.paymentOrAppreciteView {
+  border: 0px red solid;
+  height: 100%;
+  width: 90%;
+  margin: 0rpx 40rpx 0rpx 40rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.06);
+}
+
+.previewImgView {
+  border: 0px red solid;
+  height: 45%;
+  width: 100%;
+  align-items: center; /** 垂直居中*/
+  display: flex;
+  justify-content: center; /** flex 属性， 水平居中**/
+}
+
+.codeImg {
+  border: 0px red solid;
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.orTextAndCodeTextView {
+  border: 0px red solid;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+}
+
+.codeTextView {
+  border: 0px red solid;
+  height: 50%;
+  width: 100%;
+  align-items: center; /** 垂直居中*/
+  display: flex;
+  justify-content: center; /** flex 属性， 水平居中**/
+  color: #09bb07;
+  font-size: 80%;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.orTextView {
+  border: 0px red solid;
+  height: 50%;
+  width: 100%;
+  align-items: center; /** 垂直居中*/
+  display: flex;
+  justify-content: center; /** flex 属性， 水平居中**/
+  color: #09bb07;
+  font-size: 150%;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.payMonneyBtnAndDescTextViwer {
+  border: 0px red solid;
+  height: 38%;
+  width: 100%;
+}
+
+.payMonneyBtn {
+  width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-top: 30rpx;
+  color: #09bb07;
+  border: 3rpx solid #09bb07;
+  background: #fff;
+  border-radius: 12rpx;
+}
+
+.descTextView {
+  color: #b2b2b2;
+  position: fixed;
+  text-align: center;
+  bottom: 50rpx;
+  left: 0;
+  right: 0;
+}
+
+/* 付款的弹窗 */
+
+.scanned-image {
+  border-radius: 12rpx;
+  display: block;
+  width: 328rpx;
+  height: 236rpx;
+  margin: 352rpx 210rpx 0 212rpx;
+}
+
+/* 点击付款后出现的弹窗 */
+
+.payModel {
+  border: 10px red solid;
+}
+
+.place {
+  border: 0px red solid;
+  color: #09bb07;
+  font-size: 40rpx;
+  font-weight: bold;
+  letter-spacing: -0.68px;
+  text-align: center;
+}
+
+.payMoneyInput {
+  border: 0px #09bb07 solid;
+  color: black;
+  font-size: 80rpx;
+  font-weight: bold;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 12rpx;
+}
+
+.officialAccountView {
+  border: 0rpx solid #09bb07;
+  width: 90%;
+  height: 90px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
