@@ -3,56 +3,44 @@
 .materialScrollList {
   border: 0px red solid;
   width: 100%;
-  height: 100%;
+  height: 100%; 
 }
 
 .materialItemView {
   border: 0rpx solid #09bb07;
-  border-radius: 12rpx;
-  position: relative;
+  border-bottom: 2rpx solid rgba(121,100,244,0.10);
   width: 98%;
   height: 180rpx;
   font-size: 28rpx;
   color: #353535;
-  letter-spacing: -0.68rpx;
-  display: flex;
-  display: -webkit-flex;
-  overflow: hidden;
   margin: 0px auto;
   margin-top: 10rpx;
+  display: flex;  
+  flex-direction: row;  
 }
 
-.thumbImageView {
-  border: 0rpx solid #09bb07;
-  width: 180rpx;
-  height: 180rpx;
-}
 
-.thumbImage {
-  border: 0rpx solid #09bb07;
-  width: 200rpx;
-  height: 200rpx;
-}
+
 
 .titleAndDigestView {
   border: 0rpx solid #09bb07;
   background-color: #fff;
-  width: 100%;
+  display: positive;
+  width: 80%;
   height: 100%;
 }
 
 .titleView {
   border: 0rpx solid #09bb07;
   width: 100%;
-  height: 40rpx;
-  line-height: 40rpx;
+  height: 60rpx;
+  line-height: 60rpx;
   background-color: #fff;
   justify-content: left;
   align-items: left;
   text-align: left;
   font-size: 30rpx;
   color: #353535;
-  padding: 5rpx;
   padding-left: 15rpx;
 }
 
@@ -66,6 +54,27 @@
   text-align: left;
   font-size: 25rpx;
   color: #b2b2b2;
-  padding: 5rpx;
   padding-left: 15rpx;
+}
+
+
+
+
+.thumbImageView {
+  border: 0rpx solid #09bb07;
+  border-radius: 12rpx;
+  width: 20%;
+  height: 100%;
+  background-color: #fff;
+  align-items: center; /** 垂直居中*/
+  display: flex;
+  justify-content: center; /** flex 属性， 水平居中**/
+}
+
+.thumbImage {
+  border: 0rpx solid #09bb07;
+  border-radius: 12rpx;
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 15rpx;
 }

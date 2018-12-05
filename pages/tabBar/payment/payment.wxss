@@ -121,7 +121,7 @@
 /* 点击付款后出现的弹窗 */
 
 .payModel {
-  border: 10px red solid;
+  border: 0px red solid;
 }
 
 .place {

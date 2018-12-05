@@ -245,20 +245,22 @@
 }
 
 .informationView {
+  border: 0rpx solid #1296db;
   position: absolute;
-  height: 200rpx;
-  width: 80rpx;
-  right: 15rpx;
-  bottom: 200rpx;
+  height: 125rpx;
+  width: 160rpx;
+  right: 0rpx;
+  bottom: 100rpx;
   z-index: 2;
-  align-items: right;
-  /* background-color: #35d75d; */
-  border-radius: 50%;
+  border-radius: 12%;
+  align-items: center; /** 垂直居中*/
+  display: flex;
+  justify-content: center; /** flex 属性， 水平居中**/
 }
 
 .informationImg {
-  height: 200rpx;
-  width: 80rpx;
+  height: 50rpx;
+  width: 120rpx;
 }
 
 .officialAccountView {

@@ -56,7 +56,6 @@
     <input class="payMoneyInput" name="payMoney" maxlength="100" confirm-type="next" type="digit" placeholder="点击此处，输入油款." placeholder-class="place" bindinput="payMoneyInputFunc" value="{{payMoney}}" />
   </modal>
 </view>
-
 <!-- 点击打赏后出现的弹窗 -->
 <view wx:else>
   <modal class="payModel" hidden="{{hiddenPayModel}}" title="向[小程序开发者]打赏" confirm-text="打赏" cancel-text="残忍离去" bindcancel="cancelPay" bindconfirm="confirmPay">

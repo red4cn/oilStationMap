@@ -75,7 +75,7 @@ Page({
               oilStationName: res.data.data.oilStationName,
               oilStationPriceList: that.data.oilStationPriceList
             });
-            wx.setStorageSync("redActivityFlag", oilStationList[0]);
+            wx.setStorageSync("showCurrentOilStation", oilStationList[0]);
           },
           fail: function() {
             wx.hideLoading();

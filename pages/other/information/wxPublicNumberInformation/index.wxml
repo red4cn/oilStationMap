@@ -1,22 +1,21 @@
 <page>
   <view scroll-y class="materialScrollList">
     <!-- 资讯列表 -->
-    <view wx:if="{{materialList}}" wx:for="{{materialList}}">
-      <view class="materialItemView" data-url="{{item.url}}" bindtap="showMaterialDetail">
-        <!-- 资讯缩略图 -->
-        <view class="thumbImageView">
-          <image class="thumbImage" src="{{item.thumb_url}}" lazy-load="true" mode="scaleToFill"></image>
+    <view class="materialItemView" data-url="{{item.url}}" bindtap="showMaterialDetail" wx:if="{{materialList}}" wx:for="{{materialList}}">
+        <!-- 资讯标题和简讯 -->
+      <view class="titleAndDigestView">
+        <!-- 资讯标题 -->
+        <view class="titleView">
+          <text space="true" decode="true">{{item.title}}</text>
         </view>
-        <view class="titleAndDigestView">
-          <!-- 资讯标题 -->
-          <view class="titleView">
-            <text space="true" decode="true">{{item.title}}</text>
-          </view>
-          <!-- 资讯简讯 -->
-          <view class="digestView">
-            <text type="text">{{item.digest}}</text>
-          </view>
+        <!-- 资讯简讯 -->
+        <view class="digestView">
+          <text type="text">{{item.digest}}</text>
         </view>
+      </view>
+      <!-- 资讯缩略图 -->
+      <view class="thumbImageView">
+        <image class="thumbImage" src="{{item.thumb_url}}" lazy-load="true" mode="scaleToFill"></image>
       </view>
     </view>
   </view>

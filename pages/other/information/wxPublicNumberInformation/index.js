@@ -46,6 +46,10 @@ Page({
     var that = this;
     var params = {};
     params.mediaType = "NEWS";
+    wx.showLoading({
+        title: "客官请稍后...",
+        mask: true
+    });
     network.POST({
       params: params,
       requestUrl: requestUrl.batchGetMaterial,
