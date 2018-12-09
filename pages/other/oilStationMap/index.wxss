@@ -1,8 +1,66 @@
 @import "../../../app.wxss";
-.priceView{
+.oilStationMapContainerView{
+  width: 100%;
+  height: 100vh;
+}
+.oilStationMapView{
+  width: 100%;
+  position: relative;
+}
+.oilStationMap{
+  height: 100%;
+  width: 100%;
+}
+.selfLocationView{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selfLocationImg{
+  width: 76rpx;
+  height: 76rpx;
+}
+.checkOilStationPriceView{
+  border: 0px red solid;
+  position: absolute;
+  width: 400rpx;
+  height: 250rpx;
+  bottom: 10rpx;
+  align-items: center; /** 垂直居中*/
+  display: flex;
+  justify-content: center; /** flex 属性， 水平居中**/
+}
+.checkOilStationPriceBtn{
+  border: 0px red solid;
+  width: 200rpx;
+  height: 120rpx;
+}
+.checkOilStationPriceText {
   border: 0px red solid;
   width: 100%;
-  height: 100%;
+  word-break:break-all;
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #09BB07;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center; /** flex 属性， 水平居中**/
+}
+
+
+
+
+
+
+
+
+.oilStationPrizeView{
+  width: 100%;
 }
 .oilIntroduce{
   border: 0px red solid;
