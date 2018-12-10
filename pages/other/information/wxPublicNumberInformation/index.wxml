@@ -12,6 +12,11 @@
         <view class="digestView">
           <text type="text">{{item.digest}}</text>
         </view>
+        <!-- 时间和官方标识 -->
+        <view class="timeAndFlagView">
+          <text type="text">{{item.createTime}}</text>
+          <text type="text" decode="{{true}}" style="margin-left:20rpx;border: 1px #b2b2b2 solid;border-radius: 10rpx;">&nbsp;官方&nbsp;</text>
+        </view>
       </view>
       <!-- 资讯缩略图 -->
       <view class="thumbImageView">
