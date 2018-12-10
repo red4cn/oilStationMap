@@ -11,8 +11,23 @@
         controls              控件（即将废弃，建议使用 cover-view 代替）
         bindtap               点击地图时触发	 
     -->
-    <map id="oilStationMap" class="oilStationMap" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" scale="{{scale}}" show-location="true" enable-3D="true" show-compass="true" enable-overlooking="true" enable-zoom="true" enable-scroll="true"
-      enable-rotate="true" bindmarkertap="bindMarkerTapFunc" bindregionchange="bindregionchangeFunc" bindcontroltap="bindcontroltapFunc" bindtap='bindMapTap'></map>
+    <map 
+        id="oilStationMap" 
+        class="oilStationMap" 
+        latitude="{{latitude}}" 
+        longitude="{{longitude}}" 
+        markers="{{markers}}" 
+        scale="{{scale}}" 
+        show-location="true" 
+        enable-3D="true" 
+        show-compass="true" 
+        enable-overlooking="true" 
+        enable-zoom="true" 
+        enable-scroll="true"
+        enable-rotate="true" 
+        bindmarkertap="bindMarkerTapFunc" 
+        bindtap='bindMapTap'>
+      </map>
     <!--定位当前位置-->
     <cover-view class='selfLocationView' bindtap='selfLocationClick'>
       <cover-image class='selfLocationImg' src='../../../images/selfLocation.png'></cover-image>
@@ -46,7 +61,7 @@
         </view>
       </view>
       <!-- 加油站-油价 -->
-      <scroll-view scroll-y="true" style="height: 320px;border:0px red solid">
+      <scroll-view scroll-y="false" style="height: 320px;border:0px red solid">
         <view class="itemView" wx:if="{{oilStationPriceList}}" wx:for="{{oilStationPriceList}}">
           <view class="oilModelFlagNameView">
             <text class="oilModelLabel">{{item.oilModelLabel}}</text>

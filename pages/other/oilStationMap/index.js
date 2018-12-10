@@ -260,11 +260,6 @@ Page({
   },
   bindMarkerTapFunc: function(e) { //当点击某个加油站是触发
     var that = this;
-    //判断点击的是付款按钮还是打赏按钮，付款按钮可以弹出窗口输入金额，打赏按钮默认打赏一元给开发者
-    wx.showLoading({
-      title: "客官请稍后...",
-      mask: true
-    });
     //重新组装加油站的信息，将选中的加油站图标设置为已选中
     //1.根据点击的选中的加油站markerId 获取 在markers中的数组坐标
     var markersArrIndex = 0;
@@ -292,27 +287,8 @@ Page({
       markerId: that.data.markerId,
       oilStationName: that.data.oilStationName,
       oilStationAdress: that.data.oilStationAdress,
-      latitude: that.data.latitude,
-      longitude: that.data.longitude,
-      // markers: that.data.markers,
       oilStationPriceList: that.data.oilStationPriceList
     });
-    //3.根据加油站数据进行渲染地图
-    // that.oilStationMap = wx.createMapContext("oilStationMap");
-    // 4.如果markerId不为空，则将地图进行挪动到选中加油站地址
-    this.oilStationMap.translateMarker({
-      markerId: that.data.markers[markersArrIndex].id,
-      autoRotate: true,
-      duration: 5000,
-      destination: {
-        latitude: that.data.markers[markersArrIndex].latitude,
-        longitude: that.data.markers[markersArrIndex].longitude
-      },
-      animationEnd() {
-        console.log("已经平移到最新的加油站: " + that.data.markers[markersArrIndex].title);
-      }
-    });
-    wx.hideLoading(); //关闭进度条
     wx.setStorageSync("showCurrentOilStation", that.data.oilStationList[markersArrIndex]);
     return that.oilStationMap;
   },
