@@ -47,7 +47,7 @@
 .digestView {
   border: 0rpx solid #09bb07;
   width: 100%;
-  height: 75rpx;
+  height: 80rpx;
   background-color: #fff;
   justify-content: left;
   align-items: left;

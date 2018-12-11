@@ -250,7 +250,7 @@
   height: 125rpx;
   width: 160rpx;
   right: 0rpx;
-  bottom: 100rpx;
+  bottom: 120rpx;
   z-index: 2;
   border-radius: 12%;
   align-items: center; /** 垂直居中*/
