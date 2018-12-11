@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d01b97a-4b4c-48de-b2bb-39a35751b92b" name="Default" comment="优化 油价资讯 和 入口底部位置">
+    <list default="true" id="7d01b97a-4b4c-48de-b2bb-39a35751b92b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/other/oilStationMap/index.wxml" afterPath="$PROJECT_DIR$/pages/other/oilStationMap/index.wxml" />
     </list>
@@ -797,7 +797,7 @@
       <workItem from="1544413652634" duration="1185000" />
       <workItem from="1544441828351" duration="1197000" />
       <workItem from="1544512974299" duration="3223000" />
-      <workItem from="1544542545979" duration="676000" />
+      <workItem from="1544542545979" duration="1024000" />
     </task>
     <task id="LOCAL-00001" summary="优化名称">
       <created>1526697917560</created>
@@ -1086,11 +1086,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544513308172</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="优化 油站地图 的悬浮层图标">
+      <created>1544545787975</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1544545787975</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90195000" />
+    <option name="totallyTimeSpent" value="90543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1189,7 +1196,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="优化 格式化后的 代码" />
     <MESSAGE value="优化支付页面" />
     <MESSAGE value="对网络请求模块进行优化，当登录过期时重新登录并在请求." />
     <MESSAGE value="优化 对加油站的 显示策略" />
@@ -1214,7 +1220,8 @@
     <MESSAGE value="改版 寻找附近加油站" />
     <MESSAGE value="优化 油价资讯" />
     <MESSAGE value="优化 油价资讯 和 入口底部位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化 油价资讯 和 入口底部位置" />
+    <MESSAGE value="优化 油站地图 的悬浮层图标" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化 油站地图 的悬浮层图标" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

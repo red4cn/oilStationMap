@@ -39,7 +39,7 @@
         <cover-image class='checkOilStationPriceBtn' src='../../../images/home-btn.png'>
         </cover-image>
         </cover-view>
-        <cover-view style="width:100%;align-items: center;display: flex;justify-content: center;font-size: 28rpx;font-weight: bold;color: #09BB07;margin-top: 20rpx;word-break:break-all;border: 0px #09BB07 solid;">
+        <cover-view style="width:100%;display: flex;justify-content: center;font-size: 28rpx;font-weight: bold;color: #09BB07;margin-top: 20rpx;word-break:break-all;text-align:center;border: 0px #09BB07 solid;">
         {{oilStationName}}-油价
       </cover-view>
       </cover-view>
